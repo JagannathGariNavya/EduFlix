@@ -1,0 +1,142 @@
+.single__course__item {
+    padding: 15px;
+  }
+  
+  .course__img img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .enroll a, .view-course a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #17bf9e;
+  }
+  
+  .lesson,
+  .students,
+  .rating {
+    font-size: 0.9rem;
+    color: #0a2b1e;
+    font-weight: 500;
+  }
+  
+  .lesson i,
+  .students i,
+  .rating i {
+    font-weight: 400;
+  }
+  
+  .course__title {
+    line-height: 2rem;
+  }
+  
+  .course__top__left h2 {
+    font-weight: 600;
+  }
+  
+  .btn {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #17bf9e;
+    margin-right: 10px;
+  }
+  
+  .btn:hover {
+    color: #0a2b1e;
+  }
+  .course__top {
+    margin-bottom: 30px;
+  }
+  
+  .course__top h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .course__top p {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .pagination {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pagination li {
+    display: inline;
+    margin-right: 5px;
+  }
+  
+  .pagination button {
+    color: #000;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  
+  .pagination .active button {
+    color: #fff;
+    background-color: #17bf9d;
+    border-radius: 50%;
+  }
+  
+  .pagination button:hover {
+    background-color: #f0f0f0;
+  }
+  .course__top {
+    padding-bottom: 20px;
+  }
+  
+  .course__top h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .course__top p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.5;
+  }
+  
+  .course__card__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .course__card__row .col-lg-3 {
+    flex: 0 0 calc(25% - 1rem); /* Adjust this value as per your design */
+    max-width: calc(25% - 1rem); /* Adjust this value as per your design */
+    margin-bottom: 2rem; /* Adjust spacing between cards */
+  }
+  
+  @media (max-width: 992px) {
+    .course__card__row .col-lg-3 {
+      flex: 0 0 calc(33.3333% - 1rem); /* Adjust this value as per your design */
+      max-width: calc(33.3333% - 1rem); /* Adjust this value as per your design */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .course__card__row .col-lg-3 {
+      flex: 0 0 calc(50% - 1rem); /* Adjust this value as per your design */
+      max-width: calc(50% - 1rem); /* Adjust this value as per your design */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .course__card__row .col-lg-3 {
+      flex: 0 0 100%; /* Full width on smaller screens */
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  

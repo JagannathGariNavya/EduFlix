@@ -10,13 +10,18 @@ const Navbar = ({ theme, setTheme }) => {
     setTheme(theme === 'light' ? 'black' : 'white');
   };
 
+  const linkStyle = {
+    color: theme === 'black' ? 'white' : 'black',
+    textDecoration: 'none'
+  };
+
   return (
     <div className='navbar-nav' style={{ backgroundColor: theme, color: theme === 'black' ? 'white' : 'black' }}>
       <img src={Logo} alt="Logo" className='logo' />
-      <ul >
-        <li><Link to="/Home">Home</Link></li>
-        <li><Link to="/courses">Courses</Link></li>
-        <li><Link to="/subscription">Subscription</Link></li>
+      <ul>
+        <li><Link to="/" style={linkStyle}>Home</Link></li>
+        <li><Link to="/courses" style={linkStyle}>Courses</Link></li>
+        <li><Link to="/subscription" style={linkStyle}>Subscription</Link></li>
       </ul>
       <div className='search-box'>
         <input type="text" placeholder='Search' />
