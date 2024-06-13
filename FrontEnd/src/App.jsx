@@ -1,13 +1,10 @@
 import React from 'react';
-import Subscription from './components/Subscription';
-import { Header } from './components/Header';
-
+import { AllRoutes } from './pages/AllRoutes.jsx';
 
 const App = () => {
   return (
     <div >
-      <Header/>
-     <Subscription/>
+      <AllRoutes />
     </div>
   );
 };
