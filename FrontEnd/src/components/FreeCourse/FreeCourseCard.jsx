@@ -1,29 +1,30 @@
-import "../../../src/Free-Course.css"; 
-
-
 import React from "react";
+import "../../../src/Free-Course.css"; // Ensure correct path
 
 const FreeCourseCard = (props) => {
   const { imgUrl, title, students, rating } = props.item;
 
   return (
-    <div className="single__free__course">
-      <div className="free__course__img mb-5">
-        <img src={imgUrl} alt="" className="w-100" />
-        <button className="btn free__btn">Free</button>
+
+    <div className="freeCourse-card">
+      <div className="freeCourse-card-img-wrapper">
+        <img src={imgUrl} alt={title} className="freeCourse-card-img" />
+        <button className=" free__btn">Free</button>
+
       </div>
 
-      <div className="free__course__details">
-        <h6>{title}</h6>
+      <div className="freeCourse-card-details">
+        <h6 className="freeCourse-title">{title}</h6>
 
-        <div className=" d-flex align-items-center gap-5">
-          <span className=" d-flex align-items-center gap-2">
-            <i className="ri-user-line"></i> {students}k
+        <div className="d-flex align-items-center gap-5 freeCourse-card-info">
+          <span className="d-flex align-items-center gap-2 freeCourse-card-detail">
+            <i className="ri-user-line"></i><h3 className="free-h3"><b>Reviews :</b>{students}k</h3>
           </span>
 
-          <span className=" d-flex align-items-center gap-2">
-            <i class="ri-star-fill"></i> {rating}k
+          <span className="d-flex align-items-center gap-2 freeCourse-card-detail">
+            <i className="ri-star-fill freeCourse-stars"></i><h4 className="free-h4"> Ratings :{rating}k</h4>
           </span>
+
         </div>
       </div>
     </div>

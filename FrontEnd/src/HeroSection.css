@@ -40,10 +40,11 @@
     width: 100%;
   }
   
-  .container {
+  .container-hro {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   }
   
   .row {
@@ -62,6 +63,17 @@
     padding-right: 15px;
     padding-left: 15px;
   } */
+  
+  .dark-theme .hero-search {
+    border-color: #fff; /* Dark mode border color */
+    background-color: #333; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+  }
+  .dark-theme .hero-search input {
+    color: #fff; /* Dark mode input text color */
+    background-color: #333;
+    border-radius: 5px; /* Dark mode input background color */
+  }
   
   @media (min-width: 992px) {
     .col-lg-6 {

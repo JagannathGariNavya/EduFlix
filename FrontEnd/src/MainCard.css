@@ -1,27 +1,72 @@
+/* body {
+  font-family: 'Arial, sans-serif';
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} */
+
 .card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    text-align: center;
-    background-color: white;
-  }
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 500px;
+  margin-left: 340px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-top: 80px;
   
-  .card h2, .card p, .card ul {
-    margin: 10px 0;
-  }
-  
-  .request-callback-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  
-  .request-callback-button:hover {
-    background-color: #0056b3;
-  }
-  
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.card ul li {
+  margin: 10px 0;
+}
+
+.batch-info {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.request-callback-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff4081;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.request-callback-button:hover {
+  background-color: #f50057;
+  transform: translateY(-5px);
+}

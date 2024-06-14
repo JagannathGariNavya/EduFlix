@@ -6,17 +6,18 @@ const MainCard = () => {
   return (
     <>
     
+    
 
     <div className="card">
-      <h2>Launch your career powerfully with CCBP 4.0 Academy</h2>
+      <h2>Launch your career powerfully with EduSchool Academy</h2>
       <p>Build skills to get a high paid software job</p>
       <ul>
-        <li>POST 12TH / INTERMEDIATE</li>
-        <li>1ST, 2ND, 3RD YEAR</li>
+        <pre>POST 12TH / INTERMEDIATE</pre>
+        <pre>1ST, 2ND, 3RD YEAR</pre>
         <li>Learn like top IITians and achieve high-paid software jobs</li>
       </ul>
       <div className="batch-info">
-        <p>NEXT BATCH</p>
+        <p>Best Offer</p>
         <p>Starts soon</p>
         <p>Limited Seats Available</p>
       </div>

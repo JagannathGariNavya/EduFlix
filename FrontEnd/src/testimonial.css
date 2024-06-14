@@ -1,0 +1,61 @@
+.testimonial__section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.testimonial__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.testimonial__img {
+  width: 50%;
+}
+
+.testimonial__img img {
+  width: 100%;
+  display: block;
+}
+
+.testimonial__content {
+  width: 50%;
+}
+
+.testimonial__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.single__testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial__heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimonial__text {
+  margin-bottom: 15px;
+}
+
+.student__info {
+  font-size: 14px;
+}
+
+.student__name {
+  font-weight: 600;
+}
+
+.student__location {
+  color: #6c757d;
+}

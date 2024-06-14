@@ -7,23 +7,34 @@ import Enroll from "./components/Courses/Enroll"; // Correct import path
 import CourseDescription from "./components/Courses/CourseDescription";
 import Subscription from './components/Subscription';
 import CallbackForm from './components/CallbackForm';
+import Footer from './components/Footer/Footer';
+import FreeCourse from './components/FreeCourse/FreeCourse';
+
 import './App.css';
+import ContactPage from './components/Layout/ContactPage';
 
 const App = () => {
   const [theme, setTheme] = useState('light');
 
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <Router>
-      <div className={`app-container ${theme === 'black' ? 'dark-theme' : 'light-theme'}`}>
-        <Navbar theme={theme} setTheme={setTheme} />
+      <div className={`app-container ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+        <Navbar theme={theme} setTheme={toggleTheme} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/free-course" element={<FreeCourse />} />
           <Route path="/subscription" element={<Subscription />} />
           <Route path="/callback" element={<CallbackForm />} />
-          <Route path="/enroll/:courseTitle" element={<Enroll />} /> {/* Updated path */}
+          <Route path="/enroll/:courseTitle" element={<Enroll />} />
           <Route path="/course/:courseTitle" element={<CourseDescription />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

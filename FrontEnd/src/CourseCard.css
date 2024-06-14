@@ -77,6 +77,17 @@
     margin: 10px 0;
     margin-top: -25px;
   }
+  #card-b{
+    border: solid;
+
+
+  }
+  .course__card__row{
+    /* border: solid; */
+    padding-left: 80px;
+  }
+  
+  
   
   .course-card-detail {
     font-size: 15px;

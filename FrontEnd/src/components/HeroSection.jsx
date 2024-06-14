@@ -5,7 +5,7 @@ import "../../src/HeroSection.css";
 const HeroSection = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container-hro">
         <div className="row">
           <div className="col-lg-6 col-md-6">
             <div className="hero__content">
@@ -13,9 +13,7 @@ const HeroSection = () => {
                 Anytime Anywhere  Learn on your Suitable Schedule
               </h2>
               <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.
-                Aut saepe voluptatum earum delectus <br /> deserunt id iste,
-                quas officiis et repellat!
+              Designed to transform you into a highly skilled Software Professional..1700+ Companies have hired EduSchool  learners
               </p>
             </div>
             <div className="hero-search">

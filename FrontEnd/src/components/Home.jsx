@@ -1,9 +1,13 @@
 import React from 'react';
 import MainCard from './MainCard'; // Ensure this path is correct
-import Contact from './contact'; // Import Contact correctly
+// Import Contact correctly
 import Carousel from './Carousel';
 import HeroSection from './HeroSection';
 import FreeCourse from './FreeCourse/FreeCourse';
+import ChooseUs from './ChooseUs/ChooseUs';
+import Layout from './Layout/Layout';
+import Testimonials from './Testimonial/Testimonials';
+// import Footer from './Footer/Footer';
 // import HeroSection from './HeroSection';
 
 
@@ -12,11 +16,14 @@ const Home = () => {
     <div className="home-container">
       <HeroSection />
       
-      
-      <Carousel />
       <FreeCourse />
+
+      <Carousel />
       <MainCard />
-      <Contact />
+       <ChooseUs/>
+       <Testimonials/>
+      <Layout />
+      {/* <Footer/> */}
       {/* Add any other content for the Home page here */}
     </div>
   );

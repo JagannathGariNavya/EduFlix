@@ -39,9 +39,9 @@ const Courses = () => {
 
   return (
     <section>
-      <Container>
-        <Row>
-          <Col lg="12" className="mb-5">
+      <Container >
+        <Row >
+          <Col lg="12" className="mb-5" >
             <div className="course__top d-flex justify-content-between align-items-center">
               <div className="course__top__left w-50">
                 <h2>Our Popular Courses</h2>
@@ -56,7 +56,7 @@ const Courses = () => {
                 <nav>
                   <ul className="pagination">
                     {Array.from({ length: Math.ceil(coursesData.length / coursesPerPage) }, (_, index) => (
-                      <li key={index} className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}>
+                      <li key={index} className={`page-item ${currentPage === index + 1 ? 'active' : ''}`} >
                         <button onClick={() => paginate(index + 1)} className="page-link">
                           {index + 1}
                         </button>
