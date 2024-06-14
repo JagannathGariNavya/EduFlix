@@ -10,10 +10,7 @@ const Navbar = ({ theme, setTheme }) => {
   const toggleMode = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
-
-  const [cardData, setCardData] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredData, setFilteredData] = useState([]);
+  const [cardData,setCardData]=useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,7 +18,6 @@ const Navbar = ({ theme, setTheme }) => {
         const response = await axios.get("https://eduschool-2.onrender.com/card_data");
         if (response.data && Array.isArray(response.data)) {
           setCardData(response.data);
-          setFilteredData(response.data); // Initialize filteredData with fetched cardData
         } else {
           console.error("Unexpected response structure", response);
         }
@@ -33,6 +29,9 @@ const Navbar = ({ theme, setTheme }) => {
     fetchData();
   }, []);
 
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredData, setFilteredData] = useState(cardData);
+
   const handleSearch = (event) => {
     const value = event.target.value;
     setSearchTerm(value);
@@ -42,7 +41,7 @@ const Navbar = ({ theme, setTheme }) => {
   const filterData = (value) => {
     const lowercasedValue = value.toLowerCase().trim();
     if (lowercasedValue === "") {
-      setFilteredData(cardData); // Reset filteredData to all cardData if search is empty
+      setFilteredData(cardData);
     } else {
       const filteredData = cardData.filter((item) =>
         item.title.toLowerCase().includes(lowercasedValue)
@@ -50,6 +49,7 @@ const Navbar = ({ theme, setTheme }) => {
       setFilteredData(filteredData);
     }
   };
+
 
   return (
     <div className={`navbar ${theme}`}>
@@ -62,14 +62,8 @@ const Navbar = ({ theme, setTheme }) => {
         <li><Link to="/subscription" className="nav-link">Subscription</Link></li>
       </ul>
       <div className='search-box'>
-        <input
-          type="text"
-          placeholder='Search'
-          value={searchTerm}
-          onChange={handleSearch}
-          className="search-input"
-        />
-        <img src={search} alt="Search Icon" className="search-icon" />
+        <input type="text" placeholder='Search' value={searchTerm}  onChange={(e)=>handleSearch(e)} />
+        <img src={search} alt="Search Icon"/>
       </div>
       <Link to="/login" className="navbar-login-button">
         Login / Signup

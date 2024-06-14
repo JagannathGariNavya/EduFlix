@@ -46,9 +46,7 @@ const Courses = () => {
               <div className="course__top__left w-50">
                 <h2>Our Popular Courses</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                  consequatur libero quod voluptatibus ullam quia quas, vitae
-                  voluptatem recusandae reprehenderit!
+                Anytime Anywhere Learn on your Suitable Schedule ..Designed to transform you into a highly skilled Software Professional..1700+ Companies have hired EduSchool learners
                 </p>
               </div>
               <div className="w-50 text-end">
