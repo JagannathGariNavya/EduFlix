@@ -3,9 +3,8 @@ import { BsFillArchiveFill, BsPeopleFill } from 'react-icons/bs';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
 import axios from 'axios';
 
-export function Home() {
+export function Users() {
     const [datas, setDatas] = useState([]);
-    const [cardsCount, setCardsCount] = useState(0);
     const [activeUsersCount, setActiveUsersCount] = useState(0);
     const [inactiveUsersCount, setInactiveUsersCount] = useState(0);
 
@@ -20,16 +19,7 @@ export function Home() {
     ];
 
     useEffect(() => {
-        // Fetch card data
-        axios.get('https://eduschool-2.onrender.com/card_data')
-            .then(response => {
-                const fetchedData = response.data;
-                setDatas(fetchedData);
-                setCardsCount(Object.keys(fetchedData).length);
-            })
-            .catch(error => {
-                console.error("There was an error fetching the card data!", error);
-            });
+
 
         // Fetch user data
         axios.get('https://eduschool-2.onrender.com/user')
@@ -48,17 +38,10 @@ export function Home() {
     return (
         <main className='main-container'>
             <div className='main-title'>
-                <h3>DASHBOARD</h3>
+                <h3>USERS</h3>
             </div>
 
             <div className='main-cards'>
-                <div className='card'>
-                    <div className='card-inner'>
-                        <h3>CARDS</h3>
-                        <BsFillArchiveFill className='card_icon' />
-                    </div>
-                    <h1>{cardsCount}</h1>
-                </div>
                 <div className='card'>
                     <div className='card-inner'>
                         <h3>ACTIVE USERS</h3>
@@ -73,13 +56,7 @@ export function Home() {
                     </div>
                     <h1>{inactiveUsersCount}</h1>
                 </div>
-                <div className='card'>
-                    <div className='card-inner'>
-                        <h3>CUSTOMERS</h3>
-                        <BsPeopleFill className='card_icon' />
-                    </div>
-                    <h1>0</h1>
-                </div>    
+               
             </div>
 
             <div className='charts'>

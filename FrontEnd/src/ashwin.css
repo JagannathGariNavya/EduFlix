@@ -168,6 +168,26 @@ body {
   .card-inner > .card_icon {
     font-size: 25px;
   }
+
+
+  .edit_button {
+    padding: 8px 25px;
+    border-radius: 5px;
+    background-color: #2962ff;
+    margin-right: 20px; /* Added margin for spacing */
+    border: none;
+    color: white; /* Added color to make text visible */
+    cursor: pointer; /* Added cursor pointer to indicate button */
+  }
+  
+  .delete_button {
+    padding: 8px 25px;
+    border-radius: 5px;
+    background-color: #d50000;
+    border: none;
+    color: white; /* Added color to make text visible */
+    cursor: pointer; /* Added cursor pointer to indicate button */
+  }
   
   .charts {
     display: grid;
