@@ -73,6 +73,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 5,
       "image": "https://img-c.udemycdn.com/course/240x135/437398_46c3_10.jpg",
       "title": "Python for Everybody Specialization",
       "short_Description": "A comprehensive course designed to introduce beginners to programming using Python.",
@@ -90,7 +91,7 @@
       "badge": "Bestseller"
     },
     {
-      "id": 5,
+      "id": 6,
       "image": "https://img-c.udemycdn.com/course/240x135/705264_caa9_13.jpg",
       "title": "Machine Learning A-Z: Hands-On Python & R In Data Science",
       "short_Description": "Learn to create Machine Learning Algorithms in Python and R from two Data Science experts.",
@@ -108,7 +109,7 @@
       "badge": ""
     },
     {
-      "id": 6,
+      "id": 7,
       "image": "https://img-c.udemycdn.com/course/240x135/764164_de03_5.jpg",
       "title": "Complete Python Bootcamp: Go from zero to hero in Python 3",
       "short_Description": "Learn Python like a Professional! Start from the basics and go all the way to creating your own applications and games.",
@@ -127,7 +128,7 @@
       "badge": ""
     },
     {
-      "id": 7,
+      "id": 8,
       "image": "https://img-c.udemycdn.com/course/240x135/995016_ebf4_3.jpg",
       "title": "The Data Science Course 2024: Complete Data Science Bootcamp",
       "short_Description": "Complete Data Science Training: Mathematics, Statistics, Python, Advanced Statistics in Python, Machine & Deep Learning.",
@@ -145,7 +146,7 @@
       "badge": "Bestseller"
     },
     {
-      "id": 8,
+      "id": 9,
       "image": "https://img-c.udemycdn.com/course/240x135/1352468_3d97_8.jpg",
       "title": "The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert",
       "short_Description": "Become an expert at SQL! Learn how to create complex databases and use powerful query techniques.",
@@ -163,7 +164,7 @@
       "badge": "Bestseller"
     },
     {
-      "id": 9,
+      "id": 10,
       "image": "https://img-c.udemycdn.com/course/240x135/947098_02ec_2.jpg",
       "title": "Learn and Understand NodeJS",
       "short_Description": "Learn and understand NodeJS. Learn V8, Express, the MEAN stack, core concepts, and more.",
@@ -181,7 +182,7 @@
       "badge": "Bestseller"
     },
     {
-      "id": 10,
+      "id": 11,
       "image": "https://img-c.udemycdn.com/course/240x135/822444_a6db.jpg",
       "title": "Mastering Data Visualization with D3.js",
       "short_Description": "Learn to create stunning data visualizations with D3.js, a powerful JavaScript library for building custom charts.",
@@ -200,7 +201,7 @@
       "badge": ""
     },
     {
-      "id": 11,
+      "id": 12,
       "image": "https://img-c.udemycdn.com/course/240x135/364426_2991_6.jpg",
       "title": "The Complete Guide to Elasticsearch",
       "short_Description": "Learn how to use Elasticsearch, the highly scalable open-source search engine, for powerful and flexible search solutions.",
@@ -218,7 +219,7 @@
       "badge": ""
     },
     {
-      "id": 12,
+      "id": 13,
       "image": "https://img-c.udemycdn.com/course/240x135/1026604_790b_2.jpg",
       "title": "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
       "short_Description": "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.",
@@ -236,7 +237,7 @@
       "badge": "Bestseller"
     },
     {
-      "id": 13,
+      "id": 14,
       "image": "https://img-c.udemycdn.com/course/240x135/405926_02c8_2.jpg",
       "title": "HTML and CSS for Beginners - Build a Website & Launch ONLINE",
       "short_Description": "HTML and CSS for Beginners  course will give your all the knowledge you need to master HTML and CSS easily and quickly.",
@@ -255,7 +256,7 @@
       "badge": ""
     },
     {
-      "id": 14,
+      "id": 15,
       "image": "https://img-c.udemycdn.com/course/240x135/806922_6310_3.jpg",
       "title": "The Complete ASP.NET MVC 5 Course",
       "short_Description": "Learn to build fast and secure web applications with ASP.NET MVC 5 - The most popular course with 40,000+ students!",
@@ -273,7 +274,7 @@
       "badge": ""
     },
     {
-      "id": 15,
+      "id": 16,
       "image": "https://img-c.udemycdn.com/course/240x135/1463348_52a4_4.jpg",
       "title": "Modern JavaScript From The Beginning 2.0 (2024)",
       "short_Description": "A 36-hour master course to take you from beginner to advanced JavaScript",
@@ -291,7 +292,7 @@
       "badge": ""
     },
     {
-      "id": 16,
+      "id": 17,
       "image": "https://img-c.udemycdn.com/course/240x135/461160_8d87_6.jpg",
       "title": "Learn and Understand NodeJS",
       "short_Description": "Dive deep under the hood of NodeJS. Learn V8, Express, the MEAN stack, core Javascript concepts, and more.",
@@ -309,7 +310,7 @@
       "badge": ""
     },
     {
-      "id": 17,
+      "id": 18,
       "image": "https://img-c.udemycdn.com/course/240x135/2365628_0b60_9.jpg",
       "title": "Complete React Developer (w/ Redux, Hooks, GraphQL)",
       "short_Description": "Updated! Become a Senior React Developer. Build a massive E-commerce app with Redux, Hooks, GraphQL, Stripe, Firebase",
@@ -328,7 +329,7 @@
       "badge": ""
     },
     {
-      "id": 18,
+      "id": 19,
       "image": "https://img-c.udemycdn.com/course/240x135/1247828_32bb.jpg",
       "title": "The Complete Angular Course: Beginner to Advanced",
       "short_Description": "The most comprehensive Angular 4 (Angular 2+) course. Build a real e-commerce app with Angular, Firebase and Bootstrap 4",
@@ -346,7 +347,7 @@
       "badge": ""
     },
     {
-      "id": 19,
+      "id": 20,
       "image": "https://img-c.udemycdn.com/course/240x135/3490000_d298_2.jpg",
       "title": "Docker & Kubernetes: The Practical Guide [2024 Edition]",
       "short_Description": "Learn Docker, Docker Compose, Multi-Container Projects, Deployment and all about Kubernetes from the ground up!",
@@ -365,7 +366,6 @@
       "badge": "Bestseller"
     },
     {
-      "id": 20,
       "image": "https://img-c.udemycdn.com/course/240x135/1466612_bead_3.jpg",
       "title": "Ethereum and Solidity: The Complete Developer's Guide",
       "short_Description": "Use Ethereum, Solidity, and Smart Contracts to build production-ready apps based on the blockchain",
@@ -5979,6 +5979,88 @@
         "MongoDB": true,
         "JavaScript": true
       }
+    }
+  ],
+  "sales_data": [
+    {
+      "courseName": "The Complete 2024 Web Development Bootcamp",
+      "instructorName": "Dr. Angela Yu",
+      "price": 89,
+      "salesData": 53550,
+      "quantitySold": 60000,
+      "courseImageURL": "https://example.com/course-images/complete-web-development-bootcamp.jpg"
+    },
+    {
+      "courseName": "The Web Developer Bootcamp 2024",
+      "instructorName": "Colt Steele",
+      "price": 99,
+      "salesData": 2475000,
+      "quantitySold": 25000,
+      "courseImageURL": "https://example.com/course-images/web-developer-bootcamp.jpg"
+    },
+    {
+      "courseName": "The Complete JavaScript Course 2024: From Zero to Expert!",
+      "instructorName": "Jonas Schmedtmann",
+      "price": 99,
+      "salesData": 2970000,
+      "quantitySold": 30000,
+      "courseImageURL": "https://example.com/course-images/complete-javascript-course.jpg"
+    },
+    {
+      "courseName": "Python for Data Science and Machine Learning Bootcamp",
+      "instructorName": "Jose Portilla",
+      "price": 79,
+      "salesData": 15800000,
+      "quantitySold": 200000,
+      "courseImageURL": "https://example.com/course-images/python-data-science-ml.jpg"
+    },
+    {
+      "courseName": "Machine Learning A-Z: Hands-On Python & R In Data Science",
+      "instructorName": "Kirill Eremenko",
+      "price": 99,
+      "salesData": 24750000,
+      "quantitySold": 250000,
+      "courseImageURL": "https://example.com/course-images/machine-learning-az.jpg"
+    },
+    {
+      "courseName": "Complete Python Bootcamp: Go from zero to hero in Python 3",
+      "instructorName": "Jose Portilla",
+      "price": 79,
+      "salesData": 27650000,
+      "quantitySold": 350000,
+      "courseImageURL": "https://example.com/course-images/complete-python-bootcamp.jpg"
+    },
+    {
+      "courseName": "The Data Science Course 2024: Complete Data Science Bootcamp",
+      "instructorName": "365 Careers",
+      "price": 149,
+      "salesData": 59600000,
+      "quantitySold": 400000,
+      "courseImageURL": "https://example.com/course-images/data-science-bootcamp.jpg"
+    },
+    {
+      "courseName": "The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert",
+      "instructorName": "Colt Steele",
+      "price": 79,
+      "salesData": 15800000,
+      "quantitySold": 200000,
+      "courseImageURL": "https://example.com/course-images/mysql-bootcamp.jpg"
+    },
+    {
+      "courseName": "Learn and Understand NodeJS",
+      "instructorName": "Anthony Alicea",
+      "price": 79,
+      "salesData": 11850000,
+      "quantitySold": 150000,
+      "courseImageURL": "https://example.com/course-images/learn-nodejs.jpg"
+    },
+    {
+      "courseName": "Mastering Data Visualization with D3.js",
+      "instructorName": "Adam Janes",
+      "price": 69,
+      "salesData": 5520000,
+      "quantitySold": 80000,
+      "courseImageURL": "https://example.com/course-images/mastering-d3js.jpg"
     }
   ]
 }
