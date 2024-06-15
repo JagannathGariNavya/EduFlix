@@ -3,21 +3,38 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Courses from './components/Courses';
+import Enroll from "./components/Courses/Enroll"; // Correct import path
+import CourseDescription from "./components/Courses/CourseDescription";
 import Subscription from './components/Subscription';
-import './App.css'; // Assuming you have a CSS file for general styles
+import CallbackForm from './components/CallbackForm';
+import Footer from './components/Footer/Footer';
+import FreeCourse from './components/FreeCourse/FreeCourse';
+
+import './App.css';
+import ContactPage from './components/Layout/ContactPage';
 
 const App = () => {
   const [theme, setTheme] = useState('light');
 
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <Router>
-      <div className='nav-container'>
-        <Navbar theme={theme} setTheme={setTheme} />
+      <div className={`app-container ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+        <Navbar theme={theme} setTheme={toggleTheme} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/free-course" element={<FreeCourse />} />
           <Route path="/subscription" element={<Subscription />} />
+          <Route path="/callback" element={<CallbackForm />} />
+          <Route path="/enroll/:courseTitle" element={<Enroll />} />
+          <Route path="/course/:courseTitle" element={<CourseDescription />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
