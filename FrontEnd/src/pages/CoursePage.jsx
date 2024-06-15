@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Heading, Text, Image, Card, CardHeader, CardBody, CardFooter, Button, SimpleGrid, Flex, Avatar, IconButton, Accordion, AccordionIcon, AccordionButton, AccordionItem, AccordionPanel, Stack, ButtonGroup } from '@chakra-ui/react'
+import { Box, Heading, Text, Image, Card, CardHeader, CardBody, CardFooter, Button, SimpleGrid, Flex, Avatar, IconButton, Accordion, AccordionIcon, AccordionButton, AccordionItem, AccordionPanel, Stack, ButtonGroup, Spinner } from '@chakra-ui/react'
 import { MdRestartAlt } from "react-icons/md";
 import { MdOutlineCalendarViewMonth } from "react-icons/md";
 import { BiCloudDownload } from "react-icons/bi";
@@ -19,108 +19,133 @@ import { FaKeyboard } from "react-icons/fa";
 import { MdAccessAlarm } from "react-icons/md";
 import { FaEarthAmericas } from "react-icons/fa6";
 import { SiCodementor } from "react-icons/si";
+import { FaStarHalfAlt } from "react-icons/fa";
+import axios from 'axios';
+import { Link, useParams } from 'react-router-dom';
+import { CourseContent } from '../components/CourseContent';
+
+
+
 
 export const CoursePage = () => {
-    const [course, setCourses] = useState([]);
+    const [course, setCourse] = useState(null);
     const [error, setError] = useState(null);
+    const { id } = useParams();
 
     useEffect(() => {
-      fetch('https://eduschool-2.onrender.com/pdp_Details')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-          }
-          return response.json();
-        })
-        .then(data => {
-          if (data.length > 0) {
-            setCourses(data[0]); 
-          }
-        })
-        .catch(error => {
-          console.error('Error fetching data:', error);
-          setError(error.message);
-        });
+        axios.get('https://eduschool-2.onrender.com/pdp_Details')
+            .then(response => {
+                const courses = response.data;
+                if (courses.length > 0) {
+                    const randomIndex = Math.floor(Math.random() * courses.length);
+                    setCourse(courses[randomIndex]);
+                } else {
+                    throw new Error('No courses available');
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                setError(error.message);
+            });
     }, []);
-  
+
     if (error) {
-      return <div>Error: {error}</div>;
+        return <div>Error: {error}</div>;
     }
-  
+
     if (!course) {
-      return <div>Loading...</div>;
+        return <div>Loading...</div>;
     }
 
-  return (
-    <div>
-        <Box w="100%" h="60vh" bg="#056a67" p="20px" display="flex" gap="10%" >
-        {/* Data show */}
-        <Box ml="10%" color="white" w="47.4%" mt="10px" mb="30px">
-        <Heading size="lg" mb="20px">{course.courseTitle}</Heading>
-        <Text fontSize="lg" mb="20px">{course.courseDescription}</Text>
-        <Box display="flex" gap="20px">
-        <Box color="black" bg="#eceb98" w="11%" h="7%" textAlign="center" as="b">Bestseller</Box>
-        
-        {course.courseReviewsAndRatings && (
-          <Text fontSize="md" mb="10px" display="flex" alignItems="center" gap="2px">
-           <Text color="#f69c08" fontSize="18px">{course.courseReviewsAndRatings.averageRating}</Text> <FaStar color="#f69c08 "/><FaStar color="#f69c08 "/><FaStar color="#f69c08 "/><FaStar color="#f69c08 "/>({course.courseReviewsAndRatings.totalReviews} reviews)
-          </Text>
-        )}
-        {course.enrollmentNumbers && <Text fontSize="md" mb="10px">{course.enrollmentNumbers} students</Text>}
-        </Box>
-        {course.instructor && (
-          <>
-            <Text fontSize="md" mb="10px">Created by:  {course.instructor.name} {course.instructor.qualifications}</Text>
-          </>
-        )}
-        <Box display="flex" gap="20px">
-            <Text display="flex" alignItems="center" gap="10px"><BsFillPatchExclamationFill />Last updated 14/2024</Text>
-            <Text display="flex" alignItems="center" gap="10px"><TbWorld />English</Text>
-            <Text display="flex" alignItems="center" gap="10px"><FaKeyboard />English, Arabic, more</Text>
-        </Box>
-       
-        {course.coursePreview && (
-          <Box mt="4%" >
-            <ReactPlayer url={course.coursePreview} controls={true} width="110%" />
-          </Box>
-        )}  
-        </Box>
+    return (
+        <>
+           <Box w="100%" h="60vh" bg="#056a67" p="20px" display="flex" gap="10%">
+                {/* Data show */}
+                <Box ml="10%" color="white" w="47.4%" mt="10px" mb="30px">
+                    <Heading size="lg" mb="20px">{course.courseTitle}</Heading>
+                    <Text fontSize="lg" mb="20px">{course.courseDescription}</Text>
+                    <Box display="flex" gap="20px">
+                        <Box color="black" bg="#eceb98" w="11%" h="7%" textAlign="center" as="b">Bestseller</Box>
 
-        <Box mr="10%" style={{position:"sticky", top:"0px"}}>
-        <Card maxW='sm'>
-        <CardBody>
-        <Heading size="lg" mb="15px">1,500/month</Heading>
-        <Text display="flex" alignItems="center" gap="10px"><MdAccessAlarm />This prize is for 7 days only</Text>
-        <Button size="xs" colorScheme="yellow" mt="15px" mr="10px">Beginner</Button>
-        <Button size="xs" colorScheme="yellow" mt="15px">Most Picked</Button>
-        <Box m="auto">
-        <Button size="lg" mt="15px" mr="20px" colorScheme='teal' variant='outline'>Add to cart</Button>
-        <Button size="lg" bg="#056a67" colorScheme='teal' mt="15px">Buy now</Button>
-        <Heading size="sm" mt="20px" mb="25px">Course Includes</Heading>
-        <Text mb="10px" display="flex" alignItems="center" gap="13px"><MdOndemandVideo />8-hours on-demand videos</Text>
-        <Text mb="10px" display="flex" alignItems="center" gap="13px"><FaEarthAmericas />Learn from top 1% professionals in the world</Text>
-        <Text mb="10px" display="flex" alignItems="center" gap="13px"><SiCodementor />You can always choose a mentor</Text>
-        </Box>
-        </CardBody>
-            </Card>
+                        {course.courseReviewsAndRatings && (
+                            <Box fontSize="md" mb="10px" display="flex" alignItems="center" gap="3px">
+                                <Text color="#f69c08" fontSize="18px">{course.courseReviewsAndRatings.averageRating}</Text>
+                                <FaStar color="#f69c08 " /><FaStar color="#f69c08 " /><FaStar color="#f69c08 " /><FaStar color="#f69c08 " /><FaStarHalfAlt color="#f69c08 " />
+                                ({course.courseReviewsAndRatings.totalReviews} reviews)
+                            </Box>
+                        )}
+                        {course.enrollmentNumbers && (
+                            <Text fontSize="md" mb="10px" display="flex" alignItems="center">
+                                {course.enrollmentNumbers} students
+                            </Text>
+                        )}
+                    </Box>
+                    {course.instructor && (
+                        <Text fontSize="md" mb="10px">Created by: {course.instructor.name} {course.instructor.qualifications}</Text>
+                    )}
+                    <Box display="flex" gap="20px">
+                        <Text display="flex" alignItems="center" gap="10px"><BsFillPatchExclamationFill />Last updated 14/2024</Text>
+                        <Text display="flex" alignItems="center" gap="10px"><TbWorld />English</Text>
+                        <Text display="flex" alignItems="center" gap="10px"><FaKeyboard />English, Arabic, more</Text>
+                    </Box>
+
+                    {course.coursePreview && (
+                        <Box mt="4%" mb="30px">
+                            <ReactPlayer url={course.coursePreview} controls={true} width="110%" />
+                        </Box>
+                    )}
+                </Box>
+
+                <Box mr="10%">
+                    {/* <Box> */}
+                    <Card maxW='sm'>
+                        <CardBody>
+                            {course.price && (
+                                <Box mt="2%">
+                                    <Heading size="lg" mb="10px">
+                                        <span> Discount Price: ${course.price.discounted}</span>
+                                    </Heading>
+                                    <Text fontSize="lg" mb="10px">Original Price: <span style={{ textDecoration: 'line-through' }}>${course.price.original}</span></Text>
+                                </Box>
+                            )}
+                            <Text display="flex" alignItems="center" gap="10px"><MdAccessAlarm />This price is for 7 days only</Text>
+                            <Button size="xs" colorScheme="yellow" mt="15px" mr="10px">Beginner</Button>
+                            <Button size="xs" colorScheme="yellow" mt="15px">Most Picked</Button>
+                            <Box m="auto">
+                                <Button size="lg" mt="15px" mr="20px" colorScheme='teal' variant='outline'>Add to cart</Button>
+                                <Link to="/Subscription">
+                                <Button size="lg" bg="#056a67" colorScheme='teal' mt="15px">Buy now</Button>
+                                </Link>
+                                <Heading size="sm" mt="20px" mb="25px">Course Includes</Heading>
+                                <Text mb="10px" display="flex" alignItems="center" gap="13px"><MdOndemandVideo />{course.duration}</Text>
+                                <Text mb="10px" display="flex" alignItems="center" gap="13px"><FaEarthAmericas />Learn from top 1% professionals in the world</Text>
+                                <Text mb="10px" display="flex" alignItems="center" gap="13px"><SiCodementor />You can always choose a mentor</Text>
+                            </Box>
+                        </CardBody>
+                    </Card>
+                    {/* </Box> */}
+                    </Box>
             </Box>
-        </Box>
-
+       
         {/* Below Part Start  */}
 
-        <Box ml="11%" mr="15%" mt="18%">
-        <Box>
+         <Box ml="11%" mr="15%" mt="16%">
+        <Box> 
+            <CourseContent/>
+    </Box>
+    </Box>
         {/* What you will learn from this course */}
-        <Heading size="md" mb="20px">Course Content</Heading>
+        {/* <Heading size="md" mt="25px" mb="20px">Course Content</Heading>
         <Box display="flex" gap="20px" fontSize="17px"  mb="10px">
             <Text display="flex" alignItems="center" gap="7px"><MdRestartAlt />6hrs content</Text>
             <Text display="flex" alignItems="center" gap="7px"><MdOutlineCalendarViewMonth />5modules</Text>
             <Text display="flex" alignItems="center" gap="7px"><BiCloudDownload />Self pace</Text>
             
         </Box>
-        <Accordion allowToggle>
+    
+         <Accordion allowToggle>  */}
             {/* 1 Module */}
-            <Box mb="15px">
+            {/* <Box mb="15px">
             <AccordionItem w="73%" border="0" boxShadow="md" >
              <h2>
             <AccordionButton >
@@ -156,11 +181,11 @@ export const CoursePage = () => {
             </Box>
         </AccordionPanel>
         </AccordionItem>
-        </Box>
+        </Box> */}
          {/* 1 Module */}
 
          {/* 2 Module */}
-         <Box mb="15px">
+         {/* <Box mb="15px">
             <AccordionItem w="73%" border="0" boxShadow="md" >
              <h2>
             <AccordionButton >
@@ -194,11 +219,11 @@ export const CoursePage = () => {
             </Box>
         </AccordionPanel>
         </AccordionItem>
-        </Box>
+        </Box> */}
          {/* 2 Module */}
 
          {/* 3 Module */}
-         <Box mb="15px">
+         {/* <Box mb="15px">
             <AccordionItem w="73%" border="0" boxShadow="md" >
              <h2>
             <AccordionButton >
@@ -223,11 +248,11 @@ export const CoursePage = () => {
             </Box>
         </AccordionPanel>
         </AccordionItem>
-        </Box>
+        </Box> */}
          {/* 3 Module */}
 
          {/* 4 Module */}
-         <Box mb="15px">
+         {/* <Box mb="15px">
             <AccordionItem w="73%" border="0" boxShadow="md" >
              <h2>
             <AccordionButton >
@@ -256,11 +281,11 @@ export const CoursePage = () => {
             </Box>
         </AccordionPanel>
         </AccordionItem>
-        </Box>
+        </Box> */}
          {/* 4 Module */}
          
          {/* 5 Module */}
-         <Box mb="30px">
+         {/* <Box mb="30px">
             <AccordionItem w="73%" border="0" boxShadow="md" >
              <h2>
             <AccordionButton >
@@ -290,10 +315,10 @@ export const CoursePage = () => {
         </AccordionPanel>
         </AccordionItem>
         </Box>
+        </Accordion> */}
          {/* 5 Module */}
-        </Accordion>
 
-            <Heading size="md" mb="30px">What you will learn from this course</Heading>
+            {/* <Heading size="md" mb="30px">What you will learn from this course</Heading>
             <Box display="flex" gap="30px" w="73%" bg="white" boxShadow='2xl' p="27px" mb="20px">
             <Box >
             <Text display="flex" alignItems="center" gap="15px" margin="5px"><FaArrowRightLong />Management</Text>
@@ -307,11 +332,11 @@ export const CoursePage = () => {
             <Text display="flex" alignItems="center" gap="15px" margin="5px"><FaArrowRightLong />Software product management</Text>
             <Text display="flex" alignItems="center" gap="15px" margin="5px"><FaArrowRightLong />agile</Text>
             </Box>
-            </Box>
+            </Box> */}
             {/* What you will learn from this course */}
 
             {/* Know about your instructor */}
-            <Heading size="md" mb="30px">Know about your instructor</Heading>
+            {/* <Heading size="md" mb="30px">Know about your instructor</Heading>
             <Box w="60%" bg="white" boxShadow='2xl' padding="25px">
             <Heading size="sm" mb="10px">Angila</Heading>
             <Text>International Best-selling Author & Speaker</Text>
@@ -328,10 +353,11 @@ export const CoursePage = () => {
             </Box>
             <Text>Angila is an award-winning entrepreneur, best-selling author, philanthropist, and the world's leading transformational coach.</Text>
             </Box>
-            <Heading size="md" mt="30px" mb="30px">People also bought</Heading>
-        {/* Know about your instructor */}
+             */}
+         {/* Know about your instructor */}
 
           {/* People also bought */}
+        {/* <Heading size="md" mt="30px" mb="30px">People also bought</Heading> 
         <Box>
         <SimpleGrid  mb="30px" spacing={4} templateColumns='repeat(auto-fill, minmax(220px, 1fr))'>
          <Card bg="white" boxShadow='2xl'>
@@ -364,11 +390,11 @@ export const CoursePage = () => {
         <Text><AiFillLike />80%</Text>
         </CardFooter>
         </Card>
-        </SimpleGrid>
+        </SimpleGrid> */}
             {/* People also bought */}
 
             {/* REVIEWS */}
-            <Heading size="md"  mb="30px">Reviews</Heading>
+            {/* <Heading size="md"  mb="30px">Reviews</Heading>
             <Box w="75%" display="flex" gap="20px" mb="30px">
             <Card maxW='md' boxShadow='2xl'>
             <CardHeader>
@@ -418,14 +444,14 @@ export const CoursePage = () => {
             </CardBody>
             </CardHeader>
              </Card>
-            </Box>
+            </Box> */}
             {/* REVIEWS */}
 
 
-            <Heading size="md" mb="30px">Frequently Asked Questions</Heading>
-            <Accordion allowToggle>
+            {/* <Heading size="md" mb="30px">Frequently Asked Questions</Heading>
+            <Accordion allowToggle> */}
             {/* 1 Module */}
-            <Box mb="15px">
+            {/* <Box mb="15px">
             <AccordionItem w="75%" border="0" boxShadow="md" >
             <AccordionButton >
             <Box w="100%" textAlign="left" p="10px"  display="flex">
@@ -438,11 +464,11 @@ export const CoursePage = () => {
             </Box>
         </AccordionPanel>
         </AccordionItem>
-        </Box>
+        </Box> */}
          {/* 1 Module */}
 
          {/* 2 Module */}
-         <Box mb="15px">
+         {/* <Box mb="15px">
             <AccordionItem w="75%" border="0" boxShadow="md" >
             <AccordionButton >
             <Box w="100%" textAlign="left" p="10px"  display="flex">
@@ -456,11 +482,11 @@ export const CoursePage = () => {
             </Box>
         </AccordionPanel>
         </AccordionItem>
-        </Box>
+        </Box> */}
          {/* 2 Module */}
 
          {/* 3 Module */}
-         <Box mb="15px">
+         {/* <Box mb="15px">
             <AccordionItem w="75%" border="0" boxShadow="md" >
             <AccordionButton >
             <Box w="100%" textAlign="left" p="10px"  display="flex">
@@ -474,11 +500,11 @@ export const CoursePage = () => {
             </Box>
         </AccordionPanel>
         </AccordionItem>
-        </Box>
+        </Box> */}
          {/* 3 Module */}
 
          {/* 4 Module */}
-         <Box mb="15px">
+         {/* <Box mb="15px">
             <AccordionItem w="75%" border="0" boxShadow="md" >
             <AccordionButton >
             <Box w="100%" textAlign="left" p="10px"  display="flex">
@@ -492,11 +518,11 @@ export const CoursePage = () => {
             </Box>
         </AccordionPanel>
         </AccordionItem>
-        </Box>
+        </Box> */}
          {/* 4 Module */}
          
          {/* 5 Module */}
-         <Box mb="20px">
+         {/* <Box mb="20px">
             <AccordionItem w="75%" border="0" boxShadow="md" >
              <h2>
             <AccordionButton >
@@ -511,16 +537,12 @@ export const CoursePage = () => {
             </Box>
         </AccordionPanel>
         </AccordionItem>
-        </Box>
+        </Box> */}
          {/* 5 Module */}
-        </Accordion>
-            </Box>
-        </Box>
-        {/* side card */}
-        <Box>
-
-        </Box>
-        </Box>
-    </div>
+        {/* </Accordion>
+        </Box> */}
+        {/* </Box>
+        </Box> */}
+    </>
   )
-}
+} 
