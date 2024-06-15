@@ -3,6 +3,8 @@ import { Container, Row, Col } from "reactstrap";
 import axios from "axios";
 import "../../src/Courses.css";
 import CourseCard from "../components/Courses/CourseCard";
+import Testimonials from "./Testimonial/Testimonials";
+import Contact from "./contact";
 
 const Courses = () => {
   const [coursesData, setCoursesData] = useState([]);
@@ -45,7 +47,7 @@ const Courses = () => {
             <div className="course__top d-flex justify-content-between align-items-center">
               <div className="course__top__left w-50">
                 <h2>Our Popular Courses</h2>
-                <p>
+                <p className="p-tagd">
                 Anytime Anywhere Learn on your Suitable Schedule ..Designed to transform you into a highly skilled Software Professional..1700+ Companies have hired EduSchool learners
                 </p>
               </div>
@@ -103,6 +105,8 @@ const Courses = () => {
           </Col>
         </Row>
       </Container>
+      <Testimonials />
+      <Contact/>
     </section>
   );
 };

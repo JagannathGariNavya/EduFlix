@@ -13,7 +13,12 @@
     font-size: 0.9rem;
     color: #17bf9e;
   }
-  
+  .p-tagd{
+    width:80%;
+    height: 10vh;
+    margin-left: 100px;
+
+  }
   .lesson,
   .students,
   .rating {

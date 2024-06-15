@@ -22,6 +22,22 @@
    margin-top: -30px;
    float: right;
 }
+.form-container {
+  background-color: #f9f9f9; /* Light grey background */
+  width: 30%;
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for a 3D effect */
+}
+
+.form-container input {
+  margin-bottom: 15px;
+}
+
+.form-container button {
+  width: 100%;
+}
 
 .mb-45 {
   width: 30%;
