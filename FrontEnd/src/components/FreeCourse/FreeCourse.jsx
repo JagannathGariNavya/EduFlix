@@ -46,13 +46,7 @@ const FreeCourse = () => {
       students: 5.3,
       rating: 1.7,
     },
-    {
-      id: "06",
-      title: "Coding for Junior Basic Course",
-      imgUrl: courseImg02,
-      students: 5.3,
-      rating: 1.7,
-    },
+    
   ];
 
   const [courses, setCourses] = useState(() => {

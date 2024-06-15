@@ -39,6 +39,7 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/login" element={<Login setUser={setUser} />} />
           <Route path="/signup" element={<SignUp setUser={setUser} />} /> 
+          
         </Routes>
         <Footer />
       </div>

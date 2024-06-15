@@ -6,10 +6,18 @@
   /* justify-content: space-between; */
   /* padding: 10px; */
   color: black; /* Default text color */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
 }
 
 .navbar-logo {
   height: 80px;
+}
+.dark-theme .navbar{
+  background-color: black;
 }
 
 .navbar-nav {
@@ -117,6 +125,11 @@
   background-color: #333; /* Dark background color */
   color: white; /* White text color */
 }
+.dark-theme ,.navbar{
+  background-color: black :/* Dark background color */
+  color: white; /* White text color */
+}
+
 
 .dark-theme .navbar-nav {
   color: black;
