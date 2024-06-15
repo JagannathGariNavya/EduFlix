@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
 import Logo from '../assets/Logo.png';
 import search from '../assets/search.png';
@@ -10,7 +10,8 @@ const Navbar = ({ theme, setTheme }) => {
   const toggleMode = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
-  const [cardData,setCardData]=useState([]);
+
+  const [cardData, setCardData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -50,7 +51,6 @@ const Navbar = ({ theme, setTheme }) => {
     }
   };
 
-
   return (
     <div className={`navbar ${theme}`}>
       <Link to="/" className="navbar-logo-link">
@@ -62,8 +62,8 @@ const Navbar = ({ theme, setTheme }) => {
         <li><Link to="/subscription" className="nav-link">Subscription</Link></li>
       </ul>
       <div className='search-box'>
-        <input type="text" placeholder='Search' value={searchTerm}  onChange={(e)=>handleSearch(e)} />
-        <img src={search} alt="Search Icon"/>
+        <input type="text" placeholder='Search' value={searchTerm} onChange={(e) => handleSearch(e)} />
+        <img src={search} alt="Search Icon" />
       </div>
       <Link to="/login" className="navbar-login-button">
         Login / Signup

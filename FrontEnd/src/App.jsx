@@ -12,6 +12,8 @@ import FreeCourse from './components/FreeCourse/FreeCourse';
 
 import './App.css';
 import ContactPage from './components/Layout/ContactPage';
+import Login from './components/Login'; // Import Login component
+import SignUp from './components/SignUp'; // Import SignUp component
 
 const App = () => {
   const [theme, setTheme] = useState('light');
@@ -19,6 +21,8 @@ const App = () => {
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
+
+  const [user, setUser] = useState(null); // Define user state
 
   return (
     <Router>
@@ -33,6 +37,8 @@ const App = () => {
           <Route path="/enroll/:courseTitle" element={<Enroll />} />
           <Route path="/course/:courseTitle" element={<CourseDescription />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/login" element={<Login setUser={setUser} />} />
+          <Route path="/signup" element={<SignUp setUser={setUser} />} /> 
         </Routes>
         <Footer />
       </div>
