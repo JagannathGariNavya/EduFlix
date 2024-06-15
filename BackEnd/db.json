@@ -1,11 +1,5 @@
 {
-  "users":[{
-    "name":"Navya",
-    "email":"jnavyan12@gail.com",
-    "password":"1234",
-    "id":1
-  }
-  ],
+  
     "card_data": [
       {
         "image": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_18.jpg",
