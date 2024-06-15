@@ -1,0 +1,58 @@
+/* Carousel.css */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 80vh; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+  }
+  
+  .slide .slide-img {
+    width: auto;
+    height: 80vh;
+    object-fit: cover; /* Ensure the image covers the div */
+    display: block;
+    margin-left: 130px;
+  }
+  .slide-img2{
+    margin-left: 340px;
+    width: auto;
+    height: 80vh;
+    object-fit: cover; /* Ensure the image covers the div */
+    display: block;
+
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
