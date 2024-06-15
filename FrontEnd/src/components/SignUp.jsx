@@ -17,6 +17,7 @@ import {
   Link
 } from "@chakra-ui/react";
 import { FaUserAlt, FaLock } from "react-icons/fa";
+// import "../styles/signup.css"
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
@@ -58,17 +59,15 @@ const SignUp = ({ setUser }) => {
   };
 
   return (
-    <div className='signup-page'>
-      <Flex
-        gap="20px"
+    <div className='signup-page' >
+      <Flex  gap="20px"
         flexDirection="column"
         width="100wh"
         height="100vh"
         justifyContent="center"
         alignItems="center"
       >
-        <Stack
-          className='stack'
+        <Stack  className='stack' 
           flexDir="column"
           mb="2"
           justifyContent="center"
@@ -86,26 +85,31 @@ const SignUp = ({ setUser }) => {
               >
                 <FormControl>
                   <InputGroup>
+                    
                     <Input type="text" placeholder="User Name" className='signup-input'
                       value={username} onChange={e => setUsername(e.target.value)} />
                   </InputGroup>
                 </FormControl>
                 <FormControl>
                   <InputGroup>
+
                     <Input
                       type="password" className='signup-input'
                       placeholder="Password"
                       value={password} onChange={e => setPassword(e.target.value)}
                     />
+
                   </InputGroup>
                 </FormControl>
                 <FormControl>
                   <InputGroup>
+
                     <Input className='signup-input'
                       type="password"
                       placeholder="Confirm Password"
                       value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)}
                     />
+                    
                   </InputGroup>
                 </FormControl>
                 <Button className='signup-button'
@@ -138,4 +142,4 @@ const SignUp = ({ setUser }) => {
   );
 };
 
-export default SignUp;
+export default SignUp;
