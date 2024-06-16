@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../../../src/FreeCourseModal.css';
+import '../../../src/FreeCourseModal.css';
 
 const CourseModal = ({ isOpen, toggle, course }) => {
   if (!isOpen) return null;

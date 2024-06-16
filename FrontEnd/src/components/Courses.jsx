@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import axios from "axios";
 import "../../src/Courses.css";
 import CourseCard from "../components/Courses/CourseCard";
 import Testimonials from "./Testimonial/Testimonials";
 import Contact from "./contact";
+import { querycontext } from "./Navbar";
 
 const Courses = () => {
+  const {query}=useContext(querycontext);
   const [coursesData, setCoursesData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const coursesPerPage = 16; // 4 rows * 4 columns = 16 courses per page
@@ -38,6 +40,11 @@ const Courses = () => {
 
   // Calculate number of columns per row
   const columnsPerRow = 4;
+  
+  const filteredItems = coursesData.filter(item =>
+    item.name.toLowerCase().includes(query.toLowerCase())
+  );
+
 
   return (
     <section>
@@ -71,7 +78,7 @@ const Courses = () => {
           {/* Display course cards */}
           {currentCourses.length > 0 ? (
             <Row className="course__card__row">
-              {currentCourses.map((item, index) => (
+              {filteredItems.map((item, index) => (
                 <Col lg="3" md="6" sm="6" key={index} className="mb-4">
                   <CourseCard item={item} />
                 </Col>

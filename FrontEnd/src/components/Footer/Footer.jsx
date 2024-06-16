@@ -33,13 +33,13 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-sections">
           <div className="footer-section">
-            <h2>What's up?</h2>
+            <h2 className='foot-h2'>What's up?</h2>
             <p>Get updates about the programs, workshops, the latest developments, and community activities, straight to your inbox.</p>
             <div className="footer-subscribe">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="footer-input"
+                className="footer-input1"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h2>Product School</h2>
+            <h2 className='foot-h2'>Product School</h2>
             <Link to="/about-us" className="footer-link">About Us</Link>
             <Link to="/case-studies" className="footer-link">Case Studies</Link>
             <Link to="/contact-us" className="footer-link">Contact Us</Link>
@@ -57,14 +57,14 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h2>Programs</h2>
+            <h2 className='foot-h2'>Programs</h2>
             <Link to="/crash-course" className="footer-link">Crash Course</Link>
             <Link to="/masterclasses" className="footer-link">Masterclasses</Link>
             <Link to="/intensive-programs" className="footer-link">Intensive Programs</Link>
           </div>
 
           <div className="footer-section">
-            <h2>More</h2>
+            <h2 className='foot-h2'>More</h2>
             <div className="footer-contact">
               <FaPhoneAlt />
               <span>(406) 555 -0120</span>

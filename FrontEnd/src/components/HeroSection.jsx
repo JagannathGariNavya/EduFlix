@@ -16,10 +16,9 @@ const HeroSection = () => {
               Designed to transform you into a highly skilled Software Professional..1700+ Companies have hired EduSchool  learners
               </p>
             </div>
-            <div className="hero-search">
-              <input type="text" placeholder="Search" />
-              <button className="btn">Search</button>
-            </div>
+            
+              <button className="btn">Explore Now</button>
+            {/* </div> */}
           </div>
 
           <div className="col-lg-6 col-md-6">

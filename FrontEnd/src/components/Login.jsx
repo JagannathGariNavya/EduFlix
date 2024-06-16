@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import "../../src/Login.css"
 import {
   Flex,
   Heading,
@@ -25,6 +26,7 @@ const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
 
 
+
 const Login = ({ setUser }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -37,7 +39,7 @@ const Login = ({ setUser }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://furni-flex-4-yx74.onrender.com/users');
+      const response = await fetch('https://eduschool-3.onrender.com/users');
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
@@ -74,9 +76,9 @@ const Login = ({ setUser }) => {
           justifyContent="center"
           alignItems="center"
         >
-<Avatar>
-    <AvatarBadge boxSize='1em' bg='green.500' />
-  </Avatar>
+{/* <Avatar> */}
+    {/* <AvatarBadge boxSize='1em' bg='green.500' /> */}
+  {/* </Avatar> */}
           <Heading color="blue.500">Welcome</Heading>
           <Box minW={{ base: "90%", md: "468px" }}>
             <form onSubmit={handleLogin}>

@@ -43,21 +43,27 @@
   gap: 10px;
 }
 
-.footer-input {
-  padding: 10px;
+.footer-input1 {
+  padding: 5px;
   border: none;
   border-radius: 4px;
   flex: 1;
   font-size: 1rem;
+  margin-top: 30px;
+  height: 35px;
 }
 
 .footer-button {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   background-color: #f50057;
+  margin-top: 33px;
+
   border: none;
   border-radius: 4px;
+  height: 40px;
   color: #ecf0f1;
   cursor: pointer;
+  /* margin-left: -10px; */
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
@@ -89,6 +95,11 @@
 
 .footer-contact svg {
   font-size: 1.2rem;
+}
+.foot-h2{
+  color: rgb(34, 31, 31);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .footer-contact span {
