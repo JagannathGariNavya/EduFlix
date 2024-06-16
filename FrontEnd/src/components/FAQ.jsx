@@ -3,6 +3,8 @@ import { Box, Heading, Accordion, AccordionIcon, AccordionButton, AccordionItem,
 export const FAQ = () => {
   return (
     <div>
+         <Box ml="11%" mr="15%">
+         <Box> 
          <Heading size="md" mb="30px">Frequently Asked Questions</Heading>
          <Accordion allowToggle>  
          {/* 1 Module */}
@@ -95,6 +97,8 @@ export const FAQ = () => {
         </Box>
          {/* 5 Module */}
         </Accordion>
+        </Box>
+        </Box>
     </div>
   )
 }

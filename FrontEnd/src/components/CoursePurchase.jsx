@@ -3,7 +3,10 @@ import { AiFillLike } from "react-icons/ai";
 
 export const CoursePurchase = () => {
   return (
-    <div> <Heading size="md" mt="30px" mb="30px">People also bought</Heading> 
+    <div>
+         <Box ml="11%" mr="15%">
+         <Box>  
+    <Heading size="md" mt="30px" mb="30px">People also bought</Heading> 
     <Box>
     <SimpleGrid  mb="30px" spacing={4} templateColumns='repeat(auto-fill, minmax(220px, 1fr))'>
      <Card bg="white" boxShadow='2xl'>
@@ -12,7 +15,7 @@ export const CoursePurchase = () => {
     <Text>View a to become more strategic web developer</Text>
     </CardBody>
     <CardFooter>
-    <Button mr="40px" bg="#056a67" color="white" colorScheme='teal'>View Course</Button>
+    <Button mr="70px" bg="#056a67" color="white" colorScheme='teal'>View Course</Button>
     <Text><AiFillLike />80%</Text>
     </CardFooter>
     </Card>
@@ -22,7 +25,7 @@ export const CoursePurchase = () => {
     <Text>View a to become more strategic full stack web developer</Text>
     </CardBody>
     <CardFooter>
-    <Button mr="50px" bg="#056a67" color="white" colorScheme='teal'>View Course</Button>
+    <Button mr="70px" bg="#056a67" color="white" colorScheme='teal'>View Course</Button>
     <Text><AiFillLike />80%</Text>
     </CardFooter>
     </Card>
@@ -32,11 +35,13 @@ export const CoursePurchase = () => {
     <Text>View a to become more strategic mobile app developer</Text>
     </CardBody>
     <CardFooter>
-    <Button mr="50px" bg="#056a67" color="white" colorScheme='teal'>View Course</Button>
+    <Button mr="70px" bg="#056a67" color="white" colorScheme='teal'>View Course</Button>
     <Text><AiFillLike />80%</Text>
     </CardFooter>
     </Card>
     </SimpleGrid>
+    </Box>
+    </Box>
     </Box>
     </div>
   )

@@ -4,6 +4,8 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 export const Reviews = () => {
   return (
     <div>
+         <Box ml="11%" mr="15%" >
+         <Box> 
          <Heading size="md"  mb="30px">Reviews</Heading>
             <Box w="75%" display="flex" gap="20px" mb="30px">
             <Card maxW='md' boxShadow='2xl'>
@@ -54,6 +56,8 @@ export const Reviews = () => {
             </CardBody>
             </CardHeader>
              </Card>
+            </Box>
+            </Box>
             </Box>
     </div>
   )

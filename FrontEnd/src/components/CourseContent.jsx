@@ -8,6 +8,8 @@ import { MdOndemandVideo } from "react-icons/md";
 export const CourseContent = () => {
   return (
     <div>
+         <Box ml="11%" mr="15%" mt="16%">
+         <Box> 
          <Heading size="md" mb="20px">Course Content</Heading>
         <Box display="flex" gap="20px" fontSize="17px"  mb="10px">
             <Text display="flex" alignItems="center" gap="7px"><MdRestartAlt />6hrs content</Text>
@@ -46,11 +48,11 @@ export const CourseContent = () => {
             </Box>
             <Box w="100%" textAlign="left" p="10px"  display="flex" alignItems="center" gap="20px">
         <MdOndemandVideo />How to get the most out of the course
-            <Text ml="50%">09:33</Text>
+            <Text ml="49%">09:33</Text>
             </Box>
             <Box w="100%" textAlign="left" p="10px"  display="flex" alignItems="center" gap="20px">
         <MdOndemandVideo />How to Get Help When You're Stuck
-            <Text ml="52%">06:39</Text>
+            <Text ml="51%">06:39</Text>
             </Box>
         </AccordionPanel>
         </AccordionItem>
@@ -84,11 +86,11 @@ export const CourseContent = () => {
             </Box>
             <Box w="100%" textAlign="left" p="10px"  display="flex" alignItems="center" gap="20px">
         <MdOndemandVideo />Self Closing Tags
-            <Text ml="70%">11:40</Text>
+            <Text ml="69%">11:40</Text>
             </Box>
             <Box w="100%" textAlign="left" p="10px"  display="flex" alignItems="center" gap="20px">
         <MdOndemandVideo />[Project] Movie Ranking
-            <Text ml="63%">05:43</Text>
+            <Text ml="62.5%">05:43</Text>
             </Box>
         </AccordionPanel>
         </AccordionItem>
@@ -117,7 +119,7 @@ export const CourseContent = () => {
             </Box>
             <Box w="100%" textAlign="left" p="10px"  display="flex" alignItems="center" gap="20px">
         <MdOndemandVideo />Anchor Elements
-            <Text ml="71%">10:45</Text>
+            <Text ml="70.5%">10:45</Text>
             </Box>
         </AccordionPanel>
         </AccordionItem>
@@ -150,7 +152,7 @@ export const CourseContent = () => {
             </Box>
             <Box w="100%" textAlign="left" p="10px"  display="flex" alignItems="center" gap="20px">
         <MdOndemandVideo />[Project] Portfolio Website
-            <Text ml="61%">08:34</Text>
+            <Text ml="61.7%">08:34</Text>
             </Box>
         </AccordionPanel>
         </AccordionItem>
@@ -183,12 +185,14 @@ export const CourseContent = () => {
             </Box>
             <Box w="100%" textAlign="left" p="10px"  display="flex" alignItems="center" gap="20px">
         <MdOndemandVideo />CSS Selectors
-            <Text ml="74%">22:56</Text>
+            <Text ml="73.5%">22:56</Text>
             </Box>
         </AccordionPanel>
         </AccordionItem>
         </Box>
         </Accordion>
+        </Box>
+        </Box>
     </div>
   )
 }

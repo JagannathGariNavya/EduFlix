@@ -5,9 +5,11 @@ import { HiUsers } from "react-icons/hi";
 import { HiPlay } from "react-icons/hi";
 
 
-export const instructor = () => {
+export const Instructor = () => {
   return (
     <div>
+         <Box ml="11%" mr="15%">
+         <Box> 
          <Heading size="md" mb="30px">Know about your instructor</Heading>
             <Box w="60%" bg="white" boxShadow='2xl' padding="25px">
             <Heading size="sm" mb="10px">Angila</Heading>
@@ -24,6 +26,8 @@ export const instructor = () => {
             </Box>
             </Box>
             <Text>Angila is an award-winning entrepreneur, best-selling author, philanthropist, and the world's leading transformational coach.</Text>
+            </Box>
+            </Box>
             </Box>
     </div>
   )
