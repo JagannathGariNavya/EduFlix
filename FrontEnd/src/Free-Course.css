@@ -19,6 +19,9 @@
   /* border: solid; */
   margin-bottom: -70px; /* Reduced margin */
 }
+.fw-bold{
+  margin-left: -96px;
+}
 
 .freeCourse-section {
   margin-left: 50px;
@@ -41,8 +44,12 @@
 .form-container input {
   margin-bottom: 15px;
 }
+.free-button{
+  background-color: #0056b3;;
+}
 
 .form-container button {
+  
   width: 100%;
 }
 .freeCourse-section{

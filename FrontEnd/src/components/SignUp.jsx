@@ -17,7 +17,7 @@ import {
   Link
 } from "@chakra-ui/react";
 import { FaUserAlt, FaLock } from "react-icons/fa";
-// import "../styles/signup.css"
+import "../../src/signup.css"
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
@@ -38,7 +38,7 @@ const SignUp = ({ setUser }) => {
       return;
     }
     try {
-      const response = await fetch('https://furni-flex-4-yx74.onrender.com/users', {
+      const response = await fetch('https://eduschool-3.onrender.com/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ const SignUp = ({ setUser }) => {
           justifyContent="center"
           alignItems="center"
         >
-          <Avatar bg="blue.500" />
+          {/* <Avatar bg="blue.500" /> */}
           <Heading color="blue.500">Sign Up</Heading>
           <Box minW={{ base: "90%", md: "468px" }}>
             <form onSubmit={handleSignUp}>
@@ -131,7 +131,7 @@ const SignUp = ({ setUser }) => {
             </form>
           </Box>
         </Stack>
-        <Box>
+        <Box className='already'>
           Already have an account?{" "}
           <Link href="/login" color="teal.500">
             Login

@@ -1,12 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, createContext, useContext } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
 import Logo from '../assets/Logo.png';
 import search from '../assets/search.png';
 import themeIcon from '../assets/set.png';
 import '../../src/Navbar.css';
 import axios from 'axios';
+export const querycontext=createContext();
 
+export const Queryprovider=({children})=>{
+  const [query,setQuery]=useState("");
+  return(
+    <querycontext.Provider value={{query,setQuery}}>
+      {children}
+    </querycontext.Provider>
+  )
+}
 const Navbar = ({ theme, setTheme }) => {
+  const {setQuery,query}=useContext(querycontext);
   const toggleMode = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
@@ -30,27 +40,6 @@ const Navbar = ({ theme, setTheme }) => {
     fetchData();
   }, []);
 
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredData, setFilteredData] = useState(cardData);
-
-  const handleSearch = (event) => {
-    const value = event.target.value;
-    setSearchTerm(value);
-    filterData(value);
-  };
-
-  const filterData = (value) => {
-    const lowercasedValue = value.toLowerCase().trim();
-    if (lowercasedValue === "") {
-      setFilteredData(cardData);
-    } else {
-      const filteredData = cardData.filter((item) =>
-        item.title.toLowerCase().includes(lowercasedValue)
-      );
-      setFilteredData(filteredData);
-    }
-  };
-
   return (
     <div className={`navbar ${theme}`}>
       <Link to="/" className="navbar-logo-link">
@@ -62,7 +51,7 @@ const Navbar = ({ theme, setTheme }) => {
         <li><Link to="/subscription" className="nav-link">Subscription</Link></li>
       </ul>
       <div className='search-box'>
-        <input type="text" placeholder='Search' value={searchTerm} onChange={(e) => handleSearch(e)} />
+        <input type="text" placeholder='Search' value={query} onChange={(e) =>setQuery(e.target.value)} />
         <img src={search} alt="Search Icon" />
       </div>
       <Link to="/login" className="navbar-login-button">
