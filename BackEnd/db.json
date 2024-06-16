@@ -1,4 +1,13 @@
 {
+  "users": [
+    {
+      "id":1,
+      "name": "Navya",
+      "email": "jnavyan12@gmail.com",
+      "password": "1234"
+    }
+  ],
+
   "card_data": [
     {
       "id": 1,
@@ -4479,7 +4488,9 @@
         "Anyone interested in becoming a full-stack web developer"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4488,12 +4499,17 @@
       "enrollmentNumbers": 200000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/AmX9zoLhUKU?list=PLOK_oIDzalSj0QAUIWBGOHCJVjBsPoPgR",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 2,
@@ -4532,7 +4548,9 @@
         "Anyone interested in full-stack development"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Code examples",
         "Quizzes and assignments",
@@ -4541,12 +4559,17 @@
       "enrollmentNumbers": 180000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/SF_Xl5TOGlY?list=PLblA84xge2_xNtaFnZhefjFbnDrpySKD3",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 3,
@@ -4584,7 +4607,9 @@
         "Anyone interested in mastering JavaScript"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Code samples",
         "Quizzes and assignments",
@@ -4593,12 +4618,17 @@
       "enrollmentNumbers": 150000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/1uYQRG5csT8?list=PLOmL3sL-afbRVTvedkIrQcDwg2UY0JGTF",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 4,
@@ -4636,7 +4666,9 @@
         "Anyone looking to build React applications"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4645,12 +4677,17 @@
       "enrollmentNumbers": 120000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/9zmwGT7DEsM",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 5,
@@ -4687,7 +4724,9 @@
         "Professionals looking to expand their skills"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Downloadable code examples",
         "Quizzes and assignments",
@@ -4696,12 +4735,17 @@
       "enrollmentNumbers": 300000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/i3-PQ4CkU8s?list=PLSzsOkUDsvdvGZ2fXGizY_Iz9j8-ZlLqh",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 6,
@@ -4741,7 +4785,9 @@
         "Students pursuing a career in data science"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4750,12 +4796,17 @@
       "enrollmentNumbers": 250000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/SZK6qhSLVrs",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 7,
@@ -4798,7 +4849,9 @@
         "Students interested in Python programming"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4807,12 +4860,17 @@
       "enrollmentNumbers": 350000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/bqAU2k8JQa8",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 8,
@@ -4853,7 +4911,9 @@
         "Professionals looking to transition into data science"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4862,12 +4922,17 @@
       "enrollmentNumbers": 400000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/5HlbV1wKBmo?list=PLaFfQroTgZnyQFq4nUfb-w2vEopN3ULMb",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 9,
@@ -4908,7 +4973,9 @@
         "Students interested in data management"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4917,12 +4984,17 @@
       "enrollmentNumbers": 200000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/iiRN93Ifv3A?list=PL50QcNqdGrAnUfnq4AmM0YjbwTRcn3xNT",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 10,
@@ -4963,7 +5035,9 @@
         "Anyone looking to build server-side applications with NodeJS"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4972,12 +5046,17 @@
       "enrollmentNumbers": 150000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/65a5QQ3ZR2g?list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 11,
@@ -5016,7 +5095,9 @@
         "Anyone wanting to create interactive charts and graphs"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Code samples",
         "Quizzes and assignments",
@@ -5025,12 +5106,17 @@
       "enrollmentNumbers": 80000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/q6GWkbUWFBg?list=PLhGp6N0DI_1TSgS8KqsGQMyGlVIatwVXn",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     },
     {
       "id": 12,
@@ -5069,7 +5155,9 @@
         "Anyone looking to build search-based applications"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": ["English"],
+      "languages": [
+        "English"
+      ],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -5078,12 +5166,17 @@
       "enrollmentNumbers": 120000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": ["English"],
+        "subtitles": [
+          "English"
+        ],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/q6GWkbUWFBg?list=PLhGp6N0DI_1TSgS8KqsGQMyGlVIatwVXn",
-      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+      "platformFeatures": [
+        "Lifetime access",
+        "Accessible on mobile and TV"
+      ]
     }
   ],
   "user": [
