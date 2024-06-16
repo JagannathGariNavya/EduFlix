@@ -6,7 +6,7 @@ export function SideBar({ openSidebarToggle, OpenSidebar }) {
     <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive" : ""}>
       <div className='sidebar-title'>
         <div className='sidebar-brand'>
-          <BsCart3 className='icon_header' /> SHOP
+          <a href=""><img className='project_logo' src="React_Project_logo.png" alt="logo" /></a>
         </div>
         <span className='icon close_icon' onClick={OpenSidebar}>X</span>
       </div>
@@ -25,11 +25,6 @@ export function SideBar({ openSidebarToggle, OpenSidebar }) {
         <Link to="/users">
             <BsPeopleFill className='icon' /> Users
           </Link>
-        </li>
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsPeopleFill className='icon' /> Customers
-          </a>
         </li>
       </ul>
     </aside>
