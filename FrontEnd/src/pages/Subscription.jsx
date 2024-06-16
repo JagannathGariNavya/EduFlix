@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import {Box, Heading, Card, Text, Button,
+import {
+  Box,
+  Heading,
+  Card,
+  Text,
+  Button,
   Divider,
   CardFooter,
   CardHeader,
@@ -92,7 +97,18 @@ export const Subscription = () => {
     }
   };
 
-  const Plans = ({ title, priceMonthly, subscriptionType, content1, content2, content3, content4, content5, subscribe, buttonMarginTop }) => (
+  const Plans = ({
+    title,
+    priceMonthly,
+    subscriptionType,
+    content1,
+    content2,
+    content3,
+    content4,
+    content5,
+    subscribe,
+    buttonMarginTop,
+  }) => (
     <Card
       maxW="xs"
       mb="80px"
@@ -121,9 +137,17 @@ export const Subscription = () => {
           {title}
         </Box>
         <Divider mt="2" mb="5" />
-        <Text mb="5" fontSize="3xl">₹{priceMonthly}/month</Text>
-        <Text mb="4" display="flex" justifyContent="start" gap="8px"><FcCheckmark fontSize="19px" />{content1}</Text>
-        <Text mb="5" display="flex" justifyContent="start" gap="8px"><FcCheckmark fontSize="22px" />{content2}</Text>
+        <Text mb="5" fontSize="3xl">
+          ₹{priceMonthly}/month
+        </Text>
+        <Text mb="4" display="flex" justifyContent="start" gap="8px">
+          <FcCheckmark fontSize="19px" />
+          {content1}
+        </Text>
+        <Text mb="5" display="flex" justifyContent="start" gap="8px">
+          <FcCheckmark fontSize="22px" />
+          {content2}
+        </Text>
         {content4 && (
           <Text mb="5" display="flex" justifyContent="start" gap="8px">
             <FcCheckmark fontSize="22px" /> {content4}
@@ -134,7 +158,10 @@ export const Subscription = () => {
             <FcCheckmark fontSize="22px" /> {content5}
           </Text>
         )}
-        <Text display="flex" justifyContent="start" gap="8px"><FcCheckmark fontSize="20px" />{content3}</Text>
+        <Text display="flex" justifyContent="start" gap="8px">
+          <FcCheckmark fontSize="20px" />
+          {content3}
+        </Text>
       </CardHeader>
       <CardFooter>
         <Button
@@ -144,7 +171,15 @@ export const Subscription = () => {
           colorScheme="teal"
           size="lg"
           mt={buttonMarginTop}
-          onClick={() => handleSubscribe({ title, priceMonthly, durationMonths: plans.find((p) => p.title === title).durationMonths, subscriptionType })}
+          onClick={() =>
+            handleSubscribe({
+              title,
+              priceMonthly,
+              durationMonths: plans.find((p) => p.title === title)
+                .durationMonths,
+              subscriptionType,
+            })
+          }
         >
           {subscribe}
         </Button>
@@ -153,13 +188,25 @@ export const Subscription = () => {
   );
 
   return (
-    <div>
-      <Heading as="h2" size="xl" noOfLines={1} textAlign="center" mt="8%" mb="20px">
+    <div style={{ display: "block" }}>
+      <Heading
+        as="h2"
+        size="xl"
+        noOfLines={1}
+        textAlign="center"
+        mt="8%"
+        mb="20px"
+      >
         Subscription Plans
       </Heading>
 
       {/* Subscription Cards */}
-      <Grid ml="13%" mr="10%" templateColumns="repeat(auto-fill, minmax(300px, 1fr))" gap={6}>
+      <Grid
+        ml="13%"
+        mr="10%"
+        templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
+        gap={6}
+      >
         {plans.map((plan, index) => (
           <Plans key={index} {...plan} />
         ))}
@@ -171,8 +218,12 @@ export const Subscription = () => {
           <ModalHeader>Complete Your Payment</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text fontSize="lg" mb="4">You have selected the {selectedPlan?.title}.</Text>
-            <Text fontSize="lg" mb="4">Price: ₹{selectedPlan?.priceMonthly}/month</Text>
+            <Text fontSize="lg" mb="4">
+              You have selected the {selectedPlan?.title}.
+            </Text>
+            <Text fontSize="lg" mb="4">
+              Price: ₹{selectedPlan?.priceMonthly}/month
+            </Text>
             <FormControl isInvalid={isCardNumberError} mb="4">
               <FormLabel>Card Number</FormLabel>
               <Input
@@ -184,7 +235,9 @@ export const Subscription = () => {
                   setIsCardNumberError(false);
                 }}
               />
-              {isCardNumberError && <FormErrorMessage>Card number is required.</FormErrorMessage>}
+              {isCardNumberError && (
+                <FormErrorMessage>Card number is required.</FormErrorMessage>
+              )}
             </FormControl>
             <FormControl isInvalid={isCvvError} mb="4">
               <FormLabel>Card Verification Value (CVV)</FormLabel>
@@ -197,14 +250,24 @@ export const Subscription = () => {
                   setIsCvvError(false);
                 }}
               />
-              {isCvvError && <FormErrorMessage>CVV is required.</FormErrorMessage>}
+              {isCvvError && (
+                <FormErrorMessage>CVV is required.</FormErrorMessage>
+              )}
             </FormControl>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme="teal" mr={3} onClick={handlePayment} isLoading={isLoading} loadingText="Processing">
+            <Button
+              colorScheme="teal"
+              mr={3}
+              onClick={handlePayment}
+              isLoading={isLoading}
+              loadingText="Processing"
+            >
               Pay Now
             </Button>
-            <Button variant="ghost" onClick={onClose}>Cancel</Button>
+            <Button variant="ghost" onClick={onClose}>
+              Cancel
+            </Button>
           </ModalFooter>
         </ModalContent>
       </Modal>

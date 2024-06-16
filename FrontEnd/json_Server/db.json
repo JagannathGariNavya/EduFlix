@@ -1,11 +1,21 @@
 {
-  "users":[{
-    "name":"Navya",
-    "email":"jnavyan12@gmail.com",
-    "password":1234,
-    "id":1
+  "users": [
+    {
+      "id": 1,
+      "name": "Navya",
+      "email": "jnavyan12@gmail.com",
+      "password": "1234",
+      "isAdmin": false
+    },
+    {
+      "name": "Shobhit",
+      "email": "gshobhit@gmail.com",
+      "password": "1234",
+      "id": 2,
+      "isAdmin": true
+    }
+  ],
 
-  }],
   "card_data": [
     {
       "image": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_18.jpg",

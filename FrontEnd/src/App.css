@@ -1,149 +1,169 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* #root { */
+  /* max-width: 90% !important; */
+  /* margin: 0 auto !important; */
+  /* padding: 2rem !important; */
+
+/* } */
+*{
+  padding: 0;
+  margin: 0 ;
 }
 
+
+:where(*, *::before, *::after) {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+body{
+  width: 100%;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  height: 6em !important;
+  padding: 1.5em !important;
+  will-change: filter !important;
+  transition: filter 300ms !important;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cffaa) !important;
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #61dafbaa) !important;
 }
 
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) !important;
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg) !important;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 20s linear !important;
   }
 }
 
 .card {
-  padding: 2em;
+  padding: 2em !important;
 }
 .app-container {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif !important;
 }
 
 .nav-container {
-  width: 100vw;
-  min-height: 100vh;
-  background: #ced8ff;
+  /* width: 100vw !important; */
+  min-height: 100vh !important;
+  background: #ced8ff !important;
 }
 
-.navbar-nav {
-  width: 100%;
-  height: 17vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  padding-left: 50px;
-  padding-right: 50px;
-  box-sizing: border-box;
-}
+/* .navbar-nav {
+  width: 100% !important;
+  height: 17vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #fff !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  box-sizing: border-box !important;
+} */
 
 .logo {
-  width: 100px;
-  cursor: pointer;
+  width: 100px !important;
+  cursor: pointer !important;
 }
 
 ul {
-  list-style: none;
-  text-align: center;
+  list-style: none !important;
+  text-align: center !important;
 }
 
 ul li {
-  display: inline-block;
-  margin: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
+  display: inline-block !important;
+  margin: 10px 20px !important;
+  font-size: 18px !important;
+  cursor: pointer !important;
 }
 
 ul li a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .light-theme li a {
-  color: black;
+  color: black !important;
 }
 
 .dark-theme li a {
-  color: white;
+  color: white !important;
 }
 
 .toggle-icon {
-  width: 50px;
-  cursor: pointer;
-  margin-left: 40px;
+  width: 50px !important;
+  cursor: pointer !important;
+  margin-left: 40px !important;
 }
 
 .search-box {
-  display: flex;
-  align-items: center;
-  background: #242424;
-  padding: 10px;
-  border-radius: 50px;
+  display: flex !important;
+  align-items: center !important;
+  /* background: #242424 !important; */
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  padding: 10px !important;
+  border-radius: 50px !important;
+  /* color: black; */
 }
 
 .search-box input {
-  padding: 6px;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  color: #fff;
-  font-size: 18px;
-  max-width: 200px;
+  padding: 6px !important;
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  color: black !important;
+  font-size: 18px !important;
+  max-width: 200px !important;
 }
 
 .search-box input::placeholder {
-  color: #fff;
+  color: black !important;
 }
 
 .search-box img {
-  width: 20px;
-  cursor: pointer;
+  width: 20px !important;
+  cursor: pointer !important;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+/* body {
+  margin: 0 !important;
+  font-family: Arial, sans-serif !important;
+} */
 
 .home-container {
-  padding: 20px;
+  padding: 20px !important;
 }
 
 .courses-container, .subscription-container {
-  padding: 20px;
+  padding: 20px !important;
 }
 
 .dark-theme {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 
 .light-theme {
-  background-color: white;
-  color: black;
+  background-color: white !important;
+  color: black !important;
 }
 
 
 .read-the-docs {
-  color: #888;
+  color: #888 !important;
+}
+.course-card{
+  text-align: center !important;
 }

@@ -5,6 +5,7 @@ import { HiUsers } from "react-icons/hi";
 import { HiPlay } from "react-icons/hi";
 
 
+
 export const Instructor = () => {
   return (
     <div>

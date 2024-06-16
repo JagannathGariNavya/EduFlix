@@ -22,7 +22,7 @@ const Home = () => {
       <h2 style={{}}>Contact Us <pre> If you Want the Free Courses</pre></h2>
       <Contact />
 
-      <Carousel />
+      {/* <Carousel /> */}
       <MainCard />
        <ChooseUs/>
        <Testimonials/>
