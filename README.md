@@ -160,7 +160,7 @@ npm install
 npm run dev
 ```
 
-The project uses a mock server deployed using JSON-server on render. The server can be accessed here: https://staybnb-server.onrender.com/
+The project uses a mock server deployed using JSON-server on render. The server can be accessed here: 
 
 If you would like to run a local server instead, use the following commands:
 
