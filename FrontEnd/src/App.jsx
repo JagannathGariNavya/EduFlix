@@ -14,6 +14,10 @@ import './App.css';
 import ContactPage from './components/Layout/ContactPage';
 import Login from './components/Login'; // Import Login component
 import SignUp from './components/SignUp'; // Import SignUp component
+import { AllRoutes } from './pages/AllRoutes';
+import { BrowserRouter} from "react-router-dom";
+import { ChakraProvider} from '@chakra-ui/react'
+import { CoursePage } from './pages/CoursePage';
 
 const App = () => {
   const [theme, setTheme] = useState('light');
@@ -44,7 +48,16 @@ const App = () => {
         <Footer />
       </div>
     </Router>
+    <div>
+      <ChakraProvider>
+      <BrowserRouter>
+        <AllRoutes/>
+        </BrowserRouter>
+        </ChakraProvider>
+        
+    </div>
   );
 };
+
 
 export default App;
