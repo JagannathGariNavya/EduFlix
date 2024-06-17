@@ -8,7 +8,8 @@ Frontend | Backend
 
 ### Deployed Link
 
-Frontend:
+EduSchool: [Live Demo](https://edu-school-k4id.vercel.app/)
+Admin DashBoard: [Live Demo](https://edu-school-ka3k.vercel.app/)
 
 ### Directory Structure
 
@@ -18,6 +19,27 @@ Frontend:
 
 ### video Walkthrough of the project
 
+### Screenshots
+
+**Landing Page**
+
+<img src="" alt="">
+
+**Login and Signup Page**
+
+<img src="" alt="">
+
+**Course Detail Page**
+
+<img src="" alt="">
+
+**Course Page**
+
+<img src="" alt="">
+
+**Admin Dashboard**
+
+<img src="" alt="">
 
 ### Features
 
@@ -25,7 +47,7 @@ Frontend:
 - **Responsive and Dynamic**: The website adapts seamlessly to any device, ensuring a smooth and intuitive experience across desktop, tablet, and mobile.
 - **Admin Dashboard (CRUD Operations)**: (For authorized users) Admins can manage the platform effectively with a comprehensive dashboard enabling them to Create, Read, Update, and Delete courses, user accounts, and 
    other critical data.
-- **Search bar**: Easily find the course you want with our intuitive search bar.
+- **Search bar and Filtering**: Easily find the course you want with our intuitive search bar.
 - **Cart**: Keep track of your favourite courses with our convenient cart feature.
 
  ### Technology Stack
