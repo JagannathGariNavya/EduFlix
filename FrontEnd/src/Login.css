@@ -1,13 +1,9 @@
 .loginpage {
-  height: 650px;
-  background-color: #f0f0f0;
-  width: 600px;
-  margin: auto;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
 }
 
 .stack {
@@ -31,10 +27,12 @@
   padding: 0 10px;
   font-family: 'Arial', sans-serif;
   transition: border-color 0.3s, box-shadow 0.3s;
+
 }
 
 .login-input:focus {
-  border-color: #007bff;
+  border-color: black;
+  background-color: white;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   outline: none;
 }
@@ -43,8 +41,8 @@
   color: white;
   height: 40px;
   border: none;
-  border-radius: 10%;
-  background-color: #007bff;
+  border-radius: 10px;
+  background-color:  #007bff;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
   width: 50%;
@@ -53,6 +51,6 @@
 }
 
 .login-button:hover {
-  background-color: #0056b3;
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  background-color: black;
+  /* box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); */
 }

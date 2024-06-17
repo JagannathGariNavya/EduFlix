@@ -1,58 +1,57 @@
 .layout-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    height: 50vh;
-    background: linear-gradient(135deg, #f8b500, #fceabb); /* Gradient background */
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 70vh;
+  background: linear-gradient(135deg, #f8b500, #fceabb); /* Gradient background */
+  padding: 20px;
+}
+
+.layout-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+.layout-box h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.layout-box p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.contact-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .layout-box {
-    background: #fff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+  to {
+    opacity: 1;
   }
-  
-  .layout-box h1 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-  }
-  
-  .layout-box p {
-    color: #555;
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-  }
-  
-  .contact-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s;
-  }
-  
-  .contact-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+}

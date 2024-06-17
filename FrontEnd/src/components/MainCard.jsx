@@ -4,7 +4,7 @@ import '../../src/MainCard.css';
 
 const MainCard = () => {
   return (
-    <>
+    <div style={{width:"100%", display:"flex", justifyContent:"center"}}>
     
     
 
@@ -23,7 +23,7 @@ const MainCard = () => {
       </div>
       <Link to="/callback" className="request-callback-button">Request Callback</Link>
     </div>
-    </>
+    </div>
   );
 };
 

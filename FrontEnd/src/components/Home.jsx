@@ -17,15 +17,24 @@ const Home = () => {
     <div className="home-container">
       <HeroSection />
 
-      
+
       <FreeCourse />
-      <h2 style={{}}>Contact Us <pre> If you Want the Free Courses</pre></h2>
+      <h2 style={{
+        justifyContent: 'center',
+        display: 'flex',
+        fontSize: '2.5rem',
+        fontWeight: 'bold',
+        marginBottom: '10px',
+        marginTop: '30px',
+        color: '#bf1757',
+        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)'
+      }}>Contact Us <pre> If you Want the Free Courses</pre></h2>
       <Contact />
 
-      <Carousel />
+      {/* <Carousel /> */}
       <MainCard />
-       <ChooseUs/>
-       <Testimonials/>
+      <ChooseUs />
+      <Testimonials />
       <Layout />
       {/* <Footer/> */}
       {/* Add any other content for the Home page here */}

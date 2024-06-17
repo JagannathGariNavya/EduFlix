@@ -1,13 +1,51 @@
 {
-  "users":[{
-    "name":"Navya",
-    "email":"jnavyan12@gmail.com",
-    "password":1234,
-    "id":1
+  "users": [
+    {
+      "id": 1,
+      "name": "Navya",
+      "email": "jnavyan12@gmail.com",
+      "password": "1234",
+      "isAdmin": false
+    },
+    {
+      "name": "Shobhit",
+      "email": "gshobhit@gmail.com",
+      "password": "1234",
+      "id": 2,
+      "isAdmin": true
+    }
+  ],
 
-  }],
+  "admin": [
+    {
+      "id": 1,
+      "username": "ashwin@gmail.com",
+      "password": "admin123",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "username": "shobhit@gmail.com",
+      "password": "123456789",
+      "isAdmin": true
+    },
+    {
+      "id": 3,
+      "username": "shreya@gmail.com",
+      "password": "shreya",
+      "isAdmin": true
+    },
+    {
+      "id": 4,
+      "username": "navya@gmail.com",
+      "password": "jnavya",
+      "isAdmin": true
+    }
+  ],
+
   "card_data": [
     {
+      "id": 1,
       "image": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_18.jpg",
       "title": "The Complete 2024 Web Development Bootcamp",
       "short_Description": "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps",
@@ -18,7 +56,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps",
-      "instructor": "Instructor:",
       "name": "Dr. Angela Yu, Developer and Lead Instructor",
       "rating_num": "4.7",
       "review_count": "-381,906",
@@ -26,6 +63,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 2,
       "image": "https://img-c.udemycdn.com/course/240x135/625204_436a_3.jpg",
       "title": "The Web Developer Bootcamp 2024",
       "short_Description": "10 Hours of React just added. Become a Developer With ONE course - HTML, CSS, JavaScript, React, Node, MongoDB and More!",
@@ -36,7 +74,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "10 Hours of React just added. Become a Developer With ONE course - HTML, CSS, JavaScript, React, Node, MongoDB and More!",
-      "instructor": "Instructor:",
       "name": "Colt Steele",
       "rating_num": "4.7",
       "review_count": "-272,906",
@@ -44,6 +81,7 @@
       "badge": ""
     },
     {
+      "id": 3,
       "image": "https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg",
       "title": "The Complete JavaScript Course 2024: From Zero to Expert!",
       "short_Description": "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
@@ -54,7 +92,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
-      "instructor": "Instructor:",
       "name": "Jonas Schmedtmann",
       "rating_num": "4.7",
       "review_count": "-207,289",
@@ -62,17 +99,17 @@
       "badge": "Bestseller"
     },
     {
+      "id": 4,
       "image": "https://img-c.udemycdn.com/course/240x135/756150_c033_4.jpg",
-      "title": "Angular - The Complete Guide (2024 Edition)",
-      "short_Description": "Master Angular (formerly \"Angular 2\") and build awesome, reactive web apps with the successor of Angular.js",
+      "title": "The Ultimate React Developer Course 2024",
+      "short_Description": "Master React and build awesome, reactive web apps with the successor of React.js",
       "rating": "Rating: 4.6 out of 5",
       "reviews": "202250 reviews",
       "course_duration": "44 total hours",
       "lecture_count": "586 lectures",
       "level": "All Levels",
       "price": "Current price: ₹3,099",
-      "desc": "Master Angular (formerly \"Angular 2\") and build awesome, reactive web apps with the successor of Angular.js",
-      "instructor": "Instructor:",
+      "desc": "Master React and build awesome, reactive web apps with the successor of React.js",
       "name": "Maximilian Schwarzmüller",
       "rating_num": "4.6",
       "review_count": "-202,250",
@@ -80,45 +117,46 @@
       "badge": "Bestseller"
     },
     {
+      "id": 5,
       "image": "https://img-c.udemycdn.com/course/240x135/437398_46c3_10.jpg",
-      "title": "Build Responsive Real-World Websites with HTML and CSS",
-      "short_Description": "Learn modern HTML5, CSS3 and web design by building a stunning website for your portfolio! Includes flexbox and CSS Grid",
+      "title": "Python for Everybody Specialization",
+      "short_Description": "A comprehensive course designed to introduce beginners to programming using Python.",
       "rating": "Rating: 4.8 out of 5",
       "reviews": "106715 reviews",
       "course_duration": "37.5 total hours",
       "lecture_count": "149 lectures",
       "level": "All Levels",
       "price": "Current price: ₹3,699",
-      "desc": "Learn modern HTML5, CSS3 and web design by building a stunning website for your portfolio! Includes flexbox and CSS Grid",
-      "instructor": "Instructor:",
-      "name": "Jonas Schmedtmann",
+      "desc": "A comprehensive course designed to introduce beginners to programming using Python.",
+      "name": "Dr. Charles Severance",
       "rating_num": "4.8",
       "review_count": "-106,715",
       "base_price": "₹3,699",
       "badge": "Bestseller"
     },
     {
+      "id": 6,
       "image": "https://img-c.udemycdn.com/course/240x135/705264_caa9_13.jpg",
-      "title": "Modern React with Redux [2024 Update]",
-      "short_Description": "Master React and Redux. Apply modern design patterns to build apps with React Router, TailwindCSS, Context, and Hooks!",
+      "title": "Machine Learning A-Z: Hands-On Python & R In Data Science",
+      "short_Description": "Learn to create Machine Learning Algorithms in Python and R from two Data Science experts.",
       "rating": "Rating: 4.7 out of 5",
       "reviews": "86659 reviews",
       "course_duration": "76 total hours",
       "lecture_count": "684 lectures",
       "level": "All Levels",
       "price": "Current price: ₹3,699",
-      "desc": "Master React and Redux. Apply modern design patterns to build apps with React Router, TailwindCSS, Context, and Hooks!",
-      "instructor": "Instructor:",
-      "name": "Stephen Grider",
+      "desc": "Learn to create Machine Learning Algorithms in Python and R from two Data Science experts.",
+      "name": "Kirill Eremenko",
       "rating_num": "4.7",
       "review_count": "-86,659",
       "base_price": "₹3,699",
       "badge": ""
     },
     {
+      "id": 7,
       "image": "https://img-c.udemycdn.com/course/240x135/764164_de03_5.jpg",
-      "title": "The Complete Web Developer Course 3.0",
-      "short_Description": "Learn Web Development in 2024! Build apps, website, projects using HTML, CSS, Javascript, PHP, Python, MySQL &amp; more!",
+      "title": "Complete Python Bootcamp: Go from zero to hero in Python 3",
+      "short_Description": "Learn Python like a Professional! Start from the basics and go all the way to creating your own applications and games.",
       "rating": "Rating: 4.6 out of 5",
       "reviews": "72114 reviews",
       "course_duration": "31 total hours",
@@ -127,16 +165,17 @@
       "price": "Current price: ₹4,499",
       "desc": "Learn Web Development in 2024! Build apps, website, projects using HTML, CSS, Javascript, PHP, Python, MySQL & more!",
       "instructor": "Instructors:",
-      "name": "Rob Percival, Codestars • over 2 million students worldwide!",
+      "name": "Jose Portilla",
       "rating_num": "4.6",
       "review_count": "-72,114",
       "base_price": "₹4,499",
       "badge": ""
     },
     {
+      "id": 8,
       "image": "https://img-c.udemycdn.com/course/240x135/995016_ebf4_3.jpg",
-      "title": "Vue - The Complete Guide (incl. Router & Composition API)",
-      "short_Description": "Vue.js is an awesome JavaScript Framework for building Frontend Applications! VueJS mixes the Best of Angular + React!",
+      "title": "The Data Science Course 2024: Complete Data Science Bootcamp",
+      "short_Description": "Complete Data Science Training: Mathematics, Statistics, Python, Advanced Statistics in Python, Machine & Deep Learning.",
       "rating": "Rating: 4.7 out of 5",
       "reviews": "63129 reviews",
       "course_duration": "32 total hours",
@@ -144,35 +183,35 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Vue.js is an awesome JavaScript Framework for building Frontend Applications! VueJS mixes the Best of Angular + React!",
-      "instructor": "Instructor:",
-      "name": "Maximilian Schwarzmüller",
+      "name": "365 Careers",
       "rating_num": "4.7",
       "review_count": "-63,129",
       "base_price": "₹3,699",
       "badge": "Bestseller"
     },
     {
+      "id": 9,
       "image": "https://img-c.udemycdn.com/course/240x135/1352468_3d97_8.jpg",
-      "title": "Master Microservices with Spring Boot and Spring Cloud",
-      "short_Description": "Java Spring Boot Microservices 5-in-1 - Spring Boot, Spring Cloud, Docker, Kubernetes and REST API (REST Web Services)",
+      "title": "The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert",
+      "short_Description": "Become an expert at SQL! Learn how to create complex databases and use powerful query techniques.",
       "rating": "Rating: 4.6 out of 5",
       "reviews": "51677 reviews",
       "course_duration": "25 total hours",
       "lecture_count": "315 lectures",
       "level": "All Levels",
       "price": "Current price: ₹3,699",
-      "desc": "Java Spring Boot Microservices 5-in-1 - Spring Boot, Spring Cloud, Docker, Kubernetes and REST API (REST Web Services)",
-      "instructor": "Instructor:",
-      "name": "in28Minutes Official",
+      "desc": "Become an expert at SQL! Learn how to create complex databases and use powerful query techniques.",
+      "name": "Colt Steele",
       "rating_num": "4.6",
       "review_count": "-51,677",
       "base_price": "₹3,699",
       "badge": "Bestseller"
     },
     {
+      "id": 10,
       "image": "https://img-c.udemycdn.com/course/240x135/947098_02ec_2.jpg",
-      "title": "Understanding TypeScript",
-      "short_Description": "Boost your JavaScript projects with TypeScript: Learn all about core types, generics, TypeScript + React or Node & more!",
+      "title": "Learn and Understand NodeJS",
+      "short_Description": "Learn and understand NodeJS. Learn V8, Express, the MEAN stack, core concepts, and more.",
       "rating": "Rating: 4.7 out of 5",
       "reviews": "50548 reviews",
       "course_duration": "15 total hours",
@@ -180,17 +219,17 @@
       "level": "All Levels",
       "price": "Current price: ₹4,499",
       "desc": "Boost your JavaScript projects with TypeScript: Learn all about core types, generics, TypeScript + React or Node & more!",
-      "instructor": "Instructor:",
-      "name": "Maximilian Schwarzmüller",
+      "name": "Anthony Alicea",
       "rating_num": "4.7",
       "review_count": "-50,548",
       "base_price": "₹4,499",
       "badge": "Bestseller"
     },
     {
+      "id": 11,
       "image": "https://img-c.udemycdn.com/course/240x135/822444_a6db.jpg",
-      "title": "Python and Django Full Stack Web Developer Bootcamp",
-      "short_Description": "Learn to build websites with HTML , CSS , Bootstrap , Javascript , jQuery , Python 3 , and Django!",
+      "title": "Mastering Data Visualization with D3.js",
+      "short_Description": "Learn to create stunning data visualizations with D3.js, a powerful JavaScript library for building custom charts.",
       "rating": "Rating: 4.5 out of 5",
       "reviews": "50027 reviews",
       "course_duration": "32 total hours",
@@ -199,16 +238,17 @@
       "price": "Current price: ₹3,699",
       "desc": "Learn to build websites with HTML , CSS , Bootstrap , Javascript , jQuery , Python 3 , and Django!",
       "instructor": "Instructors:",
-      "name": "Jose Portilla, Pierian Training",
+      "name": "Adam Janes",
       "rating_num": "4.5",
       "review_count": "-50,027",
       "base_price": "₹3,699",
       "badge": ""
     },
     {
+      "id": 12,
       "image": "https://img-c.udemycdn.com/course/240x135/364426_2991_6.jpg",
-      "title": "JavaScript: Understanding the Weird Parts",
-      "short_Description": "An advanced JavaScript course for everyone! Scope, closures, prototypes, 'this', build your own framework, and more.",
+      "title": "The Complete Guide to Elasticsearch",
+      "short_Description": "Learn how to use Elasticsearch, the highly scalable open-source search engine, for powerful and flexible search solutions.",
       "rating": "Rating: 4.7 out of 5",
       "reviews": "48068 reviews",
       "course_duration": "12 total hours",
@@ -216,14 +256,14 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "An advanced JavaScript course for everyone! Scope, closures, prototypes, 'this', build your own framework, and more.",
-      "instructor": "Instructor:",
-      "name": "Anthony Alicea",
+      "name": "Bo Andersen",
       "rating_num": "4.7",
       "review_count": "-48,068",
       "base_price": "₹3,699",
       "badge": ""
     },
     {
+      "id": 13,
       "image": "https://img-c.udemycdn.com/course/240x135/1026604_790b_2.jpg",
       "title": "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
       "short_Description": "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.",
@@ -234,7 +274,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.",
-      "instructor": "Instructor:",
       "name": "Jonas Schmedtmann",
       "rating_num": "4.7",
       "review_count": "-43,841",
@@ -242,6 +281,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 14,
       "image": "https://img-c.udemycdn.com/course/240x135/405926_02c8_2.jpg",
       "title": "HTML and CSS for Beginners - Build a Website & Launch ONLINE",
       "short_Description": "HTML and CSS for Beginners  course will give your all the knowledge you need to master HTML and CSS easily and quickly.",
@@ -260,6 +300,7 @@
       "badge": ""
     },
     {
+      "id": 15,
       "image": "https://img-c.udemycdn.com/course/240x135/806922_6310_3.jpg",
       "title": "The Complete ASP.NET MVC 5 Course",
       "short_Description": "Learn to build fast and secure web applications with ASP.NET MVC 5 - The most popular course with 40,000+ students!",
@@ -270,7 +311,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn to build fast and secure web applications with ASP.NET MVC 5 - The most popular course with 40,000+ students!",
-      "instructor": "Instructor:",
       "name": "Mosh Hamedani",
       "rating_num": "4.5",
       "review_count": "-34,142",
@@ -278,6 +318,7 @@
       "badge": ""
     },
     {
+      "id": 16,
       "image": "https://img-c.udemycdn.com/course/240x135/1463348_52a4_4.jpg",
       "title": "Modern JavaScript From The Beginning 2.0 (2024)",
       "short_Description": "A 36-hour master course to take you from beginner to advanced JavaScript",
@@ -288,7 +329,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "A 36-hour master course to take you from beginner to advanced JavaScript",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.7",
       "review_count": "-33,630",
@@ -296,6 +336,7 @@
       "badge": ""
     },
     {
+      "id": 17,
       "image": "https://img-c.udemycdn.com/course/240x135/461160_8d87_6.jpg",
       "title": "Learn and Understand NodeJS",
       "short_Description": "Dive deep under the hood of NodeJS. Learn V8, Express, the MEAN stack, core Javascript concepts, and more.",
@@ -306,7 +347,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Dive deep under the hood of NodeJS. Learn V8, Express, the MEAN stack, core Javascript concepts, and more.",
-      "instructor": "Instructor:",
       "name": "Anthony Alicea",
       "rating_num": "4.5",
       "review_count": "-29,632",
@@ -314,6 +354,7 @@
       "badge": ""
     },
     {
+      "id": 18,
       "image": "https://img-c.udemycdn.com/course/240x135/2365628_0b60_9.jpg",
       "title": "Complete React Developer (w/ Redux, Hooks, GraphQL)",
       "short_Description": "Updated! Become a Senior React Developer. Build a massive E-commerce app with Redux, Hooks, GraphQL, Stripe, Firebase",
@@ -332,6 +373,7 @@
       "badge": ""
     },
     {
+      "id": 19,
       "image": "https://img-c.udemycdn.com/course/240x135/1247828_32bb.jpg",
       "title": "The Complete Angular Course: Beginner to Advanced",
       "short_Description": "The most comprehensive Angular 4 (Angular 2+) course. Build a real e-commerce app with Angular, Firebase and Bootstrap 4",
@@ -342,7 +384,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "The most comprehensive Angular 4 (Angular 2+) course. Build a real e-commerce app with Angular, Firebase and Bootstrap 4",
-      "instructor": "Instructor:",
       "name": "Mosh Hamedani",
       "rating_num": "4.3",
       "review_count": "-27,472",
@@ -350,6 +391,7 @@
       "badge": ""
     },
     {
+      "id": 20,
       "image": "https://img-c.udemycdn.com/course/240x135/3490000_d298_2.jpg",
       "title": "Docker & Kubernetes: The Practical Guide [2024 Edition]",
       "short_Description": "Learn Docker, Docker Compose, Multi-Container Projects, Deployment and all about Kubernetes from the ground up!",
@@ -368,6 +410,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 22,
       "image": "https://img-c.udemycdn.com/course/240x135/1466612_bead_3.jpg",
       "title": "Ethereum and Solidity: The Complete Developer's Guide",
       "short_Description": "Use Ethereum, Solidity, and Smart Contracts to build production-ready apps based on the blockchain",
@@ -378,7 +421,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Use Ethereum, Solidity, and Smart Contracts to build production-ready apps based on the blockchain",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.6",
       "review_count": "-26,955",
@@ -386,6 +428,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 23,
       "image": "https://img-c.udemycdn.com/course/240x135/2153774_bef0_4.jpg",
       "title": "Modern HTML & CSS From The Beginning (Including Sass)",
       "short_Description": "Build modern responsive websites & UIs with HTML5, CSS3 & Sass! Learn Flex & CSS Grid",
@@ -396,7 +439,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Build modern responsive websites & UIs with HTML5, CSS3 & Sass! Learn Flex & CSS Grid",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.7",
       "review_count": "-26,651",
@@ -404,6 +446,7 @@
       "badge": ""
     },
     {
+      "id": 24,
       "image": "https://img-c.udemycdn.com/course/240x135/505208_2307_5.jpg",
       "title": "Responsive Web Design: HTML5 + CSS3 for Entrepreneurs 2018",
       "short_Description": "Build a coding foundation as an entrepreneur, where I’ll take you through the entire process of coding your own website",
@@ -422,6 +465,7 @@
       "badge": ""
     },
     {
+      "id": 25,
       "image": "https://img-c.udemycdn.com/course/240x135/1386294_cf10_3.jpg",
       "title": "Python for beginners",
       "short_Description": "Master the fundamentals of Python while working on various usecases in easy steps",
@@ -432,7 +476,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Master the fundamentals of Python while working on various usecases in easy steps",
-      "instructor": "Instructor:",
       "name": "Bharath Thippireddy",
       "rating_num": "4.5",
       "review_count": "-25,389",
@@ -440,6 +483,7 @@
       "badge": ""
     },
     {
+      "id": 26,
       "image": "https://img-c.udemycdn.com/course/240x135/405282_27d2_3.jpg",
       "title": "PHP for Beginners - Become a PHP Master - CMS Project",
       "short_Description": "PHP for Beginners: learn everything you need to become a professional PHP developer with practical exercises & projects.",
@@ -458,6 +502,7 @@
       "badge": ""
     },
     {
+      "id": 27,
       "image": "https://img-c.udemycdn.com/course/240x135/833442_b26e_5.jpg",
       "title": "Angular & NodeJS - The MEAN Stack Guide [2024 Edition]",
       "short_Description": "Learn how to connect your Angular Frontend to a NodeJS &amp; Express &amp; MongoDB Backend by building a real Application",
@@ -468,7 +513,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn how to connect your Angular Frontend to a NodeJS & Express & MongoDB Backend by building a real Application",
-      "instructor": "Instructor:",
       "name": "Maximilian Schwarzmüller",
       "rating_num": "4.6",
       "review_count": "-24,584",
@@ -476,6 +520,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 28,
       "image": "https://img-c.udemycdn.com/course/240x135/1010586_b622_3.jpg",
       "title": "Become a WordPress Developer: Unlocking Power With Code",
       "short_Description": "Learn PHP, JavaScript, WordPress theming &amp; the WP REST API to Create Custom &amp; Interactive WordPress Websites",
@@ -486,7 +531,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn PHP, JavaScript, WordPress theming & the WP REST API to Create Custom & Interactive WordPress Websites",
-      "instructor": "Instructor:",
       "name": "Brad Schiff",
       "rating_num": "4.7",
       "review_count": "-24,432",
@@ -494,6 +538,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 29,
       "image": "https://img-c.udemycdn.com/course/240x135/1672410_9ff1_5.jpg",
       "title": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2024",
       "short_Description": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payments & more)",
@@ -504,7 +549,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payments & more)",
-      "instructor": "Instructor:",
       "name": "Jonas Schmedtmann",
       "rating_num": "4.6",
       "review_count": "-24,022",
@@ -512,6 +556,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 30,
       "image": "https://img-c.udemycdn.com/course/240x135/1286908_1773_6.jpg",
       "title": "The Complete React Developer Course (w/ Hooks and Redux)",
       "short_Description": "Learn how to build and launch React web applications using React, Redux, Webpack, React-Router, and more!",
@@ -522,7 +567,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "Learn how to build and launch React web applications using React, Redux, Webpack, React-Router, and more!",
-      "instructor": "Instructor:",
       "name": "Andrew Mead",
       "rating_num": "4.5",
       "review_count": "-23,256",
@@ -530,6 +574,7 @@
       "badge": ""
     },
     {
+      "id": 31,
       "image": "https://img-c.udemycdn.com/course/240x135/1455016_0b2d_2.jpg",
       "title": "Build an app with ASPNET Core and Angular from scratch",
       "short_Description": "A practical example of how to build an application with ASP.NET Core API and Angular from start to finish",
@@ -540,7 +585,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "A practical example of how to build an application with ASP.NET Core API and Angular from start to finish",
-      "instructor": "Instructor:",
       "name": "Neil Cummings",
       "rating_num": "4.5",
       "review_count": "-22,967",
@@ -548,6 +592,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 32,
       "image": "https://img-c.udemycdn.com/course/240x135/970600_68be_4.jpg",
       "title": "REST APIs with Flask and Python in 2024",
       "short_Description": "Build professional REST APIs with Python, Flask, Docker, Flask-Smorest, and Flask-SQLAlchemy",
@@ -566,6 +611,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 33,
       "image": "https://img-c.udemycdn.com/course/240x135/289230_1056_16.jpg",
       "title": "Learn and Understand AngularJS",
       "short_Description": "Master AngularJS and the Javascript concepts behind it, design custom directives, and build a single page application.",
@@ -576,7 +622,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Master AngularJS and the Javascript concepts behind it, design custom directives, and build a single page application.",
-      "instructor": "Instructor:",
       "name": "Anthony Alicea",
       "rating_num": "4.7",
       "review_count": "-21,929",
@@ -584,6 +629,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 34,
       "image": "https://img-c.udemycdn.com/course/240x135/594360_bee2_2.jpg",
       "title": "HTML5 and CSS3 Fundamentals",
       "short_Description": "Build your very own website with HTML5 from scratch using HTML5 and CSS3 - designed for complete beginners",
@@ -594,7 +640,6 @@
       "level": "Beginner",
       "price": "Current price: ₹799",
       "desc": "Build your very own website with HTML5 from scratch using HTML5 and CSS3 - designed for complete beginners",
-      "instructor": "Instructor:",
       "name": "Stone River eLearning",
       "rating_num": "4.4",
       "review_count": "-19,644",
@@ -602,6 +647,7 @@
       "badge": ""
     },
     {
+      "id": 35,
       "image": "https://img-c.udemycdn.com/course/240x135/719002_af70_3.jpg",
       "title": "Angular Crash Course for Busy Developers",
       "short_Description": "Have limited time to learn Angular 4 (Angular 2+)? Take this course and learn Angular in 10 hours!",
@@ -612,7 +658,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,499",
       "desc": "Have limited time to learn Angular 4 (Angular 2+)? Take this course and learn Angular in 10 hours!",
-      "instructor": "Instructor:",
       "name": "Mosh Hamedani",
       "rating_num": "4.4",
       "review_count": "-18,413",
@@ -620,6 +665,7 @@
       "badge": ""
     },
     {
+      "id": 36,
       "image": "https://img-c.udemycdn.com/course/240x135/3873464_403c_3.jpg",
       "title": "Next.js 14 & React - The Complete Guide",
       "short_Description": "Learn NextJS 14 from the ground up and build fullstack ReactJS + NextJS apps with the App Router or Pages Router!",
@@ -630,7 +676,6 @@
       "level": "All Levels",
       "price": "Current price: ₹4,499",
       "desc": "Learn NextJS 14 from the ground up and build fullstack ReactJS + NextJS apps with the App Router or Pages Router!",
-      "instructor": "Instructor:",
       "name": "Maximilian Schwarzmüller",
       "rating_num": "4.7",
       "review_count": "-17,907",
@@ -638,6 +683,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 37,
       "image": "https://img-c.udemycdn.com/course/240x135/2887266_c696_5.jpg",
       "title": "Microservices with Node JS and React",
       "short_Description": "Build, deploy, and scale an E-Commerce app using Microservices built with Node, React, Docker and Kubernetes",
@@ -648,7 +694,6 @@
       "level": "All Levels",
       "price": "Current price: ₹4,499",
       "desc": "Build, deploy, and scale an E-Commerce app using Microservices built with Node, React, Docker and Kubernetes",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.7",
       "review_count": "-17,892",
@@ -656,6 +701,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 38,
       "image": "https://img-c.udemycdn.com/course/240x135/405818_aa3f_3.jpg",
       "title": "Javascript for Beginners Learn by Doing Practical Exercises",
       "short_Description": "JavaScript for Beginners : Work closely with me doing exercises & learn more. I make Javascript easy for you guaranteed.",
@@ -674,6 +720,7 @@
       "badge": ""
     },
     {
+      "id": 39,
       "image": "https://img-c.udemycdn.com/course/240x135/1313502_b57f_2.jpg",
       "title": "Bootstrap 4 From Scratch With 5 Projects",
       "short_Description": "Master Bootstrap 4 and build 5 real world themes while learning HTML5 semantics & CSS3",
@@ -684,7 +731,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Master Bootstrap 4 and build 5 real world themes while learning HTML5 semantics & CSS3",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.6",
       "review_count": "-16,849",
@@ -692,6 +738,7 @@
       "badge": ""
     },
     {
+      "id": 40,
       "image": "https://img-c.udemycdn.com/course/240x135/519442_63fe_2.jpg",
       "title": "The Complete Ruby on Rails Developer Course",
       "short_Description": "Learn to make innovative web apps with Ruby on Rails and unleash your creativity",
@@ -710,6 +757,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 41,
       "image": "https://img-c.udemycdn.com/course/240x135/1078208_530c_3.jpg",
       "title": "Learn Spring Boot 3 in 100 Steps - No 1 Java Framework",
       "short_Description": "Java Spring Boot Framework in 100 steps - Build a REST API and a Web application with Java, JPA, SpringBoot and Maven",
@@ -720,7 +768,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Java Spring Boot Framework in 100 steps - Build a REST API and a Web application with Java, JPA, SpringBoot and Maven",
-      "instructor": "Instructor:",
       "name": "in28Minutes Official",
       "rating_num": "4.5",
       "review_count": "-15,850",
@@ -728,6 +775,7 @@
       "badge": ""
     },
     {
+      "id": 42,
       "image": "https://img-c.udemycdn.com/course/240x135/1844356_cba1_8.jpg",
       "title": ".NET Core MVC - The Complete Guide 2024 [E-commerce] [.NET8]",
       "short_Description": "Build real world e-commerce application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity.",
@@ -738,7 +786,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "Build real world e-commerce application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity.",
-      "instructor": "Instructor:",
       "name": "Bhrugen Patel",
       "rating_num": "4.6",
       "review_count": "-15,562",
@@ -746,6 +793,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 43,
       "image": "https://img-c.udemycdn.com/course/240x135/1646980_23f7_3.jpg",
       "title": "MERN Stack Front To Back: Full Stack React, Redux & Node.js",
       "short_Description": "Build and deploy a social network with Node.js, Express, React, Redux & MongoDB. Fully updated April 2019",
@@ -756,7 +804,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,499",
       "desc": "Build and deploy a social network with Node.js, Express, React, Redux & MongoDB. Fully updated April 2019",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.4",
       "review_count": "-15,449",
@@ -764,6 +811,7 @@
       "badge": ""
     },
     {
+      "id": 44,
       "image": "https://img-c.udemycdn.com/course/240x135/714724_b3b4_9.jpg",
       "title": "Docker Crash Course for busy DevOps and Developers",
       "short_Description": "Learn how to develop and deploy web applications with Docker technologies. Take your DevOps skills to the next level.",
@@ -782,6 +830,7 @@
       "badge": ""
     },
     {
+      "id": 45,
       "image": "https://img-c.udemycdn.com/course/240x135/1302610_5c62_4.jpg",
       "title": "Master Java Web Services and REST API with Spring Boot",
       "short_Description": "Build Java Web Services & REST API - RESTful & SOAP - with Spring & Spring Boot. Learn REST API & SOAP Web Services Now!",
@@ -792,7 +841,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Build Java Web Services & REST API - RESTful & SOAP - with Spring & Spring Boot. Learn REST API & SOAP Web Services Now!",
-      "instructor": "Instructor:",
       "name": "in28Minutes Official",
       "rating_num": "4.6",
       "review_count": "-15,130",
@@ -800,6 +848,7 @@
       "badge": "Highest rated"
     },
     {
+      "id": 46,
       "image": "https://img-c.udemycdn.com/course/240x135/41295_dd3f_9.jpg",
       "title": "Learn HTML5 Programming From Scratch",
       "short_Description": "A Complete HTML5 Programming Course for Beginners",
@@ -810,7 +859,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,299",
       "desc": "A Complete HTML5 Programming Course for Beginners",
-      "instructor": "Instructor:",
       "name": "Eduonix Learning Solutions",
       "rating_num": "4.4",
       "review_count": "-14,759",
@@ -818,6 +866,7 @@
       "badge": ""
     },
     {
+      "id": 47,
       "image": "https://img-c.udemycdn.com/course/240x135/520116_edf5_2.jpg",
       "title": "The Complete WordPress Website Business Course",
       "short_Description": "Master WordPress with this Complete WordPress Course, without learning how to code and without any programming!",
@@ -836,6 +885,7 @@
       "badge": ""
     },
     {
+      "id": 48,
       "image": "https://img-c.udemycdn.com/course/240x135/1409142_1879_8.jpg",
       "title": "The Coding Interview Bootcamp: Algorithms + Data Structures",
       "short_Description": "Ace your next Javascript coding interview by mastering data structures and algorithms.",
@@ -846,7 +896,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Ace your next Javascript coding interview by mastering data structures and algorithms.",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.6",
       "review_count": "-14,732",
@@ -854,6 +903,7 @@
       "badge": ""
     },
     {
+      "id": 49,
       "image": "https://img-c.udemycdn.com/course/240x135/1254420_f6cb_4.jpg",
       "title": "Node with React: Fullstack Web Development",
       "short_Description": "Build and deploy fullstack web apps with NodeJS, React, Redux, Express, and MongoDB.",
@@ -864,7 +914,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Build and deploy fullstack web apps with NodeJS, React, Redux, Express, and MongoDB.",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.4",
       "review_count": "-14,729",
@@ -872,6 +921,7 @@
       "badge": ""
     },
     {
+      "id": 50,
       "image": "https://img-c.udemycdn.com/course/240x135/80940_2664_10.jpg",
       "title": "Build Websites from Scratch with HTML & CSS",
       "short_Description": "Learn Web Development Essentials and Become a Web Developer From Scratch in this Complete HTML & CSS Beginner's Course",
@@ -890,6 +940,7 @@
       "badge": ""
     },
     {
+      "id": 51,
       "image": "https://img-c.udemycdn.com/course/240x135/446134_383c_3.jpg",
       "title": "Ultimate Web Designer & Web Developer Course",
       "short_Description": "Become a Full-Stack Web Designer in 2023 - Learn Everything from Web Design Fundamentals to Front-End Web Development",
@@ -900,7 +951,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Become a Full-Stack Web Designer in 2023 - Learn Everything from Web Design Fundamentals to Front-End Web Development",
-      "instructor": "Instructor:",
       "name": "Brad Hussey",
       "rating_num": "4.7",
       "review_count": "-14,435",
@@ -908,6 +958,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 52,
       "image": "https://img-c.udemycdn.com/course/240x135/1166306_84a1_3.jpg",
       "title": "The Complete Front-End Web Development Course",
       "short_Description": "Get started as a front-end web developer using HTML, CSS, JavaScript, jQuery, and Bootstrap!",
@@ -926,6 +977,7 @@
       "badge": ""
     },
     {
+      "id": 53,
       "image": "https://img-c.udemycdn.com/course/240x135/861624_864d_2.jpg",
       "title": "ES6 Javascript: The Complete Developer's Guide",
       "short_Description": "ES6 Javascript Development from scratch.  Get practice with live examples and learn exactly where to apply ES6 features.",
@@ -936,7 +988,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "ES6 Javascript Development from scratch.  Get practice with live examples and learn exactly where to apply ES6 features.",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.5",
       "review_count": "-14,048",
@@ -944,6 +995,7 @@
       "badge": ""
     },
     {
+      "id": 54,
       "image": "https://img-c.udemycdn.com/course/240x135/1241254_9cc1.jpg",
       "title": "AWS Serverless APIs & Apps - A Complete Introduction",
       "short_Description": "Get into serverless computing with API Gateway, AWS Lambda and other Amazon Web Services! Zero server config APIs & SPAs",
@@ -972,7 +1024,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn Bash Shell Scripting from total beginner:Start from the Command Line,finish with a real world Shell Script Project",
-      "instructor": "Instructor:",
       "name": "Francesco Santi",
       "rating_num": "4.6",
       "review_count": "-13,326",
@@ -990,7 +1041,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,499",
       "desc": "Learn JavaScript by building real-world apps. Includes 3 real-world projects, 80 programming challenges, and ES6/ES7!",
-      "instructor": "Instructor:",
       "name": "Andrew Mead",
       "rating_num": "4.5",
       "review_count": "-13,051",
@@ -1008,7 +1058,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Write Complete AWS CloudFormation Templates using YAML. Learn all the Recent Cloud Formation Features",
-      "instructor": "Instructor:",
       "name": "Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer",
       "rating_num": "4.7",
       "review_count": "-12,888",
@@ -1062,7 +1111,6 @@
       "level": "All Levels",
       "price": "Current price: ₹799",
       "desc": "Master modern React from beginner to advanced! Next.js, Context API, React Query, Redux, Tailwind, advanced patterns",
-      "instructor": "Instructor:",
       "name": "Jonas Schmedtmann",
       "rating_num": "4.7",
       "review_count": "-12,403",
@@ -1080,7 +1128,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "Learn to build fast, scalable and secure RESTful services with Node, Express and MongoDB, from setup to production",
-      "instructor": "Instructor:",
       "name": "Mosh Hamedani",
       "rating_num": "4.8",
       "review_count": "-12,116",
@@ -1116,7 +1163,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn Hibernate, JPA (Java Persistence API) and Spring Data JPA using Spring and Spring Boot",
-      "instructor": "Instructor:",
       "name": "in28Minutes Official",
       "rating_num": "4.5",
       "review_count": "-11,746",
@@ -1152,7 +1198,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,699",
       "desc": "Walkthroughs on advanced React v16.6.3 and Redux v4.0.0 - Authentication, Testing, Middlewares, HOC's, and Deployment",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.3",
       "review_count": "-11,382",
@@ -1188,7 +1233,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn Modern JavaScript from the very start to ninja-level & build awesome JavaScript applications.",
-      "instructor": "Instructor:",
       "name": "The Net Ninja (Shaun Pelling)",
       "rating_num": "4.8",
       "review_count": "-10,827",
@@ -1206,7 +1250,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,699",
       "desc": "Learn and master GraphQL by building real web apps with React and Node",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.4",
       "review_count": "-10,495",
@@ -1224,7 +1267,6 @@
       "level": "Beginner",
       "price": "Current price: ₹2,299",
       "desc": "An introduction to how APIs and RESTful APIs work. No coding in this course, it's all conceptual.",
-      "instructor": "Instructor:",
       "name": "Kalob Taulien",
       "rating_num": "4.4",
       "review_count": "-10,021",
@@ -1242,7 +1284,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Become a Full Stack Java Developer. Build Your First Java Full Stack Application with Angular and Spring Boot.",
-      "instructor": "Instructor:",
       "name": "in28Minutes Official",
       "rating_num": "4.4",
       "review_count": "-10,015",
@@ -1260,7 +1301,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,699",
       "desc": "Get advanced with Node.Js! Learn caching with Redis, speed up through clustering, and add image upload with S3 and Node!",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.6",
       "review_count": "-9,952",
@@ -1278,7 +1318,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Salesforce full stack development with Apex and Lightning. The only course you need to become a Salesforce Developer.",
-      "instructor": "Instructor:",
       "name": "Manish Choudhari",
       "rating_num": "4.6",
       "review_count": "-9,849",
@@ -1314,7 +1353,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Cloud Computing | Web Apps | Linux | Web Servers | DBMS | LAMP Stack | HTML | CSS | JavaScript | PHP | + More",
-      "instructor": "Instructor:",
       "name": "YouAccel Training",
       "rating_num": "4.5",
       "review_count": "-9,810",
@@ -1332,7 +1370,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,499",
       "desc": "In only seven hours you will learn enough javascript to transform from a Junior JS Dev into a Senior JS Guru",
-      "instructor": "Instructor:",
       "name": "Asim Hussain",
       "rating_num": "4.5",
       "review_count": "-9,577",
@@ -1350,7 +1387,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Develop and deploy enterprise back-end applications following best practices using Node.js and TypeScript",
-      "instructor": "Instructor:",
       "name": "Ariel Weinberger",
       "rating_num": "4.6",
       "review_count": "-9,405",
@@ -1386,7 +1422,6 @@
       "level": "Beginner",
       "price": "Current price: ₹2,299",
       "desc": "A Comprehensive Guide for Beginners interested in learning HTML, CSS, & JavaScript to Build Interactive Web Pages.",
-      "instructor": "Instructor:",
       "name": "YouAccel Training",
       "rating_num": "4.3",
       "review_count": "-9,125",
@@ -1404,7 +1439,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,499",
       "desc": "Learn Modern React 16.8+ Including Hooks, Context API, Full Stack MERN & Redux By Building Real Life Projects",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.3",
       "review_count": "-9,054",
@@ -1494,7 +1528,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "The only course you need to become a full-stack web developer. Covers HTML5, CSS3, JS, ES6, Node, APIs, Mobile & more!",
-      "instructor": "Instructor:",
       "name": "Development Island (UK)",
       "rating_num": "4.4",
       "review_count": "-8,364",
@@ -1530,7 +1563,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "7 Courses in 1! Learn Webdesign and Become a Professional Front End Web Developer! From Complete Beginner to Advanced.",
-      "instructor": "Instructor:",
       "name": "Ivan Lourenço Gomes",
       "rating_num": "4.6",
       "review_count": "-8,283",
@@ -1548,7 +1580,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "Just published! Follow the same curriculum I teach my students in SF. 10+ projects including one HUGE application!",
-      "instructor": "Instructor:",
       "name": "Colt Steele",
       "rating_num": "4.5",
       "review_count": "-8,121",
@@ -1566,7 +1597,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Master MongoDB and Mongoose design with a test-driven approach",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.2",
       "review_count": "-7,895",
@@ -1620,7 +1650,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "Complete Guide to learn Salesforce Lightning Web Components from Basics to Advance with real-time problems and projects",
-      "instructor": "Instructor:",
       "name": "Salesforce troop",
       "rating_num": "4.5",
       "review_count": "-7,737",
@@ -1638,7 +1667,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Build incredibly scalable apps with a microfrontend architecture",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.6",
       "review_count": "-7,678",
@@ -1656,7 +1684,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Salesforce Development :Learn about Apex programming and Salesforce development. Become a Salesforce Developer.",
-      "instructor": "Instructor:",
       "name": "Deepika Khanna",
       "rating_num": "4.6",
       "review_count": "-7,581",
@@ -1674,7 +1701,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,799",
       "desc": "Learn Vue JS 3 & Firebase by creating & deploying dynamic web apps (including Authentication).",
-      "instructor": "Instructor:",
       "name": "The Net Ninja (Shaun Pelling)",
       "rating_num": "4.8",
       "review_count": "-7,542",
@@ -1692,7 +1718,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,499",
       "desc": "JUST UPDATED! Build an eCommerce platform from the ground up with React, Redux Toolkit, Express & MongoDB",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.7",
       "review_count": "-7,538",
@@ -1710,7 +1735,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "Learn Web Programming from a University Professor in Computer Science with over 20 years of teaching experience.",
-      "instructor": "Instructor:",
       "name": "Todd McLeod",
       "rating_num": "4.6",
       "review_count": "-7,514",
@@ -1728,7 +1752,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn HTML5, CSS3, JavaScript, Python, Wagtail CMS, PHP & MySQL from scratch!",
-      "instructor": "Instructor:",
       "name": "Kalob Taulien",
       "rating_num": "4.5",
       "review_count": "-7,385",
@@ -1746,7 +1769,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Master Functional Programming techniques with Elixir and Phoenix while learning to build compelling web applications!",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.5",
       "review_count": "-7,316",
@@ -1764,7 +1786,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "The complete guide to building an app from start to finish using .Net 7.0, React 18 (with Typescript) and Mobx",
-      "instructor": "Instructor:",
       "name": "Neil Cummings",
       "rating_num": "4.7",
       "review_count": "-7,256",
@@ -1782,7 +1803,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "Learn Git, GitHub, Node.js, NPM, Object-oriented JavaScript, ES6, webpack, Netlify, BEM and Job Interview Tips",
-      "instructor": "Instructor:",
       "name": "Brad Schiff",
       "rating_num": "4.6",
       "review_count": "-7,214",
@@ -1800,7 +1820,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Updated To Angular 18 (Angular Signals, defer, @if @for):  Advanced Features of the Angular Core and Common modules",
-      "instructor": "Instructor:",
       "name": "Angular University",
       "rating_num": "4.6",
       "review_count": "-7,209",
@@ -1818,7 +1837,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Become Java Spring Boot Full Stack Cloud Developer. Learn AWS, React, Docker, Spring Data JPA & Spring Security.",
-      "instructor": "Instructor:",
       "name": "in28Minutes Official",
       "rating_num": "4.5",
       "review_count": "-7,204",
@@ -1854,7 +1872,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "Learn to build beautiful responsive websites with the latest Bootstrap version (4.1.3),  Flexbox, HTML5, and CSS3!",
-      "instructor": "Instructor:",
       "name": "Colt Steele",
       "rating_num": "4.6",
       "review_count": "-7,099",
@@ -1890,7 +1907,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Build 20 mini frontend projects from scratch with HTML5, CSS & JavaScript (No frameworks or libraries)",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.7",
       "review_count": "-6,956",
@@ -1944,7 +1960,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Build full featured backend APIs incredibly quickly with Nest, TypeORM, and Typescript. Includes testing and deployment!",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.7",
       "review_count": "-6,778",
@@ -1980,7 +1995,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn to write awesome Java JUnit unit tests with Spring Boot, Mockito, JsonAssert, Hamcrest & JsonPath in 40 easy steps",
-      "instructor": "Instructor:",
       "name": "in28Minutes Official",
       "rating_num": "4.5",
       "review_count": "-6,650",
@@ -1998,7 +2012,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "Build RESTful web API (C#) with Authentication and learn how to consume them in a real world application (.NET 7 API)",
-      "instructor": "Instructor:",
       "name": "Bhrugen Patel",
       "rating_num": "4.6",
       "review_count": "-6,630",
@@ -2016,7 +2029,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,299",
       "desc": "Master Angular 5 from the basics to building an advanced application with Firebase's Firestore as well as authentication",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.5",
       "review_count": "-6,622",
@@ -2034,7 +2046,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,499",
       "desc": "Take a deep dive into JavaScript, a Must-Know Language in Web Development, with a Hands-on, Example-driven Approach",
-      "instructor": "Instructor:",
       "name": "Maximilian Schwarzmüller",
       "rating_num": "4.7",
       "review_count": "-6,495",
@@ -2052,7 +2063,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn the modern NgRx Ecosystem, including NgRx Data, Store, Effects, Router Store, NgRx Entity, and DevTools",
-      "instructor": "Instructor:",
       "name": "Angular University",
       "rating_num": "4.6",
       "review_count": "-6,455",
@@ -2070,7 +2080,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "Learn modern React by building 4 projects including a Firebase 9 app and a full stack MERN app",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.6",
       "review_count": "-6,132",
@@ -2124,7 +2133,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Updated for 2022-23: React.js essentials bootcamp - React Core, Router, Redux, Hooks, in-depth JS, + detailed guides!",
-      "instructor": "Instructor:",
       "name": "David Joseph Katz",
       "rating_num": "4.3",
       "review_count": "-5,897",
@@ -2142,7 +2150,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,299",
       "desc": "Learn and Use the Future of JavaScript - Today!",
-      "instructor": "Instructor:",
       "name": "Maximilian Schwarzmüller",
       "rating_num": "4.4",
       "review_count": "-5,817",
@@ -2178,7 +2185,6 @@
       "level": "Beginner",
       "price": "Current price: ₹1,999",
       "desc": "Lean the Foundations of HTML & CSS to Create Fully Customized, Mobile Responsive Web Pages",
-      "instructor": "Instructor:",
       "name": "YouAccel Training",
       "rating_num": "4.2",
       "review_count": "-5,775",
@@ -2196,7 +2202,6 @@
       "level": "Beginner",
       "price": "Current price: ₹2,499",
       "desc": "Learn how to code in HTML in 1 hour. This class is set up for complete beginners!",
-      "instructor": "Instructor:",
       "name": "John Bura",
       "rating_num": "4.5",
       "review_count": "-5,766",
@@ -2214,7 +2219,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,299",
       "desc": "JavaScript for Beginners: Projects based learning, whiteboard animations, coding in the browser and quizzes.",
-      "instructor": "Instructor:",
       "name": "Rob Merrill",
       "rating_num": "4.7",
       "review_count": "-5,753",
@@ -2232,7 +2236,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,499",
       "desc": "Learn Python and build & deploy a real estate application using the Django framework & PostgreSQL",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.7",
       "review_count": "-5,748",
@@ -2268,7 +2271,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "Build three complete websites, learn back and front-end web development, and publish your site online with DigitalOcean",
-      "instructor": "Instructor:",
       "name": "Nick Walter",
       "rating_num": "4.6",
       "review_count": "-5,659",
@@ -2286,7 +2288,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Build Angular 18 Applications in Reactive style with plain RxJs - Patterns, Anti-Patterns, Lightweight State Management",
-      "instructor": "Instructor:",
       "name": "Angular University",
       "rating_num": "4.6",
       "review_count": "-5,510",
@@ -2304,7 +2305,6 @@
       "level": "Beginner",
       "price": "Current price: ₹1,999",
       "desc": "A Comprehensive Guide for Beginners interested in learning HTML, JavaScript, & Bootstrap. Build Interactive Web Pages.",
-      "instructor": "Instructor:",
       "name": "YouAccel Training",
       "rating_num": "4.2",
       "review_count": "-5,464",
@@ -2358,7 +2358,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn numerous RxJs Operators, learn all RxJs and Reactive Programming core concepts via Practical Examples",
-      "instructor": "Instructor:",
       "name": "Angular University",
       "rating_num": "4.6",
       "review_count": "-5,384",
@@ -2376,7 +2375,6 @@
       "level": "Beginner",
       "price": "Current price: ₹5,900",
       "desc": "Learn to build websites with HTML , CSS , JAVASCRIPT , Bootstrap , PHP , MySQL , WordPress , OOP & more!",
-      "instructor": "Instructor:",
       "name": "Srini Vanamala",
       "rating_num": "4.5",
       "review_count": "-5,326",
@@ -2394,7 +2392,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Master Webpack 2 as you deploy web apps supported by Babel, code splitting, and ES2015 Modules.",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.7",
       "review_count": "-5,288",
@@ -2412,7 +2409,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "Design and build beautiful data visualizations with d3.js. An intensive introduction to the D3 library (V6).",
-      "instructor": "Instructor:",
       "name": "Adam Janes",
       "rating_num": "4.4",
       "review_count": "-5,244",
@@ -2430,7 +2426,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "A master guide to gang of four design patterns & SOLID design principles using Java",
-      "instructor": "Instructor:",
       "name": "Coffee Powered Crew",
       "rating_num": "4.5",
       "review_count": "-5,225",
@@ -2448,7 +2443,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "Develop Microservices on .NET 8 used ASP.NET Web API, Docker, RabbitMQ, MassTransit, gRPC, Yarp Gateway, Redis,SqlServer",
-      "instructor": "Instructor:",
       "name": "Mehmet Ozkaya",
       "rating_num": "4.6",
       "review_count": "-5,215",
@@ -2466,7 +2460,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,999",
       "desc": "A complete guide to Angular 18 Unit Testing and End to End (E2E) Testing, including Testing best practices and CI",
-      "instructor": "Instructor:",
       "name": "Angular University",
       "rating_num": "4.6",
       "review_count": "-5,212",
@@ -2484,7 +2477,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹2,699",
       "desc": "Everything you need to know about Visual Studio Code, the most popular editor in Web Development!",
-      "instructor": "Instructor:",
       "name": "James Quick",
       "rating_num": "4.7",
       "review_count": "-5,188",
@@ -2502,7 +2494,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Understand the JavaScript language itself, Node.js, MongoDB, The Web Browser and More To Create Meaningful Applications",
-      "instructor": "Instructor:",
       "name": "Brad Schiff",
       "rating_num": "4.8",
       "review_count": "-5,156",
@@ -2520,7 +2511,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,699",
       "desc": "Create a real world backend for a bootcamp directory app",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.7",
       "review_count": "-5,090",
@@ -2538,7 +2528,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn to write Reactive programming and build Reactive MicroServices using Spring WebFlux and project Reactor",
-      "instructor": "Instructor:",
       "name": "Pragmatic Code School",
       "rating_num": "4.6",
       "review_count": "-5,073",
@@ -2556,7 +2545,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn Webpack 5 from the very basics to advanced! Use Webpack with JS, CSS, NPM, Module Federation and Micro Frontends.",
-      "instructor": "Instructor:",
       "name": "Viktor Pyskunov",
       "rating_num": "4.6",
       "review_count": "-4,989",
@@ -2574,7 +2562,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹2,799",
       "desc": "Build a custom object oriented PHP MVC framework and then build an application with it",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.5",
       "review_count": "-4,968",
@@ -2592,7 +2579,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Web Development for absolute beginners.Learn HTML5 and CSS3 from scratch by building 20+ amazing real world projects.",
-      "instructor": "Instructor:",
       "name": "John Smilga",
       "rating_num": "4.7",
       "review_count": "-4,947",
@@ -2610,7 +2596,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Use C# and Build an ASP.NET Core Web API with Entity Framework Core, SQL Server, Authentication, Authorization | .NET8",
-      "instructor": "Instructor:",
       "name": "Sameer Saini",
       "rating_num": "4.6",
       "review_count": "-4,934",
@@ -2628,7 +2613,6 @@
       "level": "Beginner",
       "price": "Current price: ₹1,799",
       "desc": "Lean how to create web pages using HTML",
-      "instructor": "Instructor:",
       "name": "YouAccel Training",
       "rating_num": "4.4",
       "review_count": "-4,920",
@@ -2664,7 +2648,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Spring & Spring Boot Interview Guide with 200+ Questions & Answers. With REST API, JPA, Hibernate and Spring Data JPA.",
-      "instructor": "Instructor:",
       "name": "in28Minutes Official",
       "rating_num": "4.5",
       "review_count": "-4,888",
@@ -2700,7 +2683,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn to program in Go from an award winning university professor",
-      "instructor": "Instructor:",
       "name": "Trevor Sawler",
       "rating_num": "4.7",
       "review_count": "-4,795",
@@ -2718,7 +2700,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹2,799",
       "desc": "Build a full-stack web app with ASP.NET Core, Entity Framework Core and Angular 2 (Angular 4+)",
-      "instructor": "Instructor:",
       "name": "Mosh Hamedani",
       "rating_num": "4.6",
       "review_count": "-4,763",
@@ -2736,7 +2717,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "The most complete Salesforce LWC Development course brought to you by a Google Software Engineer.",
-      "instructor": "Instructor:",
       "name": "Manish Choudhari",
       "rating_num": "4.5",
       "review_count": "-4,749",
@@ -2754,7 +2734,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Expand your portfolio of projects by building a complex app with the latest web technologies.",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.7",
       "review_count": "-4,681",
@@ -2772,7 +2751,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn GraphQL by writing full-stack JavaScript applications with Node.js, Express, Apollo Server, React, Apollo Client.",
-      "instructor": "Instructor:",
       "name": "Mirko Nasato",
       "rating_num": "4.7",
       "review_count": "-4,629",
@@ -2808,7 +2786,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "Achieve WCAG compliance by learning accessibility testing, WAI-ARIA, and website optimization for screen readers",
-      "instructor": "Instructor:",
       "name": "Stefany Newman",
       "rating_num": "4.3",
       "review_count": "-4,503",
@@ -2826,7 +2803,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,499",
       "desc": "Build 3 stunning websites, learn Back and Front End Web Development, deploy your site with HTML5, CSS3 and Bootstrap 4",
-      "instructor": "Instructor:",
       "name": "Nick Walter",
       "rating_num": "4.6",
       "review_count": "-4,492",
@@ -2862,7 +2838,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Get job ready with Angular! Understand how to build and deploy production-ready apps.",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.5",
       "review_count": "-4,360",
@@ -2898,7 +2873,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn Javascript by Building 30+ Interesting Projects",
-      "instructor": "Instructor:",
       "name": "John Smilga",
       "rating_num": "4.8",
       "review_count": "-4,328",
@@ -2916,7 +2890,6 @@
       "level": "Beginner",
       "price": "Current price: ₹1,799",
       "desc": "Learn to Build Database Driven Web Applications using PHP & MySQL",
-      "instructor": "Instructor:",
       "name": "YouAccel Training",
       "rating_num": "4.4",
       "review_count": "-4,325",
@@ -2934,7 +2907,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,299",
       "desc": "Learn PHP, Apache, MySQL, MongoDB, Python, JavaScript, XML, JSON, HTML, CSS, WordPress and more. With practical examples",
-      "instructor": "Instructor:",
       "name": "Creative Online School",
       "rating_num": "4.3",
       "review_count": "-4,310",
@@ -2952,7 +2924,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "Learn the world's fastest growing programming language from scratch. Includes Webpack & React!",
-      "instructor": "Instructor:",
       "name": "Colt Steele",
       "rating_num": "4.7",
       "review_count": "-4,285",
@@ -2988,7 +2959,6 @@
       "level": "Beginner",
       "price": "Current price: ₹1,299",
       "desc": "Learn how to Code Web Pages using JavaScript",
-      "instructor": "Instructor:",
       "name": "YouAccel Training",
       "rating_num": "4.2",
       "review_count": "-4,245",
@@ -3006,7 +2976,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,999",
       "desc": "Master Laravel 10: Build 5 Real-World Projects! Unlock Web Development Skills with In-Demand PHP Framework!",
-      "instructor": "Instructor:",
       "name": "Piotr Jura | 50,000+ Students",
       "rating_num": "4.6",
       "review_count": "-4,205",
@@ -3024,7 +2993,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹2,799",
       "desc": "Learn all about OOP, understand the most confusing parts of JavaScript and prepare for technical interviews",
-      "instructor": "Instructor:",
       "name": "Mosh Hamedani",
       "rating_num": "4.8",
       "review_count": "-4,160",
@@ -3060,7 +3028,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "The Complete Electron course for learning to build Cross Platform Desktop Apps using HTML, JavaScript & CSS",
-      "instructor": "Instructor:",
       "name": "Ray Viljoen",
       "rating_num": "4.7",
       "review_count": "-4,079",
@@ -3096,7 +3063,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,299",
       "desc": "Build your RESTful web service with .NET 5 Web API from the ground up and use Entity Framework to create your database.",
-      "instructor": "Instructor:",
       "name": "Patrick God",
       "rating_num": "4.5",
       "review_count": "-4,041",
@@ -3114,7 +3080,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,799",
       "desc": "Learn Complete Front End Web Development with HTML5, CSS3, Bootstrap 5, JavaScript, ECMAScript 6, Angular & React JS",
-      "instructor": "Instructor:",
       "name": "Fatah Gabrial",
       "rating_num": "4.5",
       "review_count": "-4,010",
@@ -3150,7 +3115,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Everything you need to become a hirable WordPress Developer building custom themes and plugins",
-      "instructor": "Instructor:",
       "name": "Zac Gordon",
       "rating_num": "4.5",
       "review_count": "-3,931",
@@ -3186,7 +3150,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Angular 11, Angular 12 Material, REST API, JWT Authentication, Angular Project, Asp.Net Core, Dashboard, Durgasoft",
-      "instructor": "Instructor:",
       "name": "Web University by Harsha Vardhan",
       "rating_num": "4.3",
       "review_count": "-3,885",
@@ -3222,7 +3185,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Build the back-end of a .NET 7 web application with a Web API, Entity Framework 7 & SQL Server in no time!",
-      "instructor": "Instructor:",
       "name": "Patrick God",
       "rating_num": "4.6",
       "review_count": "-3,771",
@@ -3240,7 +3202,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "Build React, Redux, and React Router apps using Server Side Rendering (SSR), Isomorphic, and Universal JS techniques",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.7",
       "review_count": "-3,747",
@@ -3276,7 +3237,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "ASP .NET Core 6, 7 & 8 | Asp.Net Core Projects | Bootcamp | Advanced | Interview Questions | Web API | MVC",
-      "instructor": "Instructor:",
       "name": "Web University by Harsha Vardhan",
       "rating_num": "4.6",
       "review_count": "-3,729",
@@ -3312,7 +3272,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn React from the ground up to make dynamic websites (includes Context, Hooks, Reducers, Routing, Auth, Databases)",
-      "instructor": "Instructor:",
       "name": "The Net Ninja (Shaun Pelling)",
       "rating_num": "4.7",
       "review_count": "-3,711",
@@ -3330,7 +3289,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "Become a better Software Architect by designing professional, easy to use and attractive REST API",
-      "instructor": "Instructor:",
       "name": "Memi Lavi",
       "rating_num": "4.4",
       "review_count": "-3,709",
@@ -3348,7 +3306,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,699",
       "desc": "Use DialogFlow to train chatbot to have dialogs. Develop backend app to connect chatbot to web services and databases",
-      "instructor": "Instructor:",
       "name": "Jana Bergant",
       "rating_num": "4.7",
       "review_count": "-3,612",
@@ -3366,7 +3323,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,499",
       "desc": "Building Web applications? Learn to build robust Single Page Applications (SPAs) with the popular AngularJS framework!",
-      "instructor": "Instructor:",
       "name": "Dan Wahlin",
       "rating_num": "4.6",
       "review_count": "-3,609",
@@ -3384,7 +3340,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn HTML5, CSS3, JavaScript, jQuery and Bootstrap framework by building a modern looking responsive website.",
-      "instructor": "Instructor:",
       "name": "Irfan Dayan",
       "rating_num": "3.6",
       "review_count": "-3,583",
@@ -3402,7 +3357,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Configure Cloudflare, FREE Let's Encrypt SSL/TLS certificate, NGINX and Apache web servers, create CSR SSL request",
-      "instructor": "Instructor:",
       "name": "Bogdan Stashchuk | Software Engineer, MBA, PhD",
       "rating_num": "4.6",
       "review_count": "-3,577",
@@ -3420,7 +3374,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "Learn to build e-commerce web application using Blazor Server, Blazor WASM and .NET 6(EF Core) API and deploy to azure.",
-      "instructor": "Instructor:",
       "name": "Bhrugen Patel",
       "rating_num": "4.6",
       "review_count": "-3,531",
@@ -3438,7 +3391,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn Node.js by building real-world applications with Node JS, Express, MongoDB.",
-      "instructor": "Instructor:",
       "name": "John Smilga",
       "rating_num": "4.7",
       "review_count": "-3,515",
@@ -3474,7 +3426,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "Build great looking layouts fast and efficiently using Tailwind CSS utility classes",
-      "instructor": "Instructor:",
       "name": "Brad Traversy",
       "rating_num": "4.7",
       "review_count": "-3,407",
@@ -3492,7 +3443,6 @@
       "level": "Beginner",
       "price": "Current price: ₹2,899",
       "desc": "Use the Electron Framework to build compelling cross platform desktop applications with the latest web dev technologies",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.4",
       "review_count": "-3,363",
@@ -3510,7 +3460,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,299",
       "desc": "Learn the OWASP Top 10 Risks",
-      "instructor": "Instructor:",
       "name": "Jim Manico",
       "rating_num": "4.3",
       "review_count": "-3,357",
@@ -3546,7 +3495,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,299",
       "desc": "Learn WordPress step by step to make beautiful blogs, websites,e-commerce sites to start your business ONLINE.",
-      "instructor": "Instructor:",
       "name": "Shubham Saurav",
       "rating_num": "4.4",
       "review_count": "-3,303",
@@ -3564,7 +3512,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹2,799",
       "desc": "Advance your Web Development Skills By Learning Javascript from JavaScript Expert!",
-      "instructor": "Instructor:",
       "name": "Irfan Dayan",
       "rating_num": "4.6",
       "review_count": "-3,236",
@@ -3582,7 +3529,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Asp.Net Mvc, Asp.Net Core Mvc, Repository Pattern, Web Api, Asp.Net Identity, Entity Framework",
-      "instructor": "Instructor:",
       "name": "Web University by Harsha Vardhan",
       "rating_num": "4.4",
       "review_count": "-3,227",
@@ -3618,7 +3564,6 @@
       "level": "Beginner",
       "price": "Current price: ₹1,799",
       "desc": "A Comprehensive Guide for Beginners interested in learning JavaScript, Bootstrap, & PHP",
-      "instructor": "Instructor:",
       "name": "YouAccel Training",
       "rating_num": "4.2",
       "review_count": "-3,147",
@@ -3654,7 +3599,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Don't simply follow a tutorial, learn what it really takes to become a pro Rails developer with this immersive course.",
-      "instructor": "Instructor:",
       "name": "Jordan Hudgens",
       "rating_num": "4.3",
       "review_count": "-3,129",
@@ -3672,7 +3616,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "Go From Beginner To HTML Master In A Single Day!",
-      "instructor": "Instructor:",
       "name": "Colt Steele",
       "rating_num": "4.7",
       "review_count": "-3,117",
@@ -3726,7 +3669,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,999",
       "desc": "Launch your business by learning to build your own eCommerce app step-by-step.",
-      "instructor": "Instructor:",
       "name": "Justin Mitchel",
       "rating_num": "4.4",
       "review_count": "-3,060",
@@ -3744,7 +3686,6 @@
       "level": "All Levels",
       "price": "Current price: ₹799",
       "desc": "Become a full-stack web developer in a month. Master HTML, CSS, Javascript, JQuery, PHP, MySQL and more!",
-      "instructor": "Instructor:",
       "name": "Ruben Giuliani",
       "rating_num": "4.1",
       "review_count": "-3,046",
@@ -3780,7 +3721,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,299",
       "desc": "Build REST Api's with Asp.Net Core  , Entity Framework Core and C#",
-      "instructor": "Instructor:",
       "name": "Asfend Yar Hamid",
       "rating_num": "4.3",
       "review_count": "-3,028",
@@ -3798,7 +3738,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,899",
       "desc": "Imagine what could happen to YOUR career if you knew API Security| Udmy for Business approved| 17000 satisfied students",
-      "instructor": "Instructor:",
       "name": "Matthias Biehl",
       "rating_num": "4.5",
       "review_count": "-3,001",
@@ -3816,7 +3755,6 @@
       "level": "All Levels",
       "price": "Current price: ₹1,799",
       "desc": "Master yourself in HTML5, CSS3, Bootstrap, jQuery and responsive web development",
-      "instructor": "Instructor:",
       "name": "Creative Online School",
       "rating_num": "4.3",
       "review_count": "-2,995",
@@ -3834,7 +3772,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Write faster, easier to maintain, more secure PHP websites by creating your own Model View Controller framework",
-      "instructor": "Instructor:",
       "name": "Dave Hollingworth",
       "rating_num": "4.8",
       "review_count": "-2,989",
@@ -3852,7 +3789,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn javascript online and supercharge your web design with this Javascript for beginners training course.",
-      "instructor": "Instructor:",
       "name": "SkillSprints Inc.",
       "rating_num": "4.4",
       "review_count": "-2,984",
@@ -3870,7 +3806,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn how Observables work and behave in an easy to understand step-by-step way!",
-      "instructor": "Instructor:",
       "name": "Jurek Wozniak",
       "rating_num": "4.7",
       "review_count": "-2,957",
@@ -3888,7 +3823,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,299",
       "desc": "Learn how to develop services using WCF and Web APIs.",
-      "instructor": "Instructor:",
       "name": "Manzoor Ahmed",
       "rating_num": "4.6",
       "review_count": "-2,945",
@@ -3906,7 +3840,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "Have limited time to learn Vue, Vuex, and Vue Router?  Take this course and learn Vue in 11 hours!",
-      "instructor": "Instructor:",
       "name": "Stephen Grider",
       "rating_num": "4.8",
       "review_count": "-2,936",
@@ -3942,7 +3875,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,299",
       "desc": "Learn JavaScript, PHP and MySQL by building the ultimate social network website from scratch! The complete guide!",
-      "instructor": "Instructor:",
       "name": "Reece Kenney",
       "rating_num": "4.6",
       "review_count": "-2,925",
@@ -3978,7 +3910,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn to build secure RESTful Api's with Asp.Net Core, Entity Framework and C# with .NET 7 2024",
-      "instructor": "Instructor:",
       "name": "Asfend Yar Hamid",
       "rating_num": "4.6",
       "review_count": "-2,911",
@@ -3996,7 +3927,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn the fundamentals of Git and GitHub as we will learn Git and GitHub in under 4 hours with real world exposure.",
-      "instructor": "Instructor:",
       "name": "Bhrugen Patel",
       "rating_num": "4.7",
       "review_count": "-2,887",
@@ -4032,7 +3962,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Build 3 Live Real-World Projects with the Latest Bootstrap 5 CSS Framework. Complete In-Depth Training on Bootstrap 5",
-      "instructor": "Instructor:",
       "name": "Fatah Gabrial",
       "rating_num": "4.5",
       "review_count": "-2,877",
@@ -4050,7 +3979,6 @@
       "level": "All Levels",
       "price": "Current price: ₹1,799",
       "desc": "Master yourself in HTML5: Interactive way, step by step and easy to follow. Great for Absolute Beginners!!",
-      "instructor": "Instructor:",
       "name": "Creative Online School",
       "rating_num": "4.4",
       "review_count": "-2,862",
@@ -4068,7 +3996,6 @@
       "level": "Beginner",
       "price": "Current price: ₹2,799",
       "desc": "Learn LATEST Drupal 8 Tutorial HANDS-ON with COMPLETE real life examples. BONUS assignments, tips, tricks, and pitfalls!",
-      "instructor": "Instructor:",
       "name": "Srikanth Shirodkar",
       "rating_num": "4",
       "review_count": "-2,792",
@@ -4086,7 +4013,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,699",
       "desc": "A quick, fun, and hands-on introduction to web development. Build a complete app with HTML, CSS, JavaScript, and React!",
-      "instructor": "Instructor:",
       "name": "Jonas Schmedtmann",
       "rating_num": "4.7",
       "review_count": "-2,791",
@@ -4104,7 +4030,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,799",
       "desc": "The Simplest Way to Learn React for Beginners - Line by Line with No Steps Skipped",
-      "instructor": "Instructor:",
       "name": "Rob Merrill",
       "rating_num": "4.5",
       "review_count": "-2,772",
@@ -4122,7 +4047,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Quickly Learn Web Development with ASP NET MVC and C#. From absolute basics to ninja! Learn C# and MVC like a Pro",
-      "instructor": "Instructor:",
       "name": "Brett Hargreaves",
       "rating_num": "4.3",
       "review_count": "-2,765",
@@ -4140,7 +4064,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Preparation for IAPP certifications_FREE GDPR Templates & Documentation - Practical GDPR Blueprint",
-      "instructor": "Instructor:",
       "name": "Roland Costea",
       "rating_num": "4.4",
       "review_count": "-2,764",
@@ -4176,7 +4099,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,499",
       "desc": "Learn to build awesome websites with Python & Django!",
-      "instructor": "Instructor:",
       "name": "Dennis Ivy",
       "rating_num": "4.5",
       "review_count": "-2,752",
@@ -4212,7 +4134,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn how to develop WordPress themes and plugins. Includes React and Gutenberg development.",
-      "instructor": "Instructor:",
       "name": "Luis Ramirez Jr",
       "rating_num": "4.6",
       "review_count": "-2,729",
@@ -4230,7 +4151,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,299",
       "desc": "Build and Apply AEM elements to master components and websites. Handbook included.",
-      "instructor": "Instructor:",
       "name": "Jasvinder Singh Bhatia",
       "rating_num": "4",
       "review_count": "-2,721",
@@ -4266,7 +4186,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "No MERN or MEAN... just Express js. For those who've learned a bit about the most awesome node framework, and want more.",
-      "instructor": "Instructor:",
       "name": "Robert Bunch",
       "rating_num": "4.8",
       "review_count": "-2,685",
@@ -4284,7 +4203,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,999",
       "desc": "Create the VueJS 2.0 apps you always wanted. Build 5 apps, learn development secrets, VueRouter, Vuex, & more!",
-      "instructor": "Instructor:",
       "name": "David Joseph Katz",
       "rating_num": "4.7",
       "review_count": "-2,675",
@@ -4302,7 +4220,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn React JS to create Single Page Applications (SPA) using modern practices like Context, Reducer, Suspense and more",
-      "instructor": "Instructor:",
       "name": "Brad Schiff",
       "rating_num": "4.7",
       "review_count": "-2,657",
@@ -4320,7 +4237,6 @@
       "level": "Beginner",
       "price": "Current price: ₹999",
       "desc": "Learn how to code in CSS in 1 hour. This class is set up for complete beginners!",
-      "instructor": "Instructor:",
       "name": "John Bura",
       "rating_num": "4.1",
       "review_count": "-2,627",
@@ -4338,7 +4254,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,699",
       "desc": "Learn PHP MYSQL by building 5 Projects including PHP Regular Expressions & CMS | Become a Full Stack Back-End Developer.",
-      "instructor": "Instructor:",
       "name": "Jazeb Akram",
       "rating_num": "4.2",
       "review_count": "-2,565",
@@ -4356,7 +4271,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,299",
       "desc": "Master in Practical Web design and development using Photoshop, HTML5, CSS3, Bootstrap and more.",
-      "instructor": "Instructor:",
       "name": "Creative Online School",
       "rating_num": "4",
       "review_count": "-2,561",
@@ -4374,7 +4288,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "Updated for 2024: full-stack blockchain+crypto course! A backend + frontend with Node.js, Express, React, & more!",
-      "instructor": "Instructor:",
       "name": "David Joseph Katz",
       "rating_num": "4.5",
       "review_count": "-2,559",
@@ -4392,7 +4305,6 @@
       "level": "Beginner",
       "price": "Current price: ₹1,799",
       "desc": "Learn how to Add Dynamic Client-Side Functions to your Web Pages using CSS & JavaScript",
-      "instructor": "Instructor:",
       "name": "YouAccel Training",
       "rating_num": "4.3",
       "review_count": "-2,550",
@@ -4446,7 +4358,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,499",
       "desc": "Lean the Foundations of HTML & CSS to Create Fully Customized, Mobile Responsive Web Pages",
-      "instructor": "Instructor:",
       "name": "Kiran Gavali",
       "rating_num": "4.3",
       "review_count": "-2,503",
@@ -4464,7 +4375,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,999",
       "desc": "Build the React JS and Redux apps of your dreams! Learn JavaScript, ES6, APIs, and Full Web App Development in ReactJS!",
-      "instructor": "Instructor:",
       "name": "David Joseph Katz",
       "rating_num": "4.6",
       "review_count": "-2,487",
@@ -4482,7 +4392,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "Brand New Course! Covers Flexbox, CSS Grid,  Animations, Responsive Design and More! Tons of Exercises & Projects.",
-      "instructor": "Instructor:",
       "name": "Colt Steele",
       "rating_num": "4.8",
       "review_count": "-2,451",
@@ -4500,7 +4409,6 @@
       "level": "Beginner",
       "price": "Current price: ₹2,699",
       "desc": "Start using Quarkus: the Supersonic Subatomic Java toolkit",
-      "instructor": "Instructor:",
       "name": "Antonio Goncalves",
       "rating_num": "4.7",
       "review_count": "-2,451",
@@ -4518,7 +4426,6 @@
       "level": "Intermediate",
       "price": "Current price: ₹3,099",
       "desc": "Build your own public-facing CRUD (Create, Read, Update, Delete) website w/MVC and Entity Framework in a weekend.",
-      "instructor": "Instructor:",
       "name": "Brian Gorman",
       "rating_num": "4.4",
       "review_count": "-2,442",
@@ -4536,7 +4443,6 @@
       "level": "Beginner",
       "price": "Current price: ₹799",
       "desc": "Use Docker to streamline your developer workflow and build out a awesome CI/CD pipeline",
-      "instructor": "Instructor:",
       "name": "Luke Angel",
       "rating_num": "3.6",
       "review_count": "-2,405",
@@ -4554,7 +4460,6 @@
       "level": "Beginner",
       "price": "Current price: ₹3,099",
       "desc": "Learn to Build Microservices using Spring Boot 3, Spring Cloud, React, Kafka, RabbitMQ, REST API, Docker & IntelliJ IDEA",
-      "instructor": "Instructor:",
       "name": "Ramesh Fadatare (Java Guides)",
       "rating_num": "4.6",
       "review_count": "-2,388",
@@ -4572,7 +4477,6 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Become an expert in Asynchronous JavaScript: Promises, Callbacks, Async Await, Event Loop, etc.",
-      "instructor": "Instructor:",
       "name": "Viktor Pyskunov",
       "rating_num": "4.5",
       "review_count": "-2,382",
@@ -4590,7 +4494,6 @@
       "level": "All Levels",
       "price": "Current price: ₹2,999",
       "desc": "Build REST Api's With Asp.Net , Entity Framework and C#",
-      "instructor": "Instructor:",
       "name": "Asfend Yar Hamid",
       "rating_num": "4.6",
       "review_count": "-2,369",
@@ -4608,12 +4511,1633 @@
       "level": "All Levels",
       "price": "Current price: ₹3,099",
       "desc": "Learn ASP.NET Core and Entity Framework by building and publishing a practical Employee Leave Management System.",
-      "instructor": "Instructor:",
       "name": "Trevoir Williams",
       "rating_num": "4.5",
       "review_count": "-2,366",
       "base_price": "₹3,099",
       "badge": ""
+    }
+  ],
+  "pdp_Details": [
+    {
+      "id": 1,
+      "courseTitle": "The Complete 2024 Web Development Bootcamp",
+      "instructor": {
+        "name": "Angela Yu",
+        "qualifications": "Lead Instructor at App Brewery",
+        "bio": "Angela Yu is a developer with a passion for teaching. She has built hundreds of apps and taught thousands of students."
+      },
+      "courseDescription": "Learn web development from scratch with this comprehensive course covering HTML, CSS, JavaScript, Node.js, React, and more.",
+      "courseContent": [
+        "HTML and CSS Fundamentals",
+        "JavaScript Basics",
+        "Advanced JavaScript",
+        "Node.js and Express",
+        "Databases with MongoDB",
+        "React and Redux",
+        "Building and Deploying a Full-Stack Application"
+      ],
+      "duration": "55 hours of on-demand video",
+      "price": {
+        "original": 199,
+        "discounted": 99
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.8,
+        "totalReviews": 15000
+      },
+      "requirementsPrerequisites": [
+        "No prior programming experience needed",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Beginners who want to learn web development",
+        "Experienced developers looking to update their skills",
+        "Anyone interested in becoming a full-stack web developer"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Downloadable resources",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 200000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/AmX9zoLhUKU?list=PLOK_oIDzalSj0QAUIWBGOHCJVjBsPoPgR",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 2,
+      "courseTitle": "The Web Developer Bootcamp 2024",
+      "instructor": {
+        "name": "Colt Steele",
+        "qualifications": "Developer and Bootcamp Instructor",
+        "bio": "Colt Steele is a developer with a passion for teaching. He has been working in the industry for over a decade and has taught thousands of students."
+      },
+      "courseDescription": "Learn web development with the best-selling course that covers HTML, CSS, JavaScript, Node.js, and more.",
+      "courseContent": [
+        "HTML and CSS Basics",
+        "JavaScript Fundamentals",
+        "Advanced JavaScript",
+        "Node.js and Express",
+        "Databases with MongoDB",
+        "Front-End Frameworks",
+        "Full-Stack Development Projects"
+      ],
+      "duration": "60 hours of on-demand video",
+      "price": {
+        "original": 199,
+        "discounted": 109
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.7,
+        "totalReviews": 13000
+      },
+      "requirementsPrerequisites": [
+        "No prior programming experience required",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Aspiring web developers",
+        "Developers looking to enhance their skills",
+        "Anyone interested in full-stack development"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Code examples",
+        "Quizzes and assignments",
+        "Community support"
+      ],
+      "enrollmentNumbers": 180000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/SF_Xl5TOGlY?list=PLblA84xge2_xNtaFnZhefjFbnDrpySKD3",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 3,
+      "courseTitle": "The Complete JavaScript Course 2024: From Zero to Expert!",
+      "instructor": {
+        "name": "Jonas Schmedtmann",
+        "qualifications": "JavaScript Developer and Instructor",
+        "bio": "Jonas Schmedtmann is a professional developer and instructor with years of experience in teaching JavaScript and web development."
+      },
+      "courseDescription": "Master JavaScript with this comprehensive course covering ES6, asynchronous programming, AJAX, and more.",
+      "courseContent": [
+        "JavaScript Basics",
+        "ES6 and Modern JavaScript",
+        "Asynchronous JavaScript",
+        "Working with APIs",
+        "Advanced JavaScript Concepts",
+        "Building Real-World Projects"
+      ],
+      "duration": "40 hours of on-demand video",
+      "price": {
+        "original": 149,
+        "discounted": 79
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.9,
+        "totalReviews": 10000
+      },
+      "requirementsPrerequisites": [
+        "Basic understanding of HTML and CSS",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Beginner JavaScript developers",
+        "Experienced developers looking to deepen their knowledge",
+        "Anyone interested in mastering JavaScript"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Code samples",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 150000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/1uYQRG5csT8?list=PLOmL3sL-afbRVTvedkIrQcDwg2UY0JGTF",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 4,
+      "courseTitle": "The Ultimate React Developer Course 2024",
+      "instructor": {
+        "name": "Maximilian Schwarzmüller",
+        "qualifications": "Professional React Developer and Instructor",
+        "bio": "Maximilian Schwarzmüller is a professional developer and educator with a focus on React and front-end development."
+      },
+      "courseDescription": "Become a React expert with this comprehensive course covering hooks, Redux, and advanced concepts.",
+      "courseContent": [
+        "React Basics",
+        "State and Props",
+        "React Hooks",
+        "Advanced React Patterns",
+        "Redux for State Management",
+        "Building and Deploying React Applications"
+      ],
+      "duration": "50 hours of on-demand video",
+      "price": {
+        "original": 199,
+        "discounted": 99
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.8,
+        "totalReviews": 9000
+      },
+      "requirementsPrerequisites": [
+        "Basic knowledge of JavaScript",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Developers new to React",
+        "Experienced developers wanting to master React",
+        "Anyone looking to build React applications"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Downloadable resources",
+        "Quizzes and assignments",
+        "Community support"
+      ],
+      "enrollmentNumbers": 120000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/9zmwGT7DEsM",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 5,
+      "courseTitle": "Python for Everybody Specialization",
+      "instructor": {
+        "name": "Dr. Charles Severance",
+        "qualifications": "Clinical Professor, University of Michigan",
+        "bio": "Dr. Charles Severance is a clinical professor at the University of Michigan, where he teaches programming to thousands of students."
+      },
+      "courseDescription": "A comprehensive course designed to introduce beginners to programming using Python.",
+      "courseContent": [
+        "Getting Started with Python",
+        "Python Data Structures",
+        "Using Python to Access Web Data",
+        "Using Databases with Python",
+        "Capstone: Retrieving, Processing, and Visualizing Data with Python"
+      ],
+      "duration": "70 hours of on-demand video",
+      "price": {
+        "original": 299,
+        "discounted": 149
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.9,
+        "totalReviews": 20000
+      },
+      "requirementsPrerequisites": [
+        "No prior programming experience needed",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Beginners with no programming experience",
+        "Students interested in learning Python",
+        "Professionals looking to expand their skills"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Downloadable code examples",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 300000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/i3-PQ4CkU8s?list=PLSzsOkUDsvdvGZ2fXGizY_Iz9j8-ZlLqh",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 6,
+      "courseTitle": "Machine Learning A-Z: Hands-On Python & R In Data Science",
+      "instructor": {
+        "name": "Kirill Eremenko",
+        "qualifications": "Data Scientist and Instructor",
+        "bio": "Kirill Eremenko is a data science professional with years of experience in the industry and a passion for teaching."
+      },
+      "courseDescription": "Learn to create Machine Learning Algorithms in Python and R from two Data Science experts.",
+      "courseContent": [
+        "Data Preprocessing",
+        "Regression",
+        "Classification",
+        "Clustering",
+        "Association Rule Learning",
+        "Reinforcement Learning",
+        "Natural Language Processing",
+        "Deep Learning"
+      ],
+      "duration": "40 hours of on-demand video",
+      "price": {
+        "original": 199,
+        "discounted": 99
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.8,
+        "totalReviews": 17000
+      },
+      "requirementsPrerequisites": [
+        "Basic understanding of high school mathematics",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Anyone interested in machine learning",
+        "Data scientists looking to enhance their skills",
+        "Students pursuing a career in data science"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Downloadable resources",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 250000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/SZK6qhSLVrs",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 7,
+      "courseTitle": "Complete Python Bootcamp: Go from zero to hero in Python 3",
+      "instructor": {
+        "name": "Jose Portilla",
+        "qualifications": "Head of Data Science, Pierian Data Inc.",
+        "bio": "Jose Portilla has extensive experience in data science and Python, with a passion for teaching and a commitment to helping students learn."
+      },
+      "courseDescription": "Learn Python like a Professional! Start from the basics and go all the way to creating your own applications and games.",
+      "courseContent": [
+        "Python Setup",
+        "Python Object and Data Structure Basics",
+        "Python Statements",
+        "Methods and Functions",
+        "Object-Oriented Programming",
+        "Modules and Packages",
+        "Errors and Exceptions Handling",
+        "Web Scraping",
+        "Working with Databases",
+        "Python for Data Analysis",
+        "Data Visualization"
+      ],
+      "duration": "30 hours of on-demand video",
+      "price": {
+        "original": 149,
+        "discounted": 79
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.9,
+        "totalReviews": 21000
+      },
+      "requirementsPrerequisites": [
+        "No prior programming experience needed",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Beginners who want to learn Python",
+        "Professionals looking to expand their skills",
+        "Students interested in Python programming"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Downloadable resources",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 350000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/bqAU2k8JQa8",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 8,
+      "courseTitle": "The Data Science Course 2024: Complete Data Science Bootcamp",
+      "instructor": {
+        "name": "365 Careers",
+        "qualifications": "Data Science Training Company",
+        "bio": "365 Careers is a leading training company that specializes in data science, with a focus on practical, hands-on learning."
+      },
+      "courseDescription": "Complete Data Science Training: Mathematics, Statistics, Python, Advanced Statistics in Python, Machine & Deep Learning.",
+      "courseContent": [
+        "Introduction to Data and Data Science",
+        "Mathematics for Data Science",
+        "Statistics for Data Science",
+        "Python for Data Science",
+        "Advanced Statistics in Python",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Visualization",
+        "Data Preparation"
+      ],
+      "duration": "90 hours of on-demand video",
+      "price": {
+        "original": 299,
+        "discounted": 149
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.8,
+        "totalReviews": 15000
+      },
+      "requirementsPrerequisites": [
+        "Basic understanding of high school mathematics",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Anyone interested in data science",
+        "Aspiring data scientists",
+        "Professionals looking to transition into data science"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Downloadable resources",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 400000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/5HlbV1wKBmo?list=PLaFfQroTgZnyQFq4nUfb-w2vEopN3ULMb",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 9,
+      "courseTitle": "The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert",
+      "instructor": {
+        "name": "Colt Steele",
+        "qualifications": "Developer and Bootcamp Instructor",
+        "bio": "Colt Steele is a developer with a passion for teaching. He has been working in the industry for over a decade and has taught thousands of students."
+      },
+      "courseDescription": "Become an expert at SQL! Learn how to create complex databases and use powerful query techniques.",
+      "courseContent": [
+        "SQL Basics",
+        "SQL Joins",
+        "SQL Aggregations",
+        "SQL Subqueries",
+        "SQL Functions",
+        "Advanced SQL Topics",
+        "SQL Optimization and Performance Tuning",
+        "Database Design",
+        "Building Real-World Projects"
+      ],
+      "duration": "20 hours of on-demand video",
+      "price": {
+        "original": 149,
+        "discounted": 79
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.7,
+        "totalReviews": 12000
+      },
+      "requirementsPrerequisites": [
+        "No prior SQL experience needed",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Beginners who want to learn SQL",
+        "Professionals looking to enhance their database skills",
+        "Students interested in data management"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Downloadable resources",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 200000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/iiRN93Ifv3A?list=PL50QcNqdGrAnUfnq4AmM0YjbwTRcn3xNT",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 10,
+      "courseTitle": "Learn and Understand NodeJS",
+      "instructor": {
+        "name": "Anthony Alicea",
+        "qualifications": "Software Engineer and Instructor",
+        "bio": "Anthony Alicea is a software engineer with a focus on JavaScript and NodeJS, and a commitment to teaching complex topics in a simple way."
+      },
+      "courseDescription": "Learn and understand NodeJS. Learn V8, Express, the MEAN stack, core concepts, and more.",
+      "courseContent": [
+        "Introduction to NodeJS",
+        "Core Modules",
+        "Events and Streams",
+        "Modules and NPM",
+        "Express Framework",
+        "Building REST APIs",
+        "Working with Databases",
+        "Authentication and Authorization",
+        "Deployment and Best Practices"
+      ],
+      "duration": "25 hours of on-demand video",
+      "price": {
+        "original": 149,
+        "discounted": 79
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.8,
+        "totalReviews": 10000
+      },
+      "requirementsPrerequisites": [
+        "Basic understanding of JavaScript",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "JavaScript developers new to NodeJS",
+        "Experienced developers wanting to learn NodeJS",
+        "Anyone looking to build server-side applications with NodeJS"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Downloadable resources",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 150000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/65a5QQ3ZR2g?list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 11,
+      "courseTitle": "Mastering Data Visualization with D3.js",
+      "instructor": {
+        "name": "Adam Janes",
+        "qualifications": "Data Visualization Expert",
+        "bio": "Adam Janes is a data visualization expert with years of experience in creating interactive visualizations using D3.js."
+      },
+      "courseDescription": "Learn to create stunning data visualizations with D3.js, a powerful JavaScript library for building custom charts.",
+      "courseContent": [
+        "Introduction to D3.js",
+        "Data Binding and DOM Manipulation",
+        "Scales and Axes",
+        "Drawing Shapes and Paths",
+        "Interactive Visualizations",
+        "Advanced D3 Techniques",
+        "Building Complete Projects"
+      ],
+      "duration": "15 hours of on-demand video",
+      "price": {
+        "original": 129,
+        "discounted": 69
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.7,
+        "totalReviews": 5000
+      },
+      "requirementsPrerequisites": [
+        "Basic knowledge of JavaScript",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Developers interested in data visualization",
+        "Data scientists looking to enhance their visualization skills",
+        "Anyone wanting to create interactive charts and graphs"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Code samples",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 80000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/q6GWkbUWFBg?list=PLhGp6N0DI_1TSgS8KqsGQMyGlVIatwVXn",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    },
+    {
+      "id": 12,
+      "courseTitle": "The Complete Guide to Elasticsearch",
+      "instructor": {
+        "name": "Bo Andersen",
+        "qualifications": "Software Engineer and Elasticsearch Expert",
+        "bio": "Bo Andersen is a software engineer specializing in Elasticsearch and distributed systems, with a passion for teaching."
+      },
+      "courseDescription": "Learn how to use Elasticsearch, the highly scalable open-source search engine, for powerful and flexible search solutions.",
+      "courseContent": [
+        "Introduction to Elasticsearch",
+        "Basic Concepts and Architecture",
+        "Indexing and Searching Data",
+        "Aggregations",
+        "Advanced Queries",
+        "Elasticsearch Administration",
+        "Building Real-World Applications"
+      ],
+      "duration": "20 hours of on-demand video",
+      "price": {
+        "original": 149,
+        "discounted": 79
+      },
+      "courseReviewsAndRatings": {
+        "averageRating": 4.8,
+        "totalReviews": 7000
+      },
+      "requirementsPrerequisites": [
+        "Basic understanding of data structures",
+        "A computer with internet access"
+      ],
+      "targetAudience": [
+        "Developers new to Elasticsearch",
+        "Experienced developers wanting to enhance their search skills",
+        "Anyone looking to build search-based applications"
+      ],
+      "certification": "Certificate of Completion provided",
+      "languages": ["English"],
+      "resourcesProvided": [
+        "Downloadable resources",
+        "Quizzes and assignments",
+        "Access to a community forum"
+      ],
+      "enrollmentNumbers": 120000,
+      "lastUpdated": "June 2024",
+      "accessibility": {
+        "subtitles": ["English"],
+        "transcripts": "Available for all lectures"
+      },
+      "refundPolicy": "30-day money-back guarantee",
+      "coursePreview": "https://youtu.be/q6GWkbUWFBg?list=PLhGp6N0DI_1TSgS8KqsGQMyGlVIatwVXn",
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "address": {
+        "street": "123 Main St",
+        "city": "Springfield",
+        "state": "IL",
+        "postalCode": "62701"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "phone": "+0987654321",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Greenville",
+        "state": "NC",
+        "postalCode": "27834"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "phone": "+1122334455",
+      "address": {
+        "street": "789 Oak St",
+        "city": "Metropolis",
+        "state": "NY",
+        "postalCode": "10001"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com",
+      "phone": "+1223344556",
+      "address": {
+        "street": "101 Pine St",
+        "city": "Smalltown",
+        "state": "TX",
+        "postalCode": "75001"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 5,
+      "name": "Charlie Green",
+      "email": "charlie.green@example.com",
+      "phone": "+1231231234",
+      "address": {
+        "street": "102 Maple St",
+        "city": "Riverside",
+        "state": "CA",
+        "postalCode": "92501"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 6,
+      "name": "Daniel White",
+      "email": "daniel.white@example.com",
+      "phone": "+3213214321",
+      "address": {
+        "street": "202 Birch St",
+        "city": "Lakeside",
+        "state": "MI",
+        "postalCode": "49116"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 7,
+      "name": "Eve Black",
+      "email": "eve.black@example.com",
+      "phone": "+1112223333",
+      "address": {
+        "street": "303 Cedar St",
+        "city": "Hilltown",
+        "state": "PA",
+        "postalCode": "18927"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 8,
+      "name": "Frank Brown",
+      "email": "frank.brown@example.com",
+      "phone": "+2223334444",
+      "address": {
+        "street": "404 Oak St",
+        "city": "Valleyview",
+        "state": "TX",
+        "postalCode": "76272"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 9,
+      "name": "Grace Davis",
+      "email": "grace.davis@example.com",
+      "phone": "+3334445555",
+      "address": {
+        "street": "505 Pine St",
+        "city": "Mountainview",
+        "state": "CA",
+        "postalCode": "94043"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 10,
+      "name": "Hannah Brown",
+      "email": "hannah.brown@example.com",
+      "phone": "+4445556666",
+      "address": {
+        "street": "606 Spruce St",
+        "city": "Seaside",
+        "state": "FL",
+        "postalCode": "32459"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 11,
+      "name": "Ivy Wilson",
+      "email": "ivy.wilson@example.com",
+      "phone": "+5556667777",
+      "address": {
+        "street": "707 Aspen St",
+        "city": "Forestville",
+        "state": "CA",
+        "postalCode": "95436"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 12,
+      "name": "Jack Brown",
+      "email": "jack.brown@example.com",
+      "phone": "+6667778888",
+      "address": {
+        "street": "808 Elm St",
+        "city": "Beachside",
+        "state": "CA",
+        "postalCode": "90210"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": false,
+        "MongoDB": false,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 13,
+      "name": "Karen Brown",
+      "email": "karen.brown@example.com",
+      "phone": "+7778889999",
+      "address": {
+        "street": "909 Fir St",
+        "city": "Oceanside",
+        "state": "CA",
+        "postalCode": "92054"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 14,
+      "name": "Leo Brown",
+      "email": "leo.brown@example.com",
+      "phone": "+8889990000",
+      "address": {
+        "street": "1010 Redwood St",
+        "city": "Hillsborough",
+        "state": "NJ",
+        "postalCode": "08844"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 15,
+      "name": "Megan Brown",
+      "email": "megan.brown@example.com",
+      "phone": "+9990001111",
+      "address": {
+        "street": "1111 Cypress St",
+        "city": "Clearwater",
+        "state": "FL",
+        "postalCode": "33755"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 16,
+      "name": "Nina Brown",
+      "email": "nina.brown@example.com",
+      "phone": "+0001112222",
+      "address": {
+        "street": "1212 Birch St",
+        "city": "Sunnyvale",
+        "state": "CA",
+        "postalCode": "94086"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 17,
+      "name": "Oliver Brown",
+      "email": "oliver.brown@example.com",
+      "phone": "+1112223333",
+      "address": {
+        "street": "1313 Maple St",
+        "city": "Pleasantville",
+        "state": "IA",
+        "postalCode": "50225"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 18,
+      "name": "Paula Brown",
+      "email": "paula.brown@example.com",
+      "phone": "+2223334444",
+      "address": {
+        "street": "1414 Pine St",
+        "city": "Fayetteville",
+        "state": "AR",
+        "postalCode": "72701"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 19,
+      "name": "Quincy Brown",
+      "email": "quincy.brown@example.com",
+      "phone": "+3334445555",
+      "address": {
+        "street": "1515 Cedar St",
+        "city": "Dover",
+        "state": "DE",
+        "postalCode": "19901"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 20,
+      "name": "Rachel Brown",
+      "email": "rachel.brown@example.com",
+      "phone": "+4445556666",
+      "address": {
+        "street": "1616 Oak St",
+        "city": "Lexington",
+        "state": "KY",
+        "postalCode": "40508"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 21,
+      "name": "Steve Brown",
+      "email": "steve.brown@example.com",
+      "phone": "+5556667777",
+      "address": {
+        "street": "1717 Spruce St",
+        "city": "Concord",
+        "state": "NH",
+        "postalCode": "03301"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 22,
+      "name": "Tom Brown",
+      "email": "tom.brown@example.com",
+      "phone": "+6667778888",
+      "address": {
+        "street": "1818 Aspen St",
+        "city": "Lakeview",
+        "state": "MI",
+        "postalCode": "48850"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 23,
+      "name": "Uma Brown",
+      "email": "uma.brown@example.com",
+      "phone": "+7778889999",
+      "address": {
+        "street": "1919 Birch St",
+        "city": "Palm Beach",
+        "state": "FL",
+        "postalCode": "33480"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 24,
+      "name": "Vera Brown",
+      "email": "vera.brown@example.com",
+      "phone": "+8889990000",
+      "address": {
+        "street": "2020 Cypress St",
+        "city": "Wichita",
+        "state": "KS",
+        "postalCode": "67202"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 25,
+      "name": "Will Brown",
+      "email": "will.brown@example.com",
+      "phone": "+9990001111",
+      "address": {
+        "street": "2121 Maple St",
+        "city": "Dallas",
+        "state": "TX",
+        "postalCode": "75201"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 26,
+      "name": "Xander Brown",
+      "email": "xander.brown@example.com",
+      "phone": "+0001112222",
+      "address": {
+        "street": "2222 Pine St",
+        "city": "Phoenix",
+        "state": "AZ",
+        "postalCode": "85001"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 27,
+      "name": "Yara Brown",
+      "email": "yara.brown@example.com",
+      "phone": "+1112223333",
+      "address": {
+        "street": "2323 Cedar St",
+        "city": "Las Vegas",
+        "state": "NV",
+        "postalCode": "89101"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 28,
+      "name": "Zoe Brown",
+      "email": "zoe.brown@example.com",
+      "phone": "+2223334444",
+      "address": {
+        "street": "2424 Oak St",
+        "city": "Reno",
+        "state": "NV",
+        "postalCode": "89501"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 29,
+      "name": "Aaron Brown",
+      "email": "aaron.brown@example.com",
+      "phone": "+3334445555",
+      "address": {
+        "street": "2525 Spruce St",
+        "city": "Boise",
+        "state": "ID",
+        "postalCode": "83702"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 30,
+      "name": "Bella Brown",
+      "email": "bella.brown@example.com",
+      "phone": "+4445556666",
+      "address": {
+        "street": "2626 Aspen St",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "postalCode": "84101"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 31,
+      "name": "Chris Brown",
+      "email": "chris.brown@example.com",
+      "phone": "+5556667777",
+      "address": {
+        "street": "2727 Birch St",
+        "city": "Portland",
+        "state": "OR",
+        "postalCode": "97209"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 32,
+      "name": "Diana Brown",
+      "email": "diana.brown@example.com",
+      "phone": "+6667778888",
+      "address": {
+        "street": "2828 Cypress St",
+        "city": "Seattle",
+        "state": "WA",
+        "postalCode": "98101"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 33,
+      "name": "Ethan Brown",
+      "email": "ethan.brown@example.com",
+      "phone": "+7778889999",
+      "address": {
+        "street": "2929 Maple St",
+        "city": "Denver",
+        "state": "CO",
+        "postalCode": "80202"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 34,
+      "name": "Faith Brown",
+      "email": "faith.brown@example.com",
+      "phone": "+8889990000",
+      "address": {
+        "street": "3030 Pine St",
+        "city": "Albuquerque",
+        "state": "NM",
+        "postalCode": "87101"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 35,
+      "name": "Gavin Brown",
+      "email": "gavin.brown@example.com",
+      "phone": "+9990001111",
+      "address": {
+        "street": "3131 Cedar St",
+        "city": "Tucson",
+        "state": "AZ",
+        "postalCode": "85701"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 36,
+      "name": "Holly Brown",
+      "email": "holly.brown@example.com",
+      "phone": "+0001112222",
+      "address": {
+        "street": "3232 Oak St",
+        "city": "El Paso",
+        "state": "TX",
+        "postalCode": "79901"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 37,
+      "name": "Ivan Brown",
+      "email": "ivan.brown@example.com",
+      "phone": "+1112223333",
+      "address": {
+        "street": "3333 Spruce St",
+        "city": "Memphis",
+        "state": "TN",
+        "postalCode": "38101"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 38,
+      "name": "Judy Brown",
+      "email": "judy.brown@example.com",
+      "phone": "+2223334444",
+      "address": {
+        "street": "3434 Aspen St",
+        "city": "Charlotte",
+        "state": "NC",
+        "postalCode": "28202"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 39,
+      "name": "Kevin Brown",
+      "email": "kevin.brown@example.com",
+      "phone": "+3334445555",
+      "address": {
+        "street": "3535 Birch St",
+        "city": "Baltimore",
+        "state": "MD",
+        "postalCode": "21201"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 40,
+      "name": "Luna Brown",
+      "email": "luna.brown@example.com",
+      "phone": "+4445556666",
+      "address": {
+        "street": "3636 Cypress St",
+        "city": "Washington",
+        "state": "DC",
+        "postalCode": "20001"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 41,
+      "name": "Mason Brown",
+      "email": "mason.brown@example.com",
+      "phone": "+5556667777",
+      "address": {
+        "street": "3737 Maple St",
+        "city": "Nashville",
+        "state": "TN",
+        "postalCode": "37201"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 42,
+      "name": "Nora Brown",
+      "email": "nora.brown@example.com",
+      "phone": "+6667778888",
+      "address": {
+        "street": "3838 Pine St",
+        "city": "Louisville",
+        "state": "KY",
+        "postalCode": "40202"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": false,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 43,
+      "name": "Oscar Brown",
+      "email": "oscar.brown@example.com",
+      "phone": "+7778889999",
+      "address": {
+        "street": "3939 Cedar St",
+        "city": "Detroit",
+        "state": "MI",
+        "postalCode": "48201"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": false
+      }
+    },
+    {
+      "id": 44,
+      "name": "Paula Brown",
+      "email": "paula.brown@example.com",
+      "phone": "+8889990000",
+      "address": {
+        "street": "4040 Oak St",
+        "city": "Milwaukee",
+        "state": "WI",
+        "postalCode": "53202"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 45,
+      "name": "Quinn Brown",
+      "email": "quinn.brown@example.com",
+      "phone": "+9990001111",
+      "address": {
+        "street": "4141 Spruce St",
+        "city": "Indianapolis",
+        "state": "IN",
+        "postalCode": "46201"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": false,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 46,
+      "name": "Ryan Brown",
+      "email": "ryan.brown@example.com",
+      "phone": "+0001112222",
+      "address": {
+        "street": "4242 Aspen St",
+        "city": "Columbus",
+        "state": "OH",
+        "postalCode": "43215"
+      },
+      "isActive": false,
+      "coursesPurchased": {
+        "React": false,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    },
+    {
+      "id": 47,
+      "name": "Sara Brown",
+      "email": "sara.brown@example.com",
+      "phone": "+1112223333",
+      "address": {
+        "street": "4343 Birch St",
+        "city": "Fort Worth",
+        "state": "TX",
+        "postalCode": "76102"
+      },
+      "isActive": true,
+      "coursesPurchased": {
+        "React": true,
+        "NodeJS": true,
+        "MongoDB": true,
+        "JavaScript": true
+      }
+    }
+  ],
+  "sales_data": [
+    {
+      "courseName": "The Complete 2024 Web Development Bootcamp",
+      "instructorName": "Dr. Angela Yu",
+      "price": 89,
+      "salesData": 53550,
+      "quantitySold": 60000,
+      "courseImageURL": "https://example.com/course-images/complete-web-development-bootcamp.jpg"
+    },
+    {
+      "courseName": "The Web Developer Bootcamp 2024",
+      "instructorName": "Colt Steele",
+      "price": 99,
+      "salesData": 2475000,
+      "quantitySold": 25000,
+      "courseImageURL": "https://example.com/course-images/web-developer-bootcamp.jpg"
+    },
+    {
+      "courseName": "The Complete JavaScript Course 2024: From Zero to Expert!",
+      "instructorName": "Jonas Schmedtmann",
+      "price": 99,
+      "salesData": 2970000,
+      "quantitySold": 30000,
+      "courseImageURL": "https://example.com/course-images/complete-javascript-course.jpg"
+    },
+    {
+      "courseName": "Python for Data Science and Machine Learning Bootcamp",
+      "instructorName": "Jose Portilla",
+      "price": 79,
+      "salesData": 15800000,
+      "quantitySold": 200000,
+      "courseImageURL": "https://example.com/course-images/python-data-science-ml.jpg"
+    },
+    {
+      "courseName": "Machine Learning A-Z: Hands-On Python & R In Data Science",
+      "instructorName": "Kirill Eremenko",
+      "price": 99,
+      "salesData": 24750000,
+      "quantitySold": 250000,
+      "courseImageURL": "https://example.com/course-images/machine-learning-az.jpg"
+    },
+    {
+      "courseName": "Complete Python Bootcamp: Go from zero to hero in Python 3",
+      "instructorName": "Jose Portilla",
+      "price": 79,
+      "salesData": 27650000,
+      "quantitySold": 350000,
+      "courseImageURL": "https://example.com/course-images/complete-python-bootcamp.jpg"
+    },
+    {
+      "courseName": "The Data Science Course 2024: Complete Data Science Bootcamp",
+      "instructorName": "365 Careers",
+      "price": 149,
+      "salesData": 59600000,
+      "quantitySold": 400000,
+      "courseImageURL": "https://example.com/course-images/data-science-bootcamp.jpg"
+    },
+    {
+      "courseName": "The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert",
+      "instructorName": "Colt Steele",
+      "price": 79,
+      "salesData": 15800000,
+      "quantitySold": 200000,
+      "courseImageURL": "https://example.com/course-images/mysql-bootcamp.jpg"
+    },
+    {
+      "courseName": "Learn and Understand NodeJS",
+      "instructorName": "Anthony Alicea",
+      "price": 79,
+      "salesData": 11850000,
+      "quantitySold": 150000,
+      "courseImageURL": "https://example.com/course-images/learn-nodejs.jpg"
+    },
+    {
+      "courseName": "Mastering Data Visualization with D3.js",
+      "instructorName": "Adam Janes",
+      "price": 69,
+      "salesData": 5520000,
+      "quantitySold": 80000,
+      "courseImageURL": "https://example.com/course-images/mastering-d3js.jpg"
     }
   ]
 }

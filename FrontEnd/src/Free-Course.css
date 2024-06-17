@@ -5,8 +5,10 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 5px; /* Reduced margin */
- /* margin-left: 100px; */
+  margin: 5px 20px; /* Reduced margin */
+ /* margin-left: 80px; */
+ /* border: solid; */
+ /* border:solid; */
   display: flex;
   flex-direction: column;
   border: solid;
@@ -16,16 +18,52 @@
   width: 30%;
   justify-content: space-around;
   height: 70vh;
-  /* border: solid; */
-  margin-bottom: -70px; /* Reduced margin */
+  margin-bottom: -70px;
 }
+/* .puzzle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.course-card img{
+  height: 30vh;
+}
+.Puzzles{
+  text-align: center;
+  color: rgb(24, 23, 23);
+  justify-content: center;
+  display: flex;
+
+} */
+/* .dark-theme .Puzzles{
+  color: black !important
+
+} */
+/* .puzzle-gif {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+} */
+
 .fw-bold{
-  margin-left: -96px;
+  /* margin-left: -96px;
+   */
+   justify-content: center;
+  display: flex;
+  /* color: rgb(29, 27, 27); */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: #bf1757;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   
 }
 
-.freeCourse-section {
+/* .freeCourse-section {
   margin-left: 50px;
-}
+} */
 
 .form-container {
   background-color: #f9f9f9; /* Light grey background */
@@ -45,6 +83,7 @@
   margin-bottom: 15px;
 }
 .free-button{
+  margin-bottom: 5px;
   background-color: #0056b3;;
 }
 
@@ -53,5 +92,6 @@
   width: 100%;
 }
 .freeCourse-section{
-  margin-left: 100px;
+  display: flex;
+  justify-content: center;
 }

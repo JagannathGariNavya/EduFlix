@@ -1,0 +1,66 @@
+/* body {
+  background-image: url(../assets/2000.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  width: 95%;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #319795;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.login-button:hover {
+  background-color: #2c7a7b;
+}
+#checkBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 8px;
+  margin-top: -25px;
+}
+#checkBox input {
+  width: auto;
+  box-shadow: none;
+}

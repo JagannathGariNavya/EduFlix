@@ -6,18 +6,15 @@ import {
   Button,
   InputGroup,
   Stack,
-  InputLeftElement,
   chakra,
   Box,
-  Avatar,
   FormControl,
-  InputRightElement,
   Alert,
   AlertIcon,
   Link
 } from "@chakra-ui/react";
 import { FaUserAlt, FaLock } from "react-icons/fa";
-import "../../src/signup.css"
+import "../../src/signup.css";
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
@@ -27,6 +24,7 @@ const SignUp = ({ setUser }) => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
   const handleShowClick = () => setShowPassword(!showPassword);
@@ -52,6 +50,10 @@ const SignUp = ({ setUser }) => {
       localStorage.setItem('user', JSON.stringify(newUser));
       setUser(newUser);
       setError('');
+      setSuccessMessage('Sign up successful! Redirecting to login...');
+      setTimeout(() => {
+        setSuccessMessage('');
+      }, 3000); // Clear success message after 3 seconds
     } catch (error) {
       console.error(error);
       setError('Error creating account');
@@ -59,21 +61,22 @@ const SignUp = ({ setUser }) => {
   };
 
   return (
-    <div className='signup-page' >
-      <Flex  gap="20px"
+    <div className='signup-page'>
+      <Flex
+        gap="20px"
         flexDirection="column"
         width="100wh"
         height="100vh"
         justifyContent="center"
         alignItems="center"
       >
-        <Stack  className='stack' 
+        <Stack
+          className='stack'
           flexDir="column"
           mb="2"
           justifyContent="center"
           alignItems="center"
         >
-          {/* <Avatar bg="blue.500" /> */}
           <Heading color="blue.500">Sign Up</Heading>
           <Box minW={{ base: "90%", md: "468px" }}>
             <form onSubmit={handleSignUp}>
@@ -85,35 +88,43 @@ const SignUp = ({ setUser }) => {
               >
                 <FormControl>
                   <InputGroup>
-                    
-                    <Input type="text" placeholder="User Name" className='signup-input'
-                      value={username} onChange={e => setUsername(e.target.value)} />
-                  </InputGroup>
-                </FormControl>
-                <FormControl>
-                  <InputGroup>
-
                     <Input
-                      type="password" className='signup-input'
-                      placeholder="Password"
-                      value={password} onChange={e => setPassword(e.target.value)}
-                    />
-
+                      type="text"
+                      placeholder="User Name"
+                      className='signup-input'
+                      value={username}
+                      onChange={e => setUsername(e.target.value)}
+                      required
+                    /><span style={{ color: 'red', fontSize: "20px", marginLeft: "5px" }}>*</span>
                   </InputGroup>
                 </FormControl>
                 <FormControl>
                   <InputGroup>
-
-                    <Input className='signup-input'
+                    <Input
+                      type="password"
+                      className='signup-input'
+                      placeholder="Password"
+                      value={password}
+                      onChange={e => setPassword(e.target.value)}
+                      required
+                    /><span style={{ color: 'red', fontSize: "20px", marginLeft: "5px" }}>*</span>
+                  </InputGroup>
+                </FormControl>
+                <FormControl>
+                  <InputGroup>
+                    <Input
+                      className='signup-input'
                       type="password"
                       placeholder="Confirm Password"
-                      value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)}
-                    />
-                    
+                      value={confirmPassword}
+                      onChange={e => setConfirmPassword(e.target.value)}
+                      required
+                    /><span style={{ color: 'red', fontSize: "20px", marginLeft: "5px" }}>*</span>
                   </InputGroup>
                 </FormControl>
-                <Button className='signup-button'
-                  borderRadius={0}
+                <Button
+                  className='signup-button'
+                  borderRadius={5}
                   type="submit"
                   variant="solid"
                   colorScheme="blue"
@@ -125,6 +136,12 @@ const SignUp = ({ setUser }) => {
                   <Alert status="error" borderRadius={4}>
                     <AlertIcon />
                     {error}
+                  </Alert>
+                )}
+                {successMessage && (
+                  <Alert status="success" borderRadius={4}  color="green" mt="20px" ml="20px">
+                    {/* <AlertIcon /> */}
+                    {successMessage}
                   </Alert>
                 )}
               </Stack>
@@ -142,4 +159,4 @@ const SignUp = ({ setUser }) => {
   );
 };
 
-export default SignUp;
+export default SignUp;

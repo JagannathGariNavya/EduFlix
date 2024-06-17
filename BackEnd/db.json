@@ -1,10 +1,28 @@
 {
-  "users": [
+  "admin": [
     {
-      "id":1,
-      "name": "Navya",
-      "email": "jnavyan12@gmail.com",
-      "password": "1234"
+      "id": 1,
+      "username": "ashwin@gmail.com",
+      "password": "admin123",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "username": "shobhit@gmail.com",
+      "password": "123456789",
+      "isAdmin": true
+    },
+    {
+      "id": 3,
+      "username": "shreya@gmail.com",
+      "password": "shreya",
+      "isAdmin": true
+    },
+    {
+      "id": 4,
+      "username": "navya@gmail.com",
+      "password": "jnavya",
+      "isAdmin": true
     }
   ],
 
@@ -375,6 +393,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 22,
       "image": "https://img-c.udemycdn.com/course/240x135/1466612_bead_3.jpg",
       "title": "Ethereum and Solidity: The Complete Developer's Guide",
       "short_Description": "Use Ethereum, Solidity, and Smart Contracts to build production-ready apps based on the blockchain",
@@ -392,6 +411,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 23,
       "image": "https://img-c.udemycdn.com/course/240x135/2153774_bef0_4.jpg",
       "title": "Modern HTML & CSS From The Beginning (Including Sass)",
       "short_Description": "Build modern responsive websites & UIs with HTML5, CSS3 & Sass! Learn Flex & CSS Grid",
@@ -409,6 +429,7 @@
       "badge": ""
     },
     {
+      "id": 24,
       "image": "https://img-c.udemycdn.com/course/240x135/505208_2307_5.jpg",
       "title": "Responsive Web Design: HTML5 + CSS3 for Entrepreneurs 2018",
       "short_Description": "Build a coding foundation as an entrepreneur, where I’ll take you through the entire process of coding your own website",
@@ -427,6 +448,7 @@
       "badge": ""
     },
     {
+      "id": 25,
       "image": "https://img-c.udemycdn.com/course/240x135/1386294_cf10_3.jpg",
       "title": "Python for beginners",
       "short_Description": "Master the fundamentals of Python while working on various usecases in easy steps",
@@ -444,6 +466,7 @@
       "badge": ""
     },
     {
+      "id": 26,
       "image": "https://img-c.udemycdn.com/course/240x135/405282_27d2_3.jpg",
       "title": "PHP for Beginners - Become a PHP Master - CMS Project",
       "short_Description": "PHP for Beginners: learn everything you need to become a professional PHP developer with practical exercises & projects.",
@@ -462,6 +485,7 @@
       "badge": ""
     },
     {
+      "id": 27,
       "image": "https://img-c.udemycdn.com/course/240x135/833442_b26e_5.jpg",
       "title": "Angular & NodeJS - The MEAN Stack Guide [2024 Edition]",
       "short_Description": "Learn how to connect your Angular Frontend to a NodeJS &amp; Express &amp; MongoDB Backend by building a real Application",
@@ -479,6 +503,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 28,
       "image": "https://img-c.udemycdn.com/course/240x135/1010586_b622_3.jpg",
       "title": "Become a WordPress Developer: Unlocking Power With Code",
       "short_Description": "Learn PHP, JavaScript, WordPress theming &amp; the WP REST API to Create Custom &amp; Interactive WordPress Websites",
@@ -496,6 +521,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 29,
       "image": "https://img-c.udemycdn.com/course/240x135/1672410_9ff1_5.jpg",
       "title": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2024",
       "short_Description": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payments & more)",
@@ -513,6 +539,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 30,
       "image": "https://img-c.udemycdn.com/course/240x135/1286908_1773_6.jpg",
       "title": "The Complete React Developer Course (w/ Hooks and Redux)",
       "short_Description": "Learn how to build and launch React web applications using React, Redux, Webpack, React-Router, and more!",
@@ -530,6 +557,7 @@
       "badge": ""
     },
     {
+      "id": 31,
       "image": "https://img-c.udemycdn.com/course/240x135/1455016_0b2d_2.jpg",
       "title": "Build an app with ASPNET Core and Angular from scratch",
       "short_Description": "A practical example of how to build an application with ASP.NET Core API and Angular from start to finish",
@@ -547,6 +575,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 32,
       "image": "https://img-c.udemycdn.com/course/240x135/970600_68be_4.jpg",
       "title": "REST APIs with Flask and Python in 2024",
       "short_Description": "Build professional REST APIs with Python, Flask, Docker, Flask-Smorest, and Flask-SQLAlchemy",
@@ -565,6 +594,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 33,
       "image": "https://img-c.udemycdn.com/course/240x135/289230_1056_16.jpg",
       "title": "Learn and Understand AngularJS",
       "short_Description": "Master AngularJS and the Javascript concepts behind it, design custom directives, and build a single page application.",
@@ -582,6 +612,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 34,
       "image": "https://img-c.udemycdn.com/course/240x135/594360_bee2_2.jpg",
       "title": "HTML5 and CSS3 Fundamentals",
       "short_Description": "Build your very own website with HTML5 from scratch using HTML5 and CSS3 - designed for complete beginners",
@@ -599,6 +630,7 @@
       "badge": ""
     },
     {
+      "id": 35,
       "image": "https://img-c.udemycdn.com/course/240x135/719002_af70_3.jpg",
       "title": "Angular Crash Course for Busy Developers",
       "short_Description": "Have limited time to learn Angular 4 (Angular 2+)? Take this course and learn Angular in 10 hours!",
@@ -616,6 +648,7 @@
       "badge": ""
     },
     {
+      "id": 36,
       "image": "https://img-c.udemycdn.com/course/240x135/3873464_403c_3.jpg",
       "title": "Next.js 14 & React - The Complete Guide",
       "short_Description": "Learn NextJS 14 from the ground up and build fullstack ReactJS + NextJS apps with the App Router or Pages Router!",
@@ -633,6 +666,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 37,
       "image": "https://img-c.udemycdn.com/course/240x135/2887266_c696_5.jpg",
       "title": "Microservices with Node JS and React",
       "short_Description": "Build, deploy, and scale an E-Commerce app using Microservices built with Node, React, Docker and Kubernetes",
@@ -650,6 +684,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 38,
       "image": "https://img-c.udemycdn.com/course/240x135/405818_aa3f_3.jpg",
       "title": "Javascript for Beginners Learn by Doing Practical Exercises",
       "short_Description": "JavaScript for Beginners : Work closely with me doing exercises & learn more. I make Javascript easy for you guaranteed.",
@@ -668,6 +703,7 @@
       "badge": ""
     },
     {
+      "id": 39,
       "image": "https://img-c.udemycdn.com/course/240x135/1313502_b57f_2.jpg",
       "title": "Bootstrap 4 From Scratch With 5 Projects",
       "short_Description": "Master Bootstrap 4 and build 5 real world themes while learning HTML5 semantics & CSS3",
@@ -685,6 +721,7 @@
       "badge": ""
     },
     {
+      "id": 40,
       "image": "https://img-c.udemycdn.com/course/240x135/519442_63fe_2.jpg",
       "title": "The Complete Ruby on Rails Developer Course",
       "short_Description": "Learn to make innovative web apps with Ruby on Rails and unleash your creativity",
@@ -703,6 +740,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 41,
       "image": "https://img-c.udemycdn.com/course/240x135/1078208_530c_3.jpg",
       "title": "Learn Spring Boot 3 in 100 Steps - No 1 Java Framework",
       "short_Description": "Java Spring Boot Framework in 100 steps - Build a REST API and a Web application with Java, JPA, SpringBoot and Maven",
@@ -720,6 +758,7 @@
       "badge": ""
     },
     {
+      "id": 42,
       "image": "https://img-c.udemycdn.com/course/240x135/1844356_cba1_8.jpg",
       "title": ".NET Core MVC - The Complete Guide 2024 [E-commerce] [.NET8]",
       "short_Description": "Build real world e-commerce application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity.",
@@ -737,6 +776,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 43,
       "image": "https://img-c.udemycdn.com/course/240x135/1646980_23f7_3.jpg",
       "title": "MERN Stack Front To Back: Full Stack React, Redux & Node.js",
       "short_Description": "Build and deploy a social network with Node.js, Express, React, Redux & MongoDB. Fully updated April 2019",
@@ -754,6 +794,7 @@
       "badge": ""
     },
     {
+      "id": 44,
       "image": "https://img-c.udemycdn.com/course/240x135/714724_b3b4_9.jpg",
       "title": "Docker Crash Course for busy DevOps and Developers",
       "short_Description": "Learn how to develop and deploy web applications with Docker technologies. Take your DevOps skills to the next level.",
@@ -772,6 +813,7 @@
       "badge": ""
     },
     {
+      "id": 45,
       "image": "https://img-c.udemycdn.com/course/240x135/1302610_5c62_4.jpg",
       "title": "Master Java Web Services and REST API with Spring Boot",
       "short_Description": "Build Java Web Services & REST API - RESTful & SOAP - with Spring & Spring Boot. Learn REST API & SOAP Web Services Now!",
@@ -789,6 +831,7 @@
       "badge": "Highest rated"
     },
     {
+      "id": 46,
       "image": "https://img-c.udemycdn.com/course/240x135/41295_dd3f_9.jpg",
       "title": "Learn HTML5 Programming From Scratch",
       "short_Description": "A Complete HTML5 Programming Course for Beginners",
@@ -806,6 +849,7 @@
       "badge": ""
     },
     {
+      "id": 47,
       "image": "https://img-c.udemycdn.com/course/240x135/520116_edf5_2.jpg",
       "title": "The Complete WordPress Website Business Course",
       "short_Description": "Master WordPress with this Complete WordPress Course, without learning how to code and without any programming!",
@@ -824,6 +868,7 @@
       "badge": ""
     },
     {
+      "id": 48,
       "image": "https://img-c.udemycdn.com/course/240x135/1409142_1879_8.jpg",
       "title": "The Coding Interview Bootcamp: Algorithms + Data Structures",
       "short_Description": "Ace your next Javascript coding interview by mastering data structures and algorithms.",
@@ -841,6 +886,7 @@
       "badge": ""
     },
     {
+      "id": 49,
       "image": "https://img-c.udemycdn.com/course/240x135/1254420_f6cb_4.jpg",
       "title": "Node with React: Fullstack Web Development",
       "short_Description": "Build and deploy fullstack web apps with NodeJS, React, Redux, Express, and MongoDB.",
@@ -858,6 +904,7 @@
       "badge": ""
     },
     {
+      "id": 50,
       "image": "https://img-c.udemycdn.com/course/240x135/80940_2664_10.jpg",
       "title": "Build Websites from Scratch with HTML & CSS",
       "short_Description": "Learn Web Development Essentials and Become a Web Developer From Scratch in this Complete HTML & CSS Beginner's Course",
@@ -876,6 +923,7 @@
       "badge": ""
     },
     {
+      "id": 51,
       "image": "https://img-c.udemycdn.com/course/240x135/446134_383c_3.jpg",
       "title": "Ultimate Web Designer & Web Developer Course",
       "short_Description": "Become a Full-Stack Web Designer in 2023 - Learn Everything from Web Design Fundamentals to Front-End Web Development",
@@ -893,6 +941,7 @@
       "badge": "Bestseller"
     },
     {
+      "id": 52,
       "image": "https://img-c.udemycdn.com/course/240x135/1166306_84a1_3.jpg",
       "title": "The Complete Front-End Web Development Course",
       "short_Description": "Get started as a front-end web developer using HTML, CSS, JavaScript, jQuery, and Bootstrap!",
@@ -911,6 +960,7 @@
       "badge": ""
     },
     {
+      "id": 53,
       "image": "https://img-c.udemycdn.com/course/240x135/861624_864d_2.jpg",
       "title": "ES6 Javascript: The Complete Developer's Guide",
       "short_Description": "ES6 Javascript Development from scratch.  Get practice with live examples and learn exactly where to apply ES6 features.",
@@ -928,6 +978,7 @@
       "badge": ""
     },
     {
+      "id": 54,
       "image": "https://img-c.udemycdn.com/course/240x135/1241254_9cc1.jpg",
       "title": "AWS Serverless APIs & Apps - A Complete Introduction",
       "short_Description": "Get into serverless computing with API Gateway, AWS Lambda and other Amazon Web Services! Zero server config APIs & SPAs",
@@ -4488,9 +4539,7 @@
         "Anyone interested in becoming a full-stack web developer"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4499,17 +4548,12 @@
       "enrollmentNumbers": 200000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/AmX9zoLhUKU?list=PLOK_oIDzalSj0QAUIWBGOHCJVjBsPoPgR",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 2,
@@ -4548,9 +4592,7 @@
         "Anyone interested in full-stack development"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Code examples",
         "Quizzes and assignments",
@@ -4559,17 +4601,12 @@
       "enrollmentNumbers": 180000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/SF_Xl5TOGlY?list=PLblA84xge2_xNtaFnZhefjFbnDrpySKD3",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 3,
@@ -4607,9 +4644,7 @@
         "Anyone interested in mastering JavaScript"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Code samples",
         "Quizzes and assignments",
@@ -4618,17 +4653,12 @@
       "enrollmentNumbers": 150000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/1uYQRG5csT8?list=PLOmL3sL-afbRVTvedkIrQcDwg2UY0JGTF",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 4,
@@ -4666,9 +4696,7 @@
         "Anyone looking to build React applications"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4677,17 +4705,12 @@
       "enrollmentNumbers": 120000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/9zmwGT7DEsM",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 5,
@@ -4724,9 +4747,7 @@
         "Professionals looking to expand their skills"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Downloadable code examples",
         "Quizzes and assignments",
@@ -4735,17 +4756,12 @@
       "enrollmentNumbers": 300000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/i3-PQ4CkU8s?list=PLSzsOkUDsvdvGZ2fXGizY_Iz9j8-ZlLqh",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 6,
@@ -4785,9 +4801,7 @@
         "Students pursuing a career in data science"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4796,17 +4810,12 @@
       "enrollmentNumbers": 250000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/SZK6qhSLVrs",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 7,
@@ -4849,9 +4858,7 @@
         "Students interested in Python programming"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4860,17 +4867,12 @@
       "enrollmentNumbers": 350000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/bqAU2k8JQa8",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 8,
@@ -4911,9 +4913,7 @@
         "Professionals looking to transition into data science"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4922,17 +4922,12 @@
       "enrollmentNumbers": 400000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/5HlbV1wKBmo?list=PLaFfQroTgZnyQFq4nUfb-w2vEopN3ULMb",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 9,
@@ -4973,9 +4968,7 @@
         "Students interested in data management"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -4984,17 +4977,12 @@
       "enrollmentNumbers": 200000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/iiRN93Ifv3A?list=PL50QcNqdGrAnUfnq4AmM0YjbwTRcn3xNT",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 10,
@@ -5035,9 +5023,7 @@
         "Anyone looking to build server-side applications with NodeJS"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -5046,17 +5032,12 @@
       "enrollmentNumbers": 150000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/65a5QQ3ZR2g?list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 11,
@@ -5095,9 +5076,7 @@
         "Anyone wanting to create interactive charts and graphs"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Code samples",
         "Quizzes and assignments",
@@ -5106,17 +5085,12 @@
       "enrollmentNumbers": 80000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/q6GWkbUWFBg?list=PLhGp6N0DI_1TSgS8KqsGQMyGlVIatwVXn",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     },
     {
       "id": 12,
@@ -5155,9 +5129,7 @@
         "Anyone looking to build search-based applications"
       ],
       "certification": "Certificate of Completion provided",
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "resourcesProvided": [
         "Downloadable resources",
         "Quizzes and assignments",
@@ -5166,17 +5138,12 @@
       "enrollmentNumbers": 120000,
       "lastUpdated": "June 2024",
       "accessibility": {
-        "subtitles": [
-          "English"
-        ],
+        "subtitles": ["English"],
         "transcripts": "Available for all lectures"
       },
       "refundPolicy": "30-day money-back guarantee",
       "coursePreview": "https://youtu.be/q6GWkbUWFBg?list=PLhGp6N0DI_1TSgS8KqsGQMyGlVIatwVXn",
-      "platformFeatures": [
-        "Lifetime access",
-        "Accessible on mobile and TV"
-      ]
+      "platformFeatures": ["Lifetime access", "Accessible on mobile and TV"]
     }
   ],
   "user": [

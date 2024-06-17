@@ -1,10 +1,8 @@
-/* testimonial.css */
 
-/* Testimonial Section */
 .testimonial__section {
   margin-top: 50px;
-  padding: 80px 0; /* Adjust padding as needed */
-  background-color: #f8f9fa; /* Light background color */
+  padding: 80px 0; 
+  background-color: #f8f9fa;
 }
 
 .testimonial__wrapper {
@@ -13,7 +11,7 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  /* background-color: teal; */
+ 
 }
 
 .testimonial__img {
@@ -24,7 +22,7 @@
 .testimonial__image {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Rounded corners for image */
+  border-radius: 8px; 
 }
 
 .testimonial__content {
@@ -37,27 +35,27 @@
   font-weight: bold;
   margin-right: 390px;
   margin-bottom: 20px;
-  color: #333; /* Dark text color */
+  color: #333; 
 }
 
-/* Testimonial Cards */
 .testimonial__cards {
   display: grid;
   gap: 20px;
+  
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .testimonial__card {
-  background-color: #fff; /* White background for cards */
-  padding: 20px;
-  border-radius: 8px; /* Rounded corners for cards */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  background-color: #fff; 
+  height: 40vh;
+  padding: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .testimonial__quote {
   font-size: 16px;
   font-style: italic;
-  color: #666; /* Medium gray text color */
+  color: #666; 
 }
 
 .student__info {

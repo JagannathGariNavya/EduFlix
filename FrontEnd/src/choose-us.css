@@ -93,6 +93,11 @@
 }
 .see-more-button{
   background-color: #f50057;
+  border: none;
+  color: white;
+}
+.see-more-button:hover{
+  background-color: #f50057;
   color: white;
 }
 
