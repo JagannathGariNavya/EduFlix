@@ -179,10 +179,10 @@ Warning: The project is built around the deployed server which can be accessed u
 1. The website lands on the home page. On the home page, the following functions can be performed:
 
 
-2.  hovering on the elements which are present on the navbar can see the Dropdown of elements.
+2.  hovering on the elements which are present on the navbar can easily navigate to the another page.
  
 
-3. When Scroll Down on Landing Page there are some Cards Which has the latest bike images and their short description.
+3. When Scroll Down on Landing Page there are some Cards Which has the latest courses and their short description.
 
 
 4. Next we have Learn and More With ome image of Harley-Davidson Bike, it has one explore more button by clicking on the explore more we are redirected to the the bikes page where you can get more clear information about bikes
