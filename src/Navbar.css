@@ -1,0 +1,145 @@
+/* Navbar.css */
+
+#navMain {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dark-theme #navMain{
+  box-shadow:none
+}
+.chakra-ui-light,
+.chakra-ui-dark {
+  display: block;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: black; /* Default text color */
+  /* position: sticky; */
+  
+  background-color: white;
+}
+
+.navbar-logo {
+  width: 150px;
+  max-width: none;
+}
+.dark-theme .navbar {
+  background-color: black;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 300px;
+  margin: 0px 150px 0px 150px;
+  margin-left: 20px;
+}
+
+.navbar-search-box {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin-left: -100px;
+  margin-right: 400px;
+}
+
+.search-input {
+  padding: 5px;
+  height: 30px;
+  /* width: 200px; */
+}
+
+.search-icon {
+  height: 20px;
+  /* width: 100px; */
+  margin-left: -40px;
+  margin-left: 5px;
+  border: solid;
+}
+
+.navbar-login-button,
+.navbar-cart-button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 50px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  color: #242424da; /* Default text color */
+}
+/* .search-box {
+  display: flex;
+  align-items: center;
+  background: #242424e1;
+  padding: 10px;
+  margin-left: -70px;
+  border-radius: 50px;
+} */
+.search-box input {
+  padding: 6px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 18px;
+  width: 200px;
+  /* margin-left: 40px; */
+}
+
+.search-box input::placeholder {
+  color: #fff;
+}
+ .search-box input::placeholder {
+  color: #fff;
+}
+
+.search-box img {
+  width: 20px;
+  cursor: pointer;
+  max-width: none;
+}
+
+.navbar-login-button:hover,
+.navbar-cart-button:hover {
+  opacity: 0.8;
+}
+
+.cart-icon {
+  font-size: 20px; /* Adjust size as needed */
+  /* margin-right: 5px; */
+}
+
+.navbar-toggle-icon {
+  cursor: pointer;
+  height: 30px;
+  margin-right: 40px;
+  margin-left: 45px;
+  color: #242424da;
+}
+.dark-theme .navbar-toggle-icon {
+  background-color: white;
+}
+.dark-theme {
+  background-color: #333; /* Dark background color */
+  color: white; /* White text color */
+}
+.dark-theme .navbar {
+  background-color: black; /* Dark background color */
+  color: white; /* White text color */
+}
+
+.dark-theme .navbar-nav {
+  color: black;
+  background-color: black; /* Adjust text color for navbar-nav in dark mode */
+}
+
+.dark-theme .navbar-login-button,
+.dark-theme .navbar-cart-button {
+  color: white; /* Adjust button text color in dark mode */
+}
