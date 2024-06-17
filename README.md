@@ -9,7 +9,6 @@ Frontend | Backend
 ## Deployed Link
 
 Frontend:
-Backend:
 
 ## Directory Structure
 
