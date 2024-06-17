@@ -18,7 +18,8 @@
   width: 30%;
   justify-content: space-around;
   height: 70vh;
-  margin-bottom: -70px;
+  /* border: solid; */
+  margin-bottom: -70px; /* Reduced margin */
 }
 /* .puzzle-container {
   display: flex;

@@ -52,7 +52,7 @@ export const Subscription = () => {
       priceMonthly: "1,500",
       subscriptionType: "Monthly",
       content1: "Monthly Subscription",
-      content2: "Access Intensive programs",
+      content2: "Access up to Intensive programs",
       content3: "Certificate of Completion",
       content4: "Peer Graded Assessments",
       content5: "5 Live Sessions",

@@ -100,5 +100,4 @@ const FreeCourse = () => {
   );
 };
 
-
 export default FreeCourse;

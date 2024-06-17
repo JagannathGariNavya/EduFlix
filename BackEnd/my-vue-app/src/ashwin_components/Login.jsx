@@ -16,7 +16,7 @@ function Login({ setAuth }) {
     }
 
     try {
-      const response = await axios.get("http://localhost:5000/admin");
+      const response = await axios.get("https://eduschool-2.onrender.com/admin");
       const users = response.data;
       const user = users.find(
         (user) => user.username === username && user.password === password
