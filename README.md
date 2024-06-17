@@ -8,8 +8,8 @@ Frontend | Backend
 
 ### Deployed Link
 
-EduSchool: [Live Demo](https://edu-school-k4id.vercel.app/)
-Admin DashBoard: [Live Demo](https://edu-school-ka3k.vercel.app/)
+- EduSchool: [Live Demo](https://edu-school-k4id.vercel.app/)
+- Admin DashBoard: [Live Demo](https://edu-school-ka3k.vercel.app/)
 
 ### Directory Structure
 
