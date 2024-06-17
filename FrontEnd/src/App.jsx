@@ -14,7 +14,6 @@ import { Subscription } from "./pages/Subscription";
 import CallbackForm from "./components/CallbackForm";
 import Footer from "./components/Footer/Footer";
 import FreeCourse from "./components/FreeCourse/FreeCourse";
-import { AdminHome } from "./ashwin_components/AdminHome";
 import { CartPage } from "./components/CartPage";
 import "./App.css";
 import ContactPage from "./components/Layout/ContactPage";
@@ -65,15 +64,25 @@ const App = () => {
 
             <Route path="/callback" element={<CallbackForm />} />
             <Route path="/enroll/:courseTitle" element={<Enroll />} />
-            <Route path="/course/:id" element={<ChakraProvider><CoursePage /></ChakraProvider>} />
-            <Route path="/CartPage" element={<ChakraProvider><CartPage/></ChakraProvider>}/>
+            <Route
+              path="/course/:id"
+              element={
+                <ChakraProvider>
+                  <CoursePage />
+                </ChakraProvider>
+              }
+            />
+            <Route
+              path="/CartPage"
+              element={
+                <ChakraProvider>
+                  <CartPage />
+                </ChakraProvider>
+              }
+            />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<Login setUser={setUser} />} />
             <Route path="/signup" element={<SignUp setUser={setUser} />} />
-            <Route
-              path="/admin"
-              element={user?.isAdmin ? <AdminHome /> : <Navigate to="/home" />}
-            />
           </Routes>
           <Footer />
         </div>
