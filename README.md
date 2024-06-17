@@ -1,155 +1,60 @@
 # EduSchool
-# Snap Savants_039	
-
-## Introduction
 
 Edu-School :The EduSchool Course Subscription Plan project aims to create a subscription-based model allowing users unlimited access to courses for a monthly or annual fee. It will include features such as user account management, secure payment integration, and content access control based on subscription status. The project will enhance user experience with personalized dashboards and progress tracking. Analytics and reporting tools will be developed to monitor subscription metrics and user engagement. The goal is to provide flexible learning options and recurring revenue for EduSchool.
 
 ## Project Type
 
-Frontend:
+Frontend | Backend
 
-The project is a primarily front-end project which utilizes a mock server to simulate back-end.
-
-## Deployed App
+## Deployed Link
 
 Frontend:
-
 Backend:
 
 ## Directory Structure
 
 ```
-EduShcool
-├── .gitignore
-├── BackEnd/
-│   ├── .gitignore
-│   ├── db.json
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── products.json
-│   ├── server.js
-│   └── test.rest
-├── FrontEnd/
-│   ├── .eslintrc.cjs
-│   ├── .gitignore
-│   ├── README.md
-│   ├── index.html
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── public/
-│   │   ├── logo/ 
-│   │   └── vite.svg
-│   ├── src/
-│   │   ├── App.tsx
-│   │   ├── assets/
-│   │   │   ├── react.svg
-│   │   │   
-│   │   │   
-│   │   │   
-│   │   │   
-│   │   │   
-│   │   │   
-│   │   ├── components/
-│   │   │   ├── .dummy
-│   │   │   ├── Admin/
-│   │   │   │   ├── InitialFocus.tsx
-│   │   │   │   ├── Sidebar.tsx
-│   │   │   │   └── apiService/
-│   │   │   │   │   ├── FetchProperty.tsx
-│   │   │   │   │   ├── PostData.tsx
-│   │   │   │   │   └── fetchData.tsx
-│   │   │   ├── Body/
-│   │   │   │   ├── Body.tsx
-│   │   │   ├── Footer/
-│   │   │   │   ├── Footer.tsx
-│   │   │   ├── Header/
-│   │   │   │   ├── Navbar.tsx
-│   │   │   ├── Registration/
-│   │   │   │   ├── Registration.tsx
-│   │   │   ├── product/
-│   │   │   │   ├── Products.tsx
-│   │   │   └── Addcard/
-│   │   │   │   ├── Men.tsx
-│   │   ├── main.tsx
-│   │   ├── pages/
-│   │   │   ├── Admin.tsx
-│   │   │   ├── Home.tsx
-│   │   │   ├── LoginSignUp.tsx
-│   │   │   ├── Property.tsx
-│   │   │   └── Wishlist.tsx
-│   │   ├── redux/
-│   │   │   ├── action.ts
-│   │   │   ├── actionTypes.ts
-│   │   │   ├── authReducer.ts
-│   │   │   └── store.ts
-│   │   ├── routes/
-│   │   │   ├── AllRoutes.tsx
-│   │   │   └── PrivateRoute.tsx
-│   │   ├── styles/
-│   │   │   ├── Navbar.css
-│   │   │   ├── App.css
-│   │   │   ├── Footer/
-│   │   │   │   └── footer.css
-│   │   │   ├── Registration/
-│   │   │   │   ├── css/
-│   │   │   │   │   ├── style.css
-│   │   │   │   │   └── style.css.map
-│   │   │   │   ├── fonts/
-│   │   │   │   │   └── material-icon/
-│   │   │   │   │   │   ├── css/
-│   │   │   │   │   │   │   ├── material-design-iconic-font.css
-│   │   │   │   │   │   │   └── material-design-iconic-font.min.css
-│   │   │   │   │   │   └── fonts/
-│   │   │   │   └── scss/
-│   │   │   ├── cards.css
-│   │   │   ├── filterBar.css
-│   │   │   ├── index.css
-│   │   │   ├── navbar.css
-│   │   │   └── propertyPageStyle/
-│   │   ├── utils/
-│   │   └── vite-env.d.ts
-│   ├── tsconfig.json
-│   ├── tsconfig.node.json
-│   └── vite.config.ts
-└── README.md
 
 ```
 
 ## video Walkthrough of the project
 
 
-A detailed walkthrough of all the features of our project can be found here:
-
------
-
-## video Walkthrough of the project
-
-
-A quick walkthrough of the project can be found here: 
-
------
-
 ##Features
 
--Responsive and dynamic website
-- Admin Dashboard and CRUD Operations
-- Search using search param
-- User authentication
+- **Login and Signup**: "Effortlessly access exclusive deals by logging in or sign up for personalized shopping experiences"
+- **Responsive and Dynamic**: The website adapts seamlessly to any device, ensuring a smooth and intuitive experience across desktop, tablet, and mobile.
+- **Admin Dashboard (CRUD Operations)**: (For authorized users) Admins can manage the platform effectively with a comprehensive dashboard enabling them to Create, Read, Update, and Delete courses, user accounts, and 
+   other critical data.
+- **Search bar**: Easily find the course you want with our intuitive search bar.
+- **Cart**: Keep track of your favourite courses with our convenient cart feature.
 
-## Design Decisions or Assumptions
+ ## Technology Stack
 
-This is not the cloned project . To facilitate the proper design and flow of our project following assumptions were made :
+- **HTML**: Provides the structure and content for the web page.
+- **CSS**: Handles the UI and styling, ensuring an appealing visual presentation.
+- **Javascript**: JavaScript empowers dynamic and interactive web experiences through its versatile scripting capabilities.
+- **Json Server**:JSON Server simplifies backend development by allowing you to quickly create a REST API with JSON data, streamlining your development process and enabling rapid prototyping.
+- **Bootstrap Library (Bootstrap 5.3)**:Provides responsive designs that adapt to different screen sizes.
+- **React.JS**: A JavaScript library for building user interfaces.
+- **Chakra UI**: A component library built on top of React.JS.Focuses on simplicity and on performance.
 
-- One admin for all CRUD operations instead of multiple admins and super admin
-- User must be logged in to access the test-rdie details
-- Admin user does not need to access the main website and is redirected to the admin dashboard
+### Design Elements
 
-  ## Installation & Getting started
+- **Interactive**: Card will increase in sized in a smooth way when curser hover them.
+
+- **Flex and Grid**: Many of the elements takes the benefits of display flex and display grid to provide more control over the deferent layout in different sections of website.
+
+- **Fonts & Icons**: Integrates React Fonts and React icons for enhanced visual elements. By leveraging these resources, the website achieves a modern and visually appealing design, improving readability and user engagement.
+
+## Installation & Getting started
 
 To run the frontend website, enter the following commands in your terminal:
 
 ```bash
+#Cloning repository
+Clone this repository to your local machine.
+
 # Move into the FrontEnd Directory
 cd FrontEnd/
 
@@ -171,41 +76,15 @@ cd BackEnd/
 # Run the server
 npm run start
 ```
+### Contributors
 
-Warning: The project is built around the deployed server which can be accessed using the above link. Running a local server might cause some unwanted changes.
+- [Shobhit Gupta](https://github.com/shobhit9742)
+- [JagannathGariNavya](https://github.com/JagannathGariNavya)
+- [Ashwin Bhagat](https://github.com/asbhagat2020)
+- [Shreya Kushwaha](https://github.com/shreya-kushwaha40)
 
-## Usage
+### Acknowledments
 
-1. The website lands on the home page. On the home page, the following functions can be performed:
-
-
-2.  hovering on the elements which are present on the navbar can easily navigate to the another page.
- 
-
-3. When Scroll Down on Landing Page there are some Cards Which has the latest courses and their short description.
-
-
-4. Next we have Learn and More With ome image of Harley-Davidson Bike, it has one explore more button by clicking on the explore more we are redirected to the the bikes page where you can get more clear information about bikes
-
-
-5. We have shop and Appreal cards those cards were clickable it will route us to their specific page
-    
-
-   6. We have use friendly footer where the user has any issues any help the user can contact us from the footer where the information is added
-     
-7. From Navbar when we hover on elements and click on the elements it will redirect us to thier specific page.
-  
-
-
- ## Technology Stack
-
-- HTML
-- CSS
-- JavaScript
-- Bootstrap Library (Bootstrap 5.3)
-- React.JS
-- Chakra UI
-
-
-
+- Inspired by the original EduSchool website.
+- Special thanks to our dedicated team for their invaluable contributions to EduSchool, and to our mentor/IA Aditya Kumar
 
