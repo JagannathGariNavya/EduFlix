@@ -2,24 +2,24 @@
 
 Edu-School :The EduSchool Course Subscription Plan project aims to create a subscription-based model allowing users unlimited access to courses for a monthly or annual fee. It will include features such as user account management, secure payment integration, and content access control based on subscription status. The project will enhance user experience with personalized dashboards and progress tracking. Analytics and reporting tools will be developed to monitor subscription metrics and user engagement. The goal is to provide flexible learning options and recurring revenue for EduSchool.
 
-## Project Type
+### Project Type
 
 Frontend | Backend
 
-## Deployed Link
+### Deployed Link
 
 Frontend:
 
-## Directory Structure
+### Directory Structure
 
 ```
 
 ```
 
-## video Walkthrough of the project
+### video Walkthrough of the project
 
 
-##Features
+### Features
 
 - **Login and Signup**: "Effortlessly access exclusive deals by logging in or sign up for personalized shopping experiences"
 - **Responsive and Dynamic**: The website adapts seamlessly to any device, ensuring a smooth and intuitive experience across desktop, tablet, and mobile.
@@ -28,7 +28,7 @@ Frontend:
 - **Search bar**: Easily find the course you want with our intuitive search bar.
 - **Cart**: Keep track of your favourite courses with our convenient cart feature.
 
- ## Technology Stack
+ ### Technology Stack
 
 - **HTML**: Provides the structure and content for the web page.
 - **CSS**: Handles the UI and styling, ensuring an appealing visual presentation.
@@ -46,7 +46,7 @@ Frontend:
 
 - **Fonts & Icons**: Integrates React Fonts and React icons for enhanced visual elements. By leveraging these resources, the website achieves a modern and visually appealing design, improving readability and user engagement.
 
-## Installation & Getting started
+### Installation & Getting started
 
 To run the frontend website, enter the following commands in your terminal:
 
