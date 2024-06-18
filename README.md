@@ -17,6 +17,8 @@ Frontend | Backend
 
 ### video Walkthrough of the project
 
+-[Presentation Link](https://www.youtube.com/watch?v=mR6HSHg8n68)
+
 ### Screenshots
 
 **Landing Page**
