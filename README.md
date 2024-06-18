@@ -13,9 +13,7 @@ Frontend | Backend
 
 ### Directory Structure
 
-```
-
-```
+<img src="./FrontEnd/src/assets/Directory.PNG" alt="">
 
 ### video Walkthrough of the project
 
@@ -23,23 +21,23 @@ Frontend | Backend
 
 **Landing Page**
 
-<img src="" alt="">
+<img src="./FrontEnd/src/assets/heroimg1.png" alt="">
 
 **Login and Signup Page**
 
-<img src="" alt="">
+<img src="./FrontEnd/src/assets/Login.PNG" alt="">
 
 **Course Detail Page**
 
-<img src="" alt="">
+<img src="./FrontEnd/src/assets/Courses.PNG" alt="">
 
-**Course Page**
+**Footer**
 
-<img src="" alt="">
+<img src="./FrontEnd/src/assets/Footer.PNG" alt="">
 
 **Admin Dashboard**
 
-<img src="" alt="">
+<img src="./FrontEnd/src/assets/Admin.PNG" alt="">
 
 ### Features
 
