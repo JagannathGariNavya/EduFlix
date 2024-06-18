@@ -21,7 +21,7 @@ Frontend | Backend
 
 **Landing Page**
 
-<img src="./FrontEnd/src/assets/heroimg1.png" alt="">
+<img src="./FrontEnd/src/assets/Landing Page.PNG" alt="">
 
 **Login and Signup Page**
 
